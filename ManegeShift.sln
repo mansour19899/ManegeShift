@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManegeShift", "ManegeShift\ManegeShift.csproj", "{B2B7146F-5FFD-4DF9-AA2A-7656BA77D02B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2B7146F-5FFD-4DF9-AA2A-7656BA77D02B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B7146F-5FFD-4DF9-AA2A-7656BA77D02B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B7146F-5FFD-4DF9-AA2A-7656BA77D02B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B7146F-5FFD-4DF9-AA2A-7656BA77D02B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {245A350F-B580-4EE0-A9C5-385EC78CA9B5}
+	EndGlobalSection
+EndGlobal
