@@ -21,12 +21,16 @@ namespace ManegeShift
         List<Staff> MidShift;
         List<Staff> EveningShift;
         List<Staff> SpiltShift;
+        List<Staff> Rest;
+
 
         List<Label> labelsStaff;
         List<Label> labelsMorning;
         List<Label> labelsMid;
         List<Label> labelsEvening;
         List<Label> labelsSplit;
+        List<Label> labelsRest;
+
 
         int IdSelected = 0;
         int StatusSelected = 0;
@@ -40,6 +44,7 @@ namespace ManegeShift
             MidShift = new List<Staff>();
             EveningShift = new List<Staff>();
             SpiltShift = new List<Staff>();
+            Rest = new List<Staff>();
 
             staffs = new List<Staff>
             {
@@ -49,14 +54,19 @@ namespace ManegeShift
                 new Staff(4,"hassan"),
                 new Staff(5,"shima"),
                 new Staff(6,"maryam"),
-                new Staff(7,"kosar"),
+                new Staff(8,"kosar"),
+                new Staff(9,"Faezeh"),
+                new Staff(10,"yasamin"),
+                  new Staff(11,"mohsen"),
+                  new Staff(11,"Reza"),
 
 
             };
 
             labelsStaff = new List<Label>
             {
-                lblS1,lblS2,lblS3,lblS4,lblS5,lblS6,lblS7,lblS8,lblS9
+                lblS1,lblS2,lblS3,lblS4,lblS5,lblS6,lblS7,lblS8,lblS9,lblS10,lblS11
+                ,lblS12,lblS13,lblS14,lblS15,lblS16,lblS17,lblS18,lblS19,lblS20
             };
 
             labelsMorning = new List<Label>
@@ -78,12 +88,17 @@ namespace ManegeShift
             {
                 lblSp1,lblSp2,lblSp3,lblSp4,lblSp5,lblSp6,lblSp7,lblSp8,lblSp9
             };
+            labelsRest = new List<Label>
+            {
+                lblR1,lblR2,lblR3,lblR4,lblR5,lblR6,lblR7,lblR8,lblR9
+            };
 
             SetLabels(staffs, 0);
             SetLabels(MorningShift, 1);
             SetLabels(MidShift, 2);
             SetLabels(EveningShift, 3);
             SetLabels(SpiltShift, 4);
+            SetLabels(Rest, 5);
 
             if (staffs.Count() < 10)
                 panel2.AutoScroll = true;
@@ -105,7 +120,7 @@ namespace ManegeShift
                         i = i + 1;
                     }
 
-                    for (int j = i; j < 9; j++)
+                    for (int j = i; j < 20; j++)
                     {
                         labelsStaff.ElementAt(j).Text = "";
                         labelsStaff.ElementAt(j).Tag = "";
@@ -180,6 +195,23 @@ namespace ManegeShift
                     }
                     break;
 
+                case 5:
+                    foreach (var item in s)
+                    {
+                        labelsRest.ElementAt(i).Text = item.Name;
+                        labelsRest.ElementAt(i).Tag = item.Id.ToString();
+                        labelsRest.ElementAt(i).Visible = true;
+                        i = i + 1;
+                    }
+
+                    for (int j = i; j < 9; j++)
+                    {
+                        labelsRest.ElementAt(j).Text = "";
+                        labelsRest.ElementAt(j).Tag = "";
+                        labelsRest.ElementAt(j).Visible = false;
+                    }
+                    break;
+
                 default:
                     break;
             }
@@ -205,6 +237,7 @@ namespace ManegeShift
                     var ss = MidShift.Where(p => p.Id == IdSelected).FirstOrDefault();
                     ss.Status = 1;
                     MidShift.Remove(ss);
+                    ss.Name = ss.Name.Split('(')[0];
                     MorningShift.Add(ss);
 
                     SetLabels(MidShift, 2);
@@ -230,6 +263,16 @@ namespace ManegeShift
                     SetLabels(MorningShift, 1);
                     break;
 
+                case 5:
+                    var sssss = Rest.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    sssss.Status = 1;
+                    Rest.Remove(sssss);
+                    MorningShift.Add(sssss);
+
+                    SetLabels(Rest, 5);
+                    SetLabels(MorningShift, 1);
+                    break;
+
                 default:
                     break;
             }
@@ -241,7 +284,20 @@ namespace ManegeShift
 
         private void btnMid_Click(object sender, EventArgs e)
         {
+            string FromMinte = "";
+            string Tominte ="";
 
+            if (cmbTimeFromMinte.Text == "00")
+            { }
+            else
+                FromMinte = ":" + cmbTimeFromMinte.Text;
+
+            if (cmbTimeToMinte.Text == "00")
+            { }
+            else
+                Tominte = ":" + cmbTimeToMinte.Text;
+
+            string time = "("+cmbTimeFromHour.Text + FromMinte + "-" + cmbTimeToHour.Text + Tominte+")";
 
             switch (StatusSelected)
             {
@@ -249,6 +305,7 @@ namespace ManegeShift
                     var s = staffs.Where(p => p.Id == IdSelected).FirstOrDefault();
                     s.Status = 2;
                     staffs.Remove(s);
+                    s.Name = s.Name + time;
                     MidShift.Add(s);
 
                     SetLabels(staffs, 0);
@@ -258,18 +315,23 @@ namespace ManegeShift
                     var ss = MorningShift.Where(p => p.Id == IdSelected).FirstOrDefault();
                     ss.Status = 2;
                     MorningShift.Remove(ss);
+                    ss.Name = ss.Name + time;
                     MidShift.Add(ss);
 
                     SetLabels(MorningShift, 1);
                     SetLabels(MidShift, 2);
                     break;
                 case 2:
+                    var sa = MidShift.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    sa.Name = sa.Name = sa.Name.Split('(')[0] + time;
+                    SetLabels(MidShift, 2);
 
                     break;
                 case 3:
                     var sss = EveningShift.Where(p => p.Id == IdSelected).FirstOrDefault();
                     sss.Status = 2;
                     EveningShift.Remove(sss);
+                    sss.Name = sss.Name + time;
                     MidShift.Add(sss);
 
                     SetLabels(EveningShift, 3);
@@ -279,9 +341,21 @@ namespace ManegeShift
                     var ssss = SpiltShift.Where(p => p.Id == IdSelected).FirstOrDefault();
                     ssss.Status = 2;
                     SpiltShift.Remove(ssss);
+                    ssss.Name = ssss.Name + time;
                     MidShift.Add(ssss);
 
                     SetLabels(SpiltShift, 4);
+                    SetLabels(MidShift, 2);
+                    break;
+
+                case 5:
+                    var sssss = Rest.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    sssss.Status = 2;
+                    Rest.Remove(sssss);
+                    sssss.Name = sssss.Name + time;
+                    MidShift.Add(sssss);
+
+                    SetLabels(Rest, 5);
                     SetLabels(MidShift, 2);
                     break;
 
@@ -319,6 +393,7 @@ namespace ManegeShift
                     var sss = MidShift.Where(p => p.Id == IdSelected).FirstOrDefault();
                     sss.Status = 3;
                     MidShift.Remove(sss);
+                    sss.Name = sss.Name.Split('(')[0];
                     EveningShift.Add(sss);
 
                     SetLabels(MidShift, 2);
@@ -334,6 +409,16 @@ namespace ManegeShift
                     EveningShift.Add(ssss);
 
                     SetLabels(SpiltShift, 4);
+                    SetLabels(EveningShift, 3);
+                    break;
+
+                case 5:
+                    var sssss = Rest.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    sssss.Status = 3;
+                    Rest.Remove(sssss);
+                    EveningShift.Add(sssss);
+
+                    SetLabels(Rest, 5);
                     SetLabels(EveningShift, 3);
                     break;
 
@@ -371,6 +456,7 @@ namespace ManegeShift
                     var sss = MidShift.Where(p => p.Id == IdSelected).FirstOrDefault();
                     sss.Status = 4;
                     MidShift.Remove(sss);
+                    sss.Name = sss.Name.Split('(')[0];
                     SpiltShift.Add(sss);
 
                     SetLabels(MidShift, 2);
@@ -390,6 +476,15 @@ namespace ManegeShift
                 case 4:
 
                     break;
+                case 5:
+                    var sssss = Rest.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    sssss.Status = 4;
+                    Rest.Remove(sssss);
+                    SpiltShift.Add(sssss);
+
+                    SetLabels(Rest,5);
+                    SetLabels(SpiltShift, 4);
+                    break;
 
                 default:
                     break;
@@ -402,45 +497,56 @@ namespace ManegeShift
             switch (StatusSelected)
             {
                 case 0:
+                    var s = staffs.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    s.Status = 5;
+                    staffs.Remove(s);
+                    Rest.Add(s);
 
+                    SetLabels(staffs, 0);
+                    SetLabels(Rest, 5);
                     break;
               
                 case 1:
                     var ss = MorningShift.Where(p => p.Id == IdSelected).FirstOrDefault();
-                    ss.Status = 0;
+                    ss.Status = 5;
                     MorningShift.Remove(ss);
-                    staffs.Add(ss);
+                    Rest.Add(ss);
 
                     SetLabels(MorningShift, 1);
-                    SetLabels(staffs, 0);
+                    SetLabels(Rest, 5);
                     break;
                 case 2:
                     var sss = MidShift.Where(p => p.Id == IdSelected).FirstOrDefault();
-                    sss.Status = 0;
+                    sss.Status = 5;
                     MidShift.Remove(sss);
-                    staffs.Add(sss);
+                    sss.Name = sss.Name.Split('(')[0];
+                    Rest.Add(sss);
 
                     SetLabels(MidShift, 2);
-                    SetLabels(staffs, 0);
+                    SetLabels(Rest, 5);
                     break;
 
                 case 3:
                     var ssss = EveningShift.Where(p => p.Id == IdSelected).FirstOrDefault();
-                    ssss.Status = 0;
+                    ssss.Status = 5;
                     EveningShift.Remove(ssss);
-                    staffs.Add(ssss);
+                    Rest.Add(ssss);
 
                     SetLabels(EveningShift, 3);
-                    SetLabels(staffs, 0);
+                    SetLabels(Rest, 5);
                     break;
                 case 4:
-                    var s = SpiltShift.Where(p => p.Id == IdSelected).FirstOrDefault();
-                    s.Status = 0;
-                    SpiltShift.Remove(s);
-                    staffs.Add(s);
+                    var sa = SpiltShift.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    sa.Status =5;
+                    SpiltShift.Remove(sa);
+                    Rest.Add(sa);
 
                     SetLabels(SpiltShift, 4);
-                    SetLabels(staffs, 0);
+                    SetLabels(Rest, 5);
+                    break;
+
+                case 5:
+
                     break;
 
 
@@ -684,6 +790,54 @@ namespace ManegeShift
             SelectStaff(lblSp9, 4);
         }
 
+        private void lblR1_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR1, 5);
+        }
 
+        private void lblR2_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR2, 5);
+        }
+
+        private void lblR3_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR3, 5);
+        }
+
+        private void lblR4_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR4, 5);
+        }
+
+        private void lblR5_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR5, 5);
+        }
+
+        private void lblR6_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR6, 5);
+        }
+
+        private void lblR7_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR7, 5);
+        }
+
+        private void lblR8_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR8, 5);
+        }
+
+        private void lblR9_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblR9, 5);
+        }
+
+        private void lblSelectedStaff_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = false;
+        }
     }
 }
