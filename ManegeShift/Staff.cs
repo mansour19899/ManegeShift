@@ -12,6 +12,10 @@ namespace ManegeShift
         public string Name { get; set; }
         public int Status { get; set; }
 
+        public Staff()
+        {
+
+        }
         public Staff(int id,string name,int status)
         {
             Id = id;

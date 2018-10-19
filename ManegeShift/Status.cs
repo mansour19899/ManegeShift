@@ -14,7 +14,19 @@ namespace ManegeShift
     
     public partial class Status
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Status()
+        {
+            this.DailyWeeks = new HashSet<DailyWeek>();
+            this.ShiftDays = new HashSet<ShiftDay>();
+        }
+    
         public int Id { get; set; }
         public string Status1 { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DailyWeek> DailyWeeks { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ShiftDay> ShiftDays { get; set; }
     }
 }

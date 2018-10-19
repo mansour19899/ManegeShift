@@ -27,7 +27,7 @@ namespace ManegeShift
     
         public virtual DbSet<DailyWeek> DailyWeeks { get; set; }
         public virtual DbSet<Person> People { get; set; }
-        public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<ShiftDay> ShiftDays { get; set; }
+        public virtual DbSet<Status> Status { get; set; }
     }
 }

@@ -35,6 +35,7 @@
             this.btnWednesday = new System.Windows.Forms.Button();
             this.btnThursday = new System.Windows.Forms.Button();
             this.btnFriday = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSaturday
@@ -45,12 +46,14 @@
             this.btnSaturday.FlatAppearance.BorderSize = 0;
             this.btnSaturday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaturday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaturday.Location = new System.Drawing.Point(87, 23);
+            this.btnSaturday.Location = new System.Drawing.Point(65, 19);
+            this.btnSaturday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSaturday.Name = "btnSaturday";
-            this.btnSaturday.Size = new System.Drawing.Size(206, 93);
+            this.btnSaturday.Size = new System.Drawing.Size(154, 76);
             this.btnSaturday.TabIndex = 0;
             this.btnSaturday.Text = "Saturday";
             this.btnSaturday.UseVisualStyleBackColor = false;
+            this.btnSaturday.Click += new System.EventHandler(this.btnSaturday_Click);
             // 
             // btnSunday
             // 
@@ -60,12 +63,14 @@
             this.btnSunday.FlatAppearance.BorderSize = 0;
             this.btnSunday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSunday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSunday.Location = new System.Drawing.Point(87, 145);
+            this.btnSunday.Location = new System.Drawing.Point(65, 118);
+            this.btnSunday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSunday.Name = "btnSunday";
-            this.btnSunday.Size = new System.Drawing.Size(206, 93);
+            this.btnSunday.Size = new System.Drawing.Size(154, 76);
             this.btnSunday.TabIndex = 1;
             this.btnSunday.Text = "Sunday";
             this.btnSunday.UseVisualStyleBackColor = false;
+            this.btnSunday.Click += new System.EventHandler(this.btnSunday_Click);
             // 
             // btnMonday
             // 
@@ -75,12 +80,14 @@
             this.btnMonday.FlatAppearance.BorderSize = 0;
             this.btnMonday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMonday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMonday.Location = new System.Drawing.Point(87, 262);
+            this.btnMonday.Location = new System.Drawing.Point(65, 213);
+            this.btnMonday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMonday.Name = "btnMonday";
-            this.btnMonday.Size = new System.Drawing.Size(206, 93);
+            this.btnMonday.Size = new System.Drawing.Size(154, 76);
             this.btnMonday.TabIndex = 2;
             this.btnMonday.Text = "Monday";
             this.btnMonday.UseVisualStyleBackColor = false;
+            this.btnMonday.Click += new System.EventHandler(this.btnMonday_Click);
             // 
             // btnTuesday
             // 
@@ -90,12 +97,14 @@
             this.btnTuesday.FlatAppearance.BorderSize = 0;
             this.btnTuesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTuesday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTuesday.Location = new System.Drawing.Point(87, 386);
+            this.btnTuesday.Location = new System.Drawing.Point(65, 314);
+            this.btnTuesday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnTuesday.Name = "btnTuesday";
-            this.btnTuesday.Size = new System.Drawing.Size(206, 93);
+            this.btnTuesday.Size = new System.Drawing.Size(154, 76);
             this.btnTuesday.TabIndex = 3;
             this.btnTuesday.Text = "Tuesday";
             this.btnTuesday.UseVisualStyleBackColor = false;
+            this.btnTuesday.Click += new System.EventHandler(this.btnTuesday_Click);
             // 
             // btnWednesday
             // 
@@ -105,12 +114,14 @@
             this.btnWednesday.FlatAppearance.BorderSize = 0;
             this.btnWednesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWednesday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWednesday.Location = new System.Drawing.Point(87, 503);
+            this.btnWednesday.Location = new System.Drawing.Point(65, 409);
+            this.btnWednesday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnWednesday.Name = "btnWednesday";
-            this.btnWednesday.Size = new System.Drawing.Size(206, 93);
+            this.btnWednesday.Size = new System.Drawing.Size(154, 76);
             this.btnWednesday.TabIndex = 4;
             this.btnWednesday.Text = "Wednesday";
             this.btnWednesday.UseVisualStyleBackColor = false;
+            this.btnWednesday.Click += new System.EventHandler(this.btnWednesday_Click);
             // 
             // btnThursday
             // 
@@ -120,12 +131,14 @@
             this.btnThursday.FlatAppearance.BorderSize = 0;
             this.btnThursday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThursday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThursday.Location = new System.Drawing.Point(87, 627);
+            this.btnThursday.Location = new System.Drawing.Point(65, 509);
+            this.btnThursday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThursday.Name = "btnThursday";
-            this.btnThursday.Size = new System.Drawing.Size(206, 93);
+            this.btnThursday.Size = new System.Drawing.Size(154, 76);
             this.btnThursday.TabIndex = 5;
             this.btnThursday.Text = "Thursday";
             this.btnThursday.UseVisualStyleBackColor = false;
+            this.btnThursday.Click += new System.EventHandler(this.btnThursday_Click);
             // 
             // btnFriday
             // 
@@ -135,20 +148,34 @@
             this.btnFriday.FlatAppearance.BorderSize = 0;
             this.btnFriday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFriday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFriday.Location = new System.Drawing.Point(87, 742);
+            this.btnFriday.Location = new System.Drawing.Point(65, 603);
+            this.btnFriday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFriday.Name = "btnFriday";
-            this.btnFriday.Size = new System.Drawing.Size(206, 93);
+            this.btnFriday.Size = new System.Drawing.Size(154, 76);
             this.btnFriday.TabIndex = 6;
             this.btnFriday.Text = "Friday";
             this.btnFriday.UseVisualStyleBackColor = false;
+            this.btnFriday.Click += new System.EventHandler(this.btnFriday_Click);
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(678, 650);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(211, 61);
+            this.label10.TabIndex = 73;
+            this.label10.Text = "Hyper Star";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // WeekForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ManegeShift.Resource1.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1197, 871);
+            this.ClientSize = new System.Drawing.Size(898, 708);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnFriday);
             this.Controls.Add(this.btnThursday);
             this.Controls.Add(this.btnWednesday);
@@ -156,9 +183,12 @@
             this.Controls.Add(this.btnMonday);
             this.Controls.Add(this.btnSunday);
             this.Controls.Add(this.btnSaturday);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "WeekForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WeekForm";
+            this.Load += new System.EventHandler(this.WeekForm_Load);
             this.ResumeLayout(false);
 
         }
@@ -172,5 +202,6 @@
         private System.Windows.Forms.Button btnWednesday;
         private System.Windows.Forms.Button btnThursday;
         private System.Windows.Forms.Button btnFriday;
+        private System.Windows.Forms.Label label10;
     }
 }

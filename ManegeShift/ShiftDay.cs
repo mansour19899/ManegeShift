@@ -19,5 +19,8 @@ namespace ManegeShift
         public System.DateTime Date { get; set; }
         public int Status_fk { get; set; }
         public string mid { get; set; }
+    
+        public virtual Person Person { get; set; }
+        public virtual Status Status { get; set; }
     }
 }

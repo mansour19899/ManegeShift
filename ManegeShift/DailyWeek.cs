@@ -19,5 +19,8 @@ namespace ManegeShift
         public int Person_fk { get; set; }
         public int Status_fk { get; set; }
         public string Mid { get; set; }
+    
+        public virtual Person Person { get; set; }
+        public virtual Status Status { get; set; }
     }
 }

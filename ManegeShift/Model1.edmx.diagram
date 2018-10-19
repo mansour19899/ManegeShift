@@ -5,10 +5,14 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="4ad82efa922e49678c304161a0c9b8a0" Name="Diagram1">
-        <EntityTypeShape EntityType="ManageShiftModel.DailyWeek" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ManageShiftModel.Person" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ManageShiftModel.Status" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ManageShiftModel.ShiftDay" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ManageShiftModel.DailyWeek" Width="1.5" PointX="3" PointY="3.75" />
+        <EntityTypeShape EntityType="ManageShiftModel.Person" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ManageShiftModel.ShiftDay" Width="1.5" PointX="6" PointY="3.75" />
+        <EntityTypeShape EntityType="ManageShiftModel.Status" Width="1.5" PointX="0.75" PointY="4" />
+        <AssociationConnector Association="ManageShiftModel.FK_DailyWeek_Person" />
+        <AssociationConnector Association="ManageShiftModel.FK_DailyWeek_Status" />
+        <AssociationConnector Association="ManageShiftModel.FK_ShiftDay_Person" />
+        <AssociationConnector Association="ManageShiftModel.FK_ShiftDay_Status" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

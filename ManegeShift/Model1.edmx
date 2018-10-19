@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ManageShiftModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ManageShiftModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="DailyWeek">
           <Key>
             <PropertyRef Name="Id" />
@@ -13,7 +13,7 @@
           <Property Name="IdDay" Type="int" Nullable="false" />
           <Property Name="Person_fk" Type="int" Nullable="false" />
           <Property Name="Status_fk" Type="int" Nullable="false" />
-          <Property Name="Mid" Type="nchar" MaxLength="10" />
+          <Property Name="Mid" Type="nchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Person">
           <Key>
@@ -25,20 +25,15 @@
           <Property Name="NickName" Type="nchar" MaxLength="50" />
           <Property Name="Level" Type="int" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'ManageShift.dbo.ShiftDay' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="ShiftDay">
           <Key>
             <PropertyRef Name="Id" />
-            <PropertyRef Name="Person_fk" />
-            <PropertyRef Name="Date" />
-            <PropertyRef Name="Status_fk" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Person_fk" Type="int" Nullable="false" />
           <Property Name="Date" Type="date" Nullable="false" />
           <Property Name="Status_fk" Type="int" Nullable="false" />
-          <Property Name="mid" Type="nchar" MaxLength="10" />
+          <Property Name="mid" Type="nchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Status">
           <Key>
@@ -47,25 +42,102 @@ warning 6002: The table/view 'ManageShift.dbo.ShiftDay' does not have a primary 
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Status" Type="nchar" MaxLength="10" Nullable="false" />
         </EntityType>
+        <Association Name="FK_DailyWeek_Person">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="DailyWeek" Type="Self.DailyWeek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DailyWeek">
+              <PropertyRef Name="Person_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DailyWeek_Status">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="DailyWeek" Type="Self.DailyWeek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DailyWeek">
+              <PropertyRef Name="Status_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShiftDay_Person">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="ShiftDay" Type="Self.ShiftDay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShiftDay">
+              <PropertyRef Name="Person_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShiftDay_Status">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="ShiftDay" Type="Self.ShiftDay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShiftDay">
+              <PropertyRef Name="Status_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="ManageShiftModelStoreContainer">
           <EntitySet Name="DailyWeek" EntityType="Self.DailyWeek" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShiftDay" EntityType="Self.ShiftDay" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="ShiftDay" EntityType="Self.ShiftDay" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [ShiftDay].[Id] AS [Id], 
-    [ShiftDay].[Person_fk] AS [Person_fk], 
-    [ShiftDay].[Date] AS [Date], 
-    [ShiftDay].[Status_fk] AS [Status_fk], 
-    [ShiftDay].[mid] AS [mid]
-    FROM [dbo].[ShiftDay] AS [ShiftDay]</DefiningQuery>
-          </EntitySet>
+          <AssociationSet Name="FK_DailyWeek_Person" Association="Self.FK_DailyWeek_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="DailyWeek" EntitySet="DailyWeek" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DailyWeek_Status" Association="Self.FK_DailyWeek_Status">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="DailyWeek" EntitySet="DailyWeek" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShiftDay_Person" Association="Self.FK_ShiftDay_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="ShiftDay" EntitySet="ShiftDay" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShiftDay_Status" Association="Self.FK_ShiftDay_Status">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="ShiftDay" EntitySet="ShiftDay" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ManageShiftModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ManageShiftEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DailyWeeks" EntityType="ManageShiftModel.DailyWeek" />
+          <EntitySet Name="People" EntityType="ManageShiftModel.Person" />
+          <EntitySet Name="ShiftDays" EntityType="ManageShiftModel.ShiftDay" />
+          <EntitySet Name="Status" EntityType="ManageShiftModel.Status" />
+          <AssociationSet Name="FK_DailyWeek_Person" Association="ManageShiftModel.FK_DailyWeek_Person">
+            <End Role="Person" EntitySet="People" />
+            <End Role="DailyWeek" EntitySet="DailyWeeks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DailyWeek_Status" Association="ManageShiftModel.FK_DailyWeek_Status">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="DailyWeek" EntitySet="DailyWeeks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShiftDay_Person" Association="ManageShiftModel.FK_ShiftDay_Person">
+            <End Role="Person" EntitySet="People" />
+            <End Role="ShiftDay" EntitySet="ShiftDays" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShiftDay_Status" Association="ManageShiftModel.FK_ShiftDay_Status">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="ShiftDay" EntitySet="ShiftDays" />
+          </AssociationSet>
+        </EntityContainer>
         <EntityType Name="DailyWeek">
           <Key>
             <PropertyRef Name="Id" />
@@ -74,7 +146,9 @@ warning 6002: The table/view 'ManageShift.dbo.ShiftDay' does not have a primary 
           <Property Name="IdDay" Type="Int32" Nullable="false" />
           <Property Name="Person_fk" Type="Int32" Nullable="false" />
           <Property Name="Status_fk" Type="Int32" Nullable="false" />
-          <Property Name="Mid" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Mid" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Person" Relationship="ManageShiftModel.FK_DailyWeek_Person" FromRole="DailyWeek" ToRole="Person" />
+          <NavigationProperty Name="Status" Relationship="ManageShiftModel.FK_DailyWeek_Status" FromRole="DailyWeek" ToRole="Status" />
         </EntityType>
         <EntityType Name="Person">
           <Key>
@@ -85,34 +159,79 @@ warning 6002: The table/view 'ManageShift.dbo.ShiftDay' does not have a primary 
           <Property Name="Lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="NickName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="Level" Type="Int32" />
+          <NavigationProperty Name="DailyWeeks" Relationship="ManageShiftModel.FK_DailyWeek_Person" FromRole="Person" ToRole="DailyWeek" />
+          <NavigationProperty Name="ShiftDays" Relationship="ManageShiftModel.FK_ShiftDay_Person" FromRole="Person" ToRole="ShiftDay" />
+        </EntityType>
+        <EntityType Name="ShiftDay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Person_fk" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Status_fk" Type="Int32" Nullable="false" />
+          <Property Name="mid" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Person" Relationship="ManageShiftModel.FK_ShiftDay_Person" FromRole="ShiftDay" ToRole="Person" />
+          <NavigationProperty Name="Status" Relationship="ManageShiftModel.FK_ShiftDay_Status" FromRole="ShiftDay" ToRole="Status" />
         </EntityType>
         <EntityType Name="Status">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Status1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Status1" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="DailyWeeks" Relationship="ManageShiftModel.FK_DailyWeek_Status" FromRole="Status" ToRole="DailyWeek" />
+          <NavigationProperty Name="ShiftDays" Relationship="ManageShiftModel.FK_ShiftDay_Status" FromRole="Status" ToRole="ShiftDay" />
         </EntityType>
-        <EntityType Name="ShiftDay">
-          <Key>
-            <PropertyRef Name="Id" />
-            <PropertyRef Name="Person_fk" />
-            <PropertyRef Name="Date" />
-            <PropertyRef Name="Status_fk" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Person_fk" Type="Int32" Nullable="false" />
-          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="Status_fk" Type="Int32" Nullable="false" />
-          <Property Name="mid" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-        </EntityType>
-        <EntityContainer Name="ManageShiftEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="DailyWeeks" EntityType="Self.DailyWeek" />
-          <EntitySet Name="People" EntityType="Self.Person" />
-          <EntitySet Name="Status" EntityType="Self.Status" />
-          <EntitySet Name="ShiftDays" EntityType="Self.ShiftDay" />
-        </EntityContainer>
-      </Schema>
+        <Association Name="FK_DailyWeek_Person">
+          <End Type="ManageShiftModel.Person" Role="Person" Multiplicity="1" />
+          <End Type="ManageShiftModel.DailyWeek" Role="DailyWeek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DailyWeek">
+              <PropertyRef Name="Person_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DailyWeek_Status">
+          <End Type="ManageShiftModel.Status" Role="Status" Multiplicity="1" />
+          <End Type="ManageShiftModel.DailyWeek" Role="DailyWeek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DailyWeek">
+              <PropertyRef Name="Status_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShiftDay_Person">
+          <End Type="ManageShiftModel.Person" Role="Person" Multiplicity="1" />
+          <End Type="ManageShiftModel.ShiftDay" Role="ShiftDay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShiftDay">
+              <PropertyRef Name="Person_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShiftDay_Status">
+          <End Type="ManageShiftModel.Status" Role="Status" Multiplicity="1" />
+          <End Type="ManageShiftModel.ShiftDay" Role="ShiftDay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShiftDay">
+              <PropertyRef Name="Status_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -121,41 +240,41 @@ warning 6002: The table/view 'ManageShift.dbo.ShiftDay' does not have a primary 
           <EntitySetMapping Name="DailyWeeks">
             <EntityTypeMapping TypeName="ManageShiftModel.DailyWeek">
               <MappingFragment StoreEntitySet="DailyWeek">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="IdDay" ColumnName="IdDay" />
-                <ScalarProperty Name="Person_fk" ColumnName="Person_fk" />
-                <ScalarProperty Name="Status_fk" ColumnName="Status_fk" />
                 <ScalarProperty Name="Mid" ColumnName="Mid" />
+                <ScalarProperty Name="Status_fk" ColumnName="Status_fk" />
+                <ScalarProperty Name="Person_fk" ColumnName="Person_fk" />
+                <ScalarProperty Name="IdDay" ColumnName="IdDay" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="People">
             <EntityTypeMapping TypeName="ManageShiftModel.Person">
               <MappingFragment StoreEntitySet="Person">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Lastname" ColumnName="Lastname" />
-                <ScalarProperty Name="NickName" ColumnName="NickName" />
                 <ScalarProperty Name="Level" ColumnName="Level" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Status">
-            <EntityTypeMapping TypeName="ManageShiftModel.Status">
-              <MappingFragment StoreEntitySet="Status">
+                <ScalarProperty Name="NickName" ColumnName="NickName" />
+                <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Status1" ColumnName="Status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ShiftDays">
             <EntityTypeMapping TypeName="ManageShiftModel.ShiftDay">
               <MappingFragment StoreEntitySet="ShiftDay">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="Person_fk" ColumnName="Person_fk" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="Status_fk" ColumnName="Status_fk" />
                 <ScalarProperty Name="mid" ColumnName="mid" />
+                <ScalarProperty Name="Status_fk" ColumnName="Status_fk" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Person_fk" ColumnName="Person_fk" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Status">
+            <EntityTypeMapping TypeName="ManageShiftModel.Status">
+              <MappingFragment StoreEntitySet="Status">
+                <ScalarProperty Name="Status1" ColumnName="Status" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
