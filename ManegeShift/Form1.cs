@@ -941,72 +941,145 @@ namespace ManegeShift
             string mid = "";
             lblDayName.Enabled = false;
             var eee = new DailyWeek();
-
-            foreach (var item in MorningShift)
+            var fff = new ShiftDay();
+            if(IsDate)
             {
-                eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                if (eee == null)
+                foreach (var item in MorningShift)
                 {
-                    db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 1 });
+                    fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                    if (fff == null)
+                    {
+                        db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 1 });
+                    }
+                    else
+                        fff.Status_fk = 1;
                 }
-                else
-                    eee.Status_fk = 1;
+
+                foreach (var item in MidShift)
+                {
+                    fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                    if (fff == null)
+                    {
+                        mid = item.Name.Split('(')[1].Split(')')[0];
+                        db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 2, mid = mid });
+                    }
+                    else
+                    {
+                        mid = item.Name.Split('(')[1].Split(')')[0];
+                        fff.Status_fk = 2;
+                        fff.mid = mid;
+                    }
+
+
+
+
+
+                }
+
+                foreach (var item in EveningShift)
+                {
+                    fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                    if (fff == null)
+                    {
+                        db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 3 });
+                    }
+                    else
+                        fff.Status_fk = 3;
+
+                }
+                foreach (var item in SpiltShift)
+                {
+                    fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                    if (fff == null)
+                    {
+                        db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 4 });
+                    }
+                    else
+                        fff.Status_fk = 4;
+
+                }
+                foreach (var item in Rest)
+                {
+                    fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                    if (fff == null)
+                    {
+                        db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 5 });
+                    }
+                    else
+                        fff.Status_fk = 5;
+
+                }
+
+            }
+            else
+            {
+                foreach (var item in MorningShift)
+                {
+                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
+                    if (eee == null)
+                    {
+                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 1 });
+                    }
+                    else
+                        eee.Status_fk = 1;
+                }
+
+                foreach (var item in MidShift)
+                {
+                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
+                    if (eee == null)
+                    {
+                        mid = item.Name.Split('(')[1].Split(')')[0];
+                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 2, Mid = mid });
+                    }
+                    else
+                    {
+                        mid = item.Name.Split('(')[1].Split(')')[0];
+                        eee.Status_fk = 2;
+                        eee.Mid = mid;
+                    }
+
+
+
+
+
+                }
+
+                foreach (var item in EveningShift)
+                {
+                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
+                    if (eee == null)
+                    {
+                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 3 });
+                    }
+                    else
+                        eee.Status_fk = 3;
+
+                }
+                foreach (var item in SpiltShift)
+                {
+                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
+                    if (eee == null)
+                    {
+                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 4 });
+                    }
+                    else
+                        eee.Status_fk = 4;
+
+                }
+                foreach (var item in Rest)
+                {
+                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
+                    if (eee == null)
+                    {
+                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 5 });
+                    }
+                    else
+                        eee.Status_fk = 5;
+
+                }
             }
 
-            foreach (var item in MidShift)
-            {
-                eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                if (eee == null)
-                {
-                    mid = item.Name.Split('(')[1].Split(')')[0];
-                    db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 2, Mid = mid });
-                }
-                else
-                {
-                    mid = item.Name.Split('(')[1].Split(')')[0];
-                    eee.Status_fk = 2;
-                    eee.Mid = mid;
-                }
-
-
-
-
-
-            }
-
-            foreach (var item in EveningShift)
-            {
-                eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                if (eee == null)
-                {
-                    db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 3 });
-                }
-                else
-                    eee.Status_fk = 3;
-
-            }
-            foreach (var item in SpiltShift)
-            {
-                eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                if (eee == null)
-                {
-                    db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 4 });
-                }
-                else
-                    eee.Status_fk = 4;
-
-            }
-            foreach (var item in Rest)
-            {
-                eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                if (eee == null)
-                {
-                    db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 5 });
-                }
-                else
-                    eee.Status_fk = 5;
-
-            }
 
             db.SaveChanges();
             this.Close();

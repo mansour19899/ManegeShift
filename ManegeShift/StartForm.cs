@@ -97,7 +97,7 @@ namespace ManegeShift
         {
             lblDateShamsi.Text = Today.ToPersianDateString();
             lblDateDay.Text = Today.DayOfWeek.ToString();
-            lblDateMiladi.Text = Today.ToShortDateString();
+            lblDateMiladi.Text = Today.Year.ToString() + "/" + Today.Month.ToString() + "/" + Today.Day.ToString();
 
             cmbYearStart.Items.Add(YearStart);
             cmbYearEnd.Items.Add(YearStart);

@@ -31,6 +31,7 @@
             this.btnWeek = new System.Windows.Forms.Button();
             this.btnDay = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbDayEnd = new System.Windows.Forms.ComboBox();
@@ -46,7 +47,6 @@
             this.lblDateShamsi = new System.Windows.Forms.Label();
             this.lblDateDay = new System.Windows.Forms.Label();
             this.lblDateMiladi = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -116,6 +116,23 @@
             this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkGreen;
+            this.button1.BackgroundImage = global::ManegeShift.Resource1.pi78y9qbT;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(201, 160);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 70);
+            this.button1.TabIndex = 67;
+            this.button1.Text = "  Save";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
@@ -135,7 +152,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 41);
             this.label4.TabIndex = 72;
-            this.label4.Text = "\\";
+            this.label4.Text = "/";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbDayEnd
@@ -209,7 +226,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 41);
             this.label6.TabIndex = 70;
-            this.label6.Text = "\\";
+            this.label6.Text = "/";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -231,7 +248,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 41);
             this.label1.TabIndex = 29;
-            this.label1.Text = "\\";
+            this.label1.Text = "/";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbDayStart
@@ -306,7 +323,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(25, 41);
             this.label5.TabIndex = 25;
-            this.label5.Text = "\\";
+            this.label5.Text = "/";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDateShamsi
@@ -342,23 +359,6 @@
             this.lblDateMiladi.Text = "label2";
             this.lblDateMiladi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkGreen;
-            this.button1.BackgroundImage = global::ManegeShift.Resource1.pi78y9qbT;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(201, 160);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 70);
-            this.button1.TabIndex = 67;
-            this.button1.Text = "  Save";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -388,7 +388,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 70);
             this.button2.TabIndex = 67;
-            this.button2.Text = "  Save";
+            this.button2.Text = "Create";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -411,7 +411,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(25, 41);
             this.label11.TabIndex = 29;
-            this.label11.Text = "\\";
+            this.label11.Text = "/";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cmbDay
@@ -486,7 +486,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(25, 41);
             this.label12.TabIndex = 25;
-            this.label12.Text = "\\";
+            this.label12.Text = "/";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // StartForm
