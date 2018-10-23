@@ -36,6 +36,7 @@
             this.btnThursday = new System.Windows.Forms.Button();
             this.btnFriday = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSaturday
@@ -47,7 +48,7 @@
             this.btnSaturday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaturday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaturday.Location = new System.Drawing.Point(65, 19);
-            this.btnSaturday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSaturday.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaturday.Name = "btnSaturday";
             this.btnSaturday.Size = new System.Drawing.Size(154, 76);
             this.btnSaturday.TabIndex = 0;
@@ -64,7 +65,7 @@
             this.btnSunday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSunday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSunday.Location = new System.Drawing.Point(65, 118);
-            this.btnSunday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSunday.Margin = new System.Windows.Forms.Padding(2);
             this.btnSunday.Name = "btnSunday";
             this.btnSunday.Size = new System.Drawing.Size(154, 76);
             this.btnSunday.TabIndex = 1;
@@ -81,7 +82,7 @@
             this.btnMonday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMonday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMonday.Location = new System.Drawing.Point(65, 213);
-            this.btnMonday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMonday.Margin = new System.Windows.Forms.Padding(2);
             this.btnMonday.Name = "btnMonday";
             this.btnMonday.Size = new System.Drawing.Size(154, 76);
             this.btnMonday.TabIndex = 2;
@@ -98,7 +99,7 @@
             this.btnTuesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTuesday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuesday.Location = new System.Drawing.Point(65, 314);
-            this.btnTuesday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTuesday.Margin = new System.Windows.Forms.Padding(2);
             this.btnTuesday.Name = "btnTuesday";
             this.btnTuesday.Size = new System.Drawing.Size(154, 76);
             this.btnTuesday.TabIndex = 3;
@@ -115,7 +116,7 @@
             this.btnWednesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWednesday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWednesday.Location = new System.Drawing.Point(65, 409);
-            this.btnWednesday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWednesday.Margin = new System.Windows.Forms.Padding(2);
             this.btnWednesday.Name = "btnWednesday";
             this.btnWednesday.Size = new System.Drawing.Size(154, 76);
             this.btnWednesday.TabIndex = 4;
@@ -132,7 +133,7 @@
             this.btnThursday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThursday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThursday.Location = new System.Drawing.Point(65, 509);
-            this.btnThursday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThursday.Margin = new System.Windows.Forms.Padding(2);
             this.btnThursday.Name = "btnThursday";
             this.btnThursday.Size = new System.Drawing.Size(154, 76);
             this.btnThursday.TabIndex = 5;
@@ -149,7 +150,7 @@
             this.btnFriday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFriday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFriday.Location = new System.Drawing.Point(65, 603);
-            this.btnFriday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnFriday.Margin = new System.Windows.Forms.Padding(2);
             this.btnFriday.Name = "btnFriday";
             this.btnFriday.Size = new System.Drawing.Size(154, 76);
             this.btnFriday.TabIndex = 6;
@@ -159,14 +160,24 @@
             // 
             // label10
             // 
+            this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(678, 650);
+            this.label10.Location = new System.Drawing.Point(703, 663);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(211, 61);
+            this.label10.Size = new System.Drawing.Size(147, 35);
             this.label10.TabIndex = 73;
             this.label10.Text = "Hyper Star";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Location = new System.Drawing.Point(690, 533);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(185, 166);
+            this.label7.TabIndex = 74;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // WeekForm
             // 
@@ -183,13 +194,15 @@
             this.Controls.Add(this.btnMonday);
             this.Controls.Add(this.btnSunday);
             this.Controls.Add(this.btnSaturday);
+            this.Controls.Add(this.label7);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "WeekForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WeekForm";
             this.Load += new System.EventHandler(this.WeekForm_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -203,5 +216,6 @@
         private System.Windows.Forms.Button btnThursday;
         private System.Windows.Forms.Button btnFriday;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label7;
     }
 }

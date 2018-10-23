@@ -56,13 +56,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DailyWeek.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Mode2.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mode2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mode2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mode2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mode2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mode2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Mode2.edmx</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -81,7 +102,7 @@
     </Compile>
     <Compile Include="MyPersianDate.cs" />
     <Compile Include="Person.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Mode2.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,7 +112,7 @@
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
     <Compile Include="ShiftDay.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Mode2.tt</DependentUpon>
     </Compile>
     <Compile Include="Staff.cs" />
     <Compile Include="StartForm.cs">
@@ -101,7 +122,7 @@
       <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Status.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Mode2.tt</DependentUpon>
     </Compile>
     <Compile Include="WeekForm.cs">
       <SubType>Form</SubType>
@@ -111,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,6 +159,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="Mode2.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Mode2.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Mode2.edmx.diagram">
+      <DependentUpon>Mode2.edmx</DependentUpon>
+    </None>
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -156,6 +187,16 @@
     <None Include="Resources\Adidas-Wallpaper-For-Background.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Mode2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Mode2.edmx</DependentUpon>
+      <LastGenOutput>Mode2.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Mode2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Mode2.edmx</DependentUpon>
+      <LastGenOutput>Mode2.cs</LastGenOutput>
+    </Content>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

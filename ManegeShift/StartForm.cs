@@ -13,7 +13,7 @@ namespace ManegeShift
     
     public partial class StartForm : Form
     {
-        ManageShiftEntities db;
+        ManageShiftEntities1 db;
         List< DailyWeek> WeekShift;
         DateTime Today = DateTime.Today;
        // DateTime Today = new DateTime(2019, 1, 22);
@@ -26,10 +26,9 @@ namespace ManegeShift
 
         private void btnDay_Click(object sender, EventArgs e)
         {
-            btnDay.Visible = false;
-            panel2.Visible = true;
+           panel2.Visible = true;
 
-            btnDay.Enabled = false;
+     
 
 
 
@@ -44,10 +43,28 @@ namespace ManegeShift
             frm.ShowDialog();
         }
 
+        private void label7_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = false;
+        }
+
+        private void btnSetWeek_Click(object sender, EventArgs e)
+        {
+            WeekForm frm = new WeekForm();
+            frm.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Info frm = new Info();
+            frm.ShowDialog();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             btnWeek.Enabled = false;
-            db = new ManageShiftEntities();
+            db = new ManageShiftEntities1();
             WeekShift = db.DailyWeeks.ToList();
             DateTime DateStart, DateEnd;
             DateStart=( "13"+cmbYearStart.Text + "/" + cmbMonthStart.Text + "/" + cmbDayStart.Text).ToGeorgianDateTime();
@@ -75,8 +92,7 @@ namespace ManegeShift
 
         private void btnSaturday_Click(object sender, EventArgs e)
         {
-            btnDay.Visible = false;
-            panel1.Visible = true;
+           panel1.Visible = true;
         }
 
         public StartForm()
@@ -170,11 +186,22 @@ namespace ManegeShift
                     break;
             }
 
+            var delete = db.ShiftDays.Any(p => p.Date == date);
+            if(delete)
+            {
+                var del = db.ShiftDays.Where(p => p.Date == date).ToList();
+                foreach (var item in del)
+                {
+                    db.ShiftDays.Remove(item);
+                }
+            }
+
             var t = WeekShift.Where(p => p.IdDay == DayOfWeek).Select(p=>new ShiftDay {Person_fk=p.Person_fk,Status_fk=p.Status_fk,mid=p.Mid,Date=date }).ToList();
             foreach (var item in t)
             {
                 db.ShiftDays.Add(item);
             }
+
 
             db.SaveChanges();
             

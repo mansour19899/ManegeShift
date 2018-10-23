@@ -15,7 +15,7 @@ namespace ManegeShift
         int Day = 0;
         DateTime Date;
         bool IsDate = false;
-        ManageShiftEntities db;
+        ManageShiftEntities1 db;
         public Form1()
         {
             InitializeComponent();
@@ -23,14 +23,14 @@ namespace ManegeShift
         public Form1(int day)
         {
             Day = day;
-            db = new ManageShiftEntities();
+            db = new ManageShiftEntities1();
             InitializeComponent();
         }
         public Form1(DateTime date)
         {
             Date = date;
             IsDate = true;
-            db = new ManageShiftEntities();
+            db = new ManageShiftEntities1();
             InitializeComponent();
         }
         List<Staff> staffs;

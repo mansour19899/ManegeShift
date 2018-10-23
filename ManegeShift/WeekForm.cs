@@ -77,5 +77,10 @@ namespace ManegeShift
             frm.ShowDialog();
             this.Show();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
