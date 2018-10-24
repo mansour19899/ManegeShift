@@ -25,7 +25,8 @@ namespace ManegeShift
         public string Name { get; set; }
         public string Lastname { get; set; }
         public string NickName { get; set; }
-        public Nullable<int> Level { get; set; }
+        public int Level { get; set; }
+        public bool IsDelete { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DailyWeek> DailyWeeks { get; set; }

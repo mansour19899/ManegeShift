@@ -19,12 +19,15 @@ namespace ManegeShift
         int SelectId = 0;
         public Info()
         {
-            InitializeComponent();
+        
             db = new ManageShiftEntities1();
+  
+            InitializeComponent();
         }
 
         private void Info_Load(object sender, EventArgs e)
         {
+            panel1.Visible = false;
 
             labelsStaff = new List<Label>
             {
@@ -39,11 +42,11 @@ namespace ManegeShift
 
         public void SetLabelStaff()
         {
-            People = db.People.ToList();
+            People = db.People.Where(p=>p.IsDelete==false).OrderByDescending(p => p.Level).ThenBy(p=>p.Id).ToList();
             int i = 0;
             foreach (var item in People)
             {
-                labelsStaff.ElementAt(i).Text = item.Name;
+                labelsStaff.ElementAt(i).Text = item.NickName.Trim();
                 labelsStaff.ElementAt(i).Tag = item.Id.ToString();
                 labelsStaff.ElementAt(i).Visible = true;
                 i = i + 1;
@@ -65,14 +68,17 @@ namespace ManegeShift
             person = People.Where(p => p.Id == id).FirstOrDefault();
             txtName.Text = person.Name;
             txtLastName.Text = person.Lastname;
-            txtNickName.Text = person.NickName;
+            txtNickName.Text = person.NickName.Trim();
 
-            if (person.Level != null)
+          
                 cmbLevel.Text = person.Level.ToString();
-            else
-                cmbLevel.Text = "";
 
 
+            btnAdd.Visible = false;
+            btnDelete.Visible = true;
+            btnEdit.Visible = true;
+
+            panel1.Visible = true;
 
 
         }
@@ -105,17 +111,160 @@ namespace ManegeShift
             person.Level = Convert.ToInt16(cmbLevel.Text);
 
             db.SaveChanges();
+            panel1.Visible = false;
+
+            SetLabelStaff();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             var per =db.People.Where(p => p.Id == SelectId).FirstOrDefault();
-            db.People.Remove(person);
+            per.IsDelete = true;
+
+            var delShiftDays = db.ShiftDays.Where(p => p.Person_fk == per.Id & p.Date >= DateTime.Today);
+            foreach (var item in delShiftDays)
+            {
+                db.ShiftDays.Remove(item);
+            }
+
+            var delWeekDays = db.DailyWeeks.Where(p => p.Person_fk == per.Id );
+            foreach (var itemm in delWeekDays)
+            {
+                db.DailyWeeks.Remove(itemm);
+            }
 
             db.SaveChanges();
+            panel1.Visible = false;
+            SetLabelStaff();
 
 
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+            btnAdd.Visible = true;
+
+            btnDelete.Visible = false;
+            btnEdit.Visible = false;
+            ClearTextbox();
+
+            panel1.Visible = true;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Person per = new Person();
+            per.Name = txtName.Text;
+            per.Lastname = txtLastName.Text;
+            per.NickName = txtNickName.Text;
+            per.Level =Convert.ToInt16( cmbLevel.Text);
+            per.IsDelete = false;
+
+
+            ClearTextbox();
+
+            db.People.Add(per);
+            db.SaveChanges();
+
+            SetLabelStaff();
+
+            panel1.Visible = false;
+
+        }
+
+        public void ClearTextbox()
+        {
+            txtName.Text = "";
+            txtLastName.Text = "";
+            txtNickName.Text = "";
+            cmbLevel.Text = "1";
+        }
+
+        private void lblS6_Click(object sender, EventArgs e)
+        {
+            Selected(lblS6);
+        }
+
+        private void lblS5_Click(object sender, EventArgs e)
+        {
+            Selected(lblS5);
+        }
+
+        private void lblS7_Click(object sender, EventArgs e)
+        {
+            Selected(lblS7);
+        }
+
+        private void lblS8_Click(object sender, EventArgs e)
+        {
+            Selected(lblS8);
+        }
+
+        private void lblS9_Click(object sender, EventArgs e)
+        {
+            Selected(lblS9);
+        }
+
+        private void lblS10_Click(object sender, EventArgs e)
+        {
+            Selected(lblS10);
+        }
+
+        private void lblS11_Click(object sender, EventArgs e)
+        {
+            Selected(lblS11);
+        }
+
+        private void lblS12_Click(object sender, EventArgs e)
+        {
+            Selected(lblS12);
+        }
+
+        private void lblS13_Click(object sender, EventArgs e)
+        {
+            Selected(lblS13);
+        }
+
+        private void lblS14_Click(object sender, EventArgs e)
+        {
+            Selected(lblS14);
+        }
+
+        private void lblS15_Click(object sender, EventArgs e)
+        {
+            Selected(lblS15);
+        }
+
+        private void lblS16_Click(object sender, EventArgs e)
+        {
+            Selected(lblS16);
+        }
+
+        private void lblS17_Click(object sender, EventArgs e)
+        {
+            Selected(lblS17);
+        }
+
+        private void lblS18_Click(object sender, EventArgs e)
+        {
+            Selected(lblS18);
+        }
+
+        private void lblS19_Click(object sender, EventArgs e)
+        {
+            Selected(lblS19);
+        }
+
+        private void lblS20_Click(object sender, EventArgs e)
+        {
+            Selected(lblS20);
         }
     }
 }

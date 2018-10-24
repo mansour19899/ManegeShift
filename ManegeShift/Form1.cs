@@ -163,12 +163,12 @@ namespace ManegeShift
             if (IsDate)
             {
                 var dbb = db.ShiftDays.Where(p => p.Date == Date).ToList();
-                var staffss = db.People.Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim() }).ToList();
-                MorningShift = dbb.Where(p => p.Status_fk == 1).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() }).ToList();
-                MidShift = dbb.Where(p => p.Status_fk == 2).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() + "(" + p.mid.Trim() + ")" }).ToList();
-                EveningShift = dbb.Where(p => p.Status_fk == 3).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() }).ToList();
-                SpiltShift = dbb.Where(p => p.Status_fk == 4).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() }).ToList();
-                Rest = dbb.Where(p => p.Status_fk == 5).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() }).ToList();
+                var staffss = db.People.Where(p=>p.IsDelete==false).Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim(),Level=p.Level}).ToList();
+                MorningShift = dbb.Where(p => p.Status_fk == 1).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level}).ToList();
+                MidShift = dbb.Where(p => p.Status_fk == 2).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() + "(" + p.mid.Trim() + ")",Level=p.Person.Level }).ToList();
+                EveningShift = dbb.Where(p => p.Status_fk == 3).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();
+                SpiltShift = dbb.Where(p => p.Status_fk == 4).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
+                Rest = dbb.Where(p => p.Status_fk == 5).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
 
                 staffs = staffss.Where(p => !MorningShift.Any(p2 => p2.Id == p.Id) & !MidShift.Any(p2 => p2.Id == p.Id) & !EveningShift.Any(p2 => p2.Id == p.Id)
                 & !SpiltShift.Any(p2 => p2.Id == p.Id) & !Rest.Any(p2 => p2.Id == p.Id)).ToList();
@@ -178,12 +178,12 @@ namespace ManegeShift
             }
             else
             {
-                var staffss = db.People.Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim() }).ToList();
-                MorningShift = db.DailyWeeks.Where(p => p.Status_fk == 1 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() }).ToList();
-                MidShift = db.DailyWeeks.Where(p => p.Status_fk == 2 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() + "(" + p.Mid.Trim() + ")" }).ToList();
-                EveningShift = db.DailyWeeks.Where(p => p.Status_fk == 3 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() }).ToList();
-                SpiltShift = db.DailyWeeks.Where(p => p.Status_fk == 4 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() }).ToList();
-                Rest = db.DailyWeeks.Where(p => p.Status_fk == 5 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() }).ToList();
+                var staffss = db.People.Where(p=>p.IsDelete==false).Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim(),Level=p.Level }).ToList();
+                MorningShift = db.DailyWeeks.Where(p => p.Status_fk == 1 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
+                MidShift = db.DailyWeeks.Where(p => p.Status_fk == 2 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() + "(" + p.Mid.Trim() + ")" , Level=p.Person.Level}).ToList();
+                EveningShift = db.DailyWeeks.Where(p => p.Status_fk == 3 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
+                SpiltShift = db.DailyWeeks.Where(p => p.Status_fk == 4 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
+                Rest = db.DailyWeeks.Where(p => p.Status_fk == 5 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
 
 
                 staffs = staffss.Where(p => !MorningShift.Any(p2 => p2.Id == p.Id) & !MidShift.Any(p2 => p2.Id == p.Id) & !EveningShift.Any(p2 => p2.Id == p.Id)
@@ -193,11 +193,11 @@ namespace ManegeShift
 
 
 
-            int x = 0;
+          
         }
         public void SetLabels(List<Staff> ss, int status)
         {
-            var s = ss.OrderBy(p => p.Id).ToList();
+            var s = ss.OrderByDescending(p => p.Level).ThenBy(p=>p.Id).ToList();
             int i = 0;
             switch (status)
             {

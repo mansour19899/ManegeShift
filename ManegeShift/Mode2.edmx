@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ManageShiftModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ManageShiftModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="DailyWeek">
           <Key>
             <PropertyRef Name="Id" />
@@ -23,7 +23,8 @@
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
           <Property Name="Lastname" Type="nvarchar" MaxLength="50" />
           <Property Name="NickName" Type="nchar" MaxLength="50" />
-          <Property Name="Level" Type="int" />
+          <Property Name="Level" Type="int" Nullable="false" />
+          <Property Name="IsDelete" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="ShiftDay">
           <Key>
@@ -112,8 +113,7 @@
             <End Role="ShiftDay" EntitySet="ShiftDay" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ManageShiftModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -137,9 +137,10 @@
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="NickName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-          <Property Name="Level" Type="Int32" />
+          <Property Name="Level" Type="Int32" Nullable="false" />
           <NavigationProperty Name="DailyWeeks" Relationship="Self.FK_DailyWeek_Person" FromRole="Person" ToRole="DailyWeek" />
           <NavigationProperty Name="ShiftDays" Relationship="Self.FK_ShiftDay_Person" FromRole="Person" ToRole="ShiftDay" />
+          <Property Name="IsDelete" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="ShiftDay">
           <Key>
@@ -252,6 +253,7 @@
           <EntitySetMapping Name="People">
             <EntityTypeMapping TypeName="ManageShiftModel1.Person">
               <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Lastname" ColumnName="Lastname" />
