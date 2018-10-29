@@ -13,7 +13,7 @@ namespace ManegeShift
     
     public partial class StartForm : Form
     {
-        ManageShiftEntities1 db;
+        HiiiEntities db;
         List< DailyWeek> WeekShift;
         DateTime Today = DateTime.Today;
        // DateTime Today = new DateTime(2019, 1, 22);
@@ -39,8 +39,16 @@ namespace ManegeShift
             DateTime Date;
             Date = ("13" + cmbYear.Text + "/" + cmbMonth.Text + "/" + cmbDay.Text).ToGeorgianDateTime();
 
-            Form1 frm = new Form1(Date);
-            frm.ShowDialog();
+            if(Date<Today)
+            {
+                MessageBox.Show(" It is impossible");
+            }
+            else
+            {
+                Form1 frm = new Form1(Date);
+                frm.ShowDialog();
+            }
+
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -64,7 +72,7 @@ namespace ManegeShift
         private void button1_Click(object sender, EventArgs e)
         {
             btnWeek.Enabled = false;
-            db = new ManageShiftEntities1();
+            db = new HiiiEntities();
             WeekShift = db.DailyWeeks.ToList();
             DateTime DateStart, DateEnd;
             DateStart=( "13"+cmbYearStart.Text + "/" + cmbMonthStart.Text + "/" + cmbDayStart.Text).ToGeorgianDateTime();

@@ -13,14 +13,14 @@ namespace ManegeShift
     public partial class Info : Form
     {
         List<Label> labelsStaff;
-        ManageShiftEntities1 db;
+        HiiiEntities db;
         List<Person> People;
         Person person;
         int SelectId = 0;
         public Info()
         {
         
-            db = new ManageShiftEntities1();
+            db = new HiiiEntities();
   
             InitializeComponent();
         }
@@ -28,6 +28,7 @@ namespace ManegeShift
         private void Info_Load(object sender, EventArgs e)
         {
             panel1.Visible = false;
+          
 
             labelsStaff = new List<Label>
             {
@@ -59,6 +60,7 @@ namespace ManegeShift
                 labelsStaff.ElementAt(j).Visible = false;
             }
             lblCountStaff.Text = "(" + People.Count().ToString() + ")";
+            lblName.Text = "";
         }
 
         public void Selected(Label lb)
@@ -69,7 +71,8 @@ namespace ManegeShift
             txtName.Text = person.Name;
             txtLastName.Text = person.Lastname;
             txtNickName.Text = person.NickName.Trim();
-
+            lblName.ForeColor = Color.Navy;
+            lblName.Text = person.Name + "  " + person.Lastname;
           
                 cmbLevel.Text = person.Level.ToString();
 
@@ -119,24 +122,42 @@ namespace ManegeShift
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var per =db.People.Where(p => p.Id == SelectId).FirstOrDefault();
+
+            var per = db.People.Where(p => p.Id == SelectId).FirstOrDefault();
             per.IsDelete = true;
 
-            var delShiftDays = db.ShiftDays.Where(p => p.Person_fk == per.Id & p.Date >= DateTime.Today);
-            foreach (var item in delShiftDays)
+
+            DialogResult result3 = MessageBox.Show("Do you want to delete "+per.Name+" "+per.Lastname+"?",
+           "The Question",
+            MessageBoxButtons.YesNo,
+           MessageBoxIcon.Question);
+
+            if (result3 == DialogResult.Yes)
             {
-                db.ShiftDays.Remove(item);
+
+
+                var delShiftDays = db.ShiftDays.Where(p => p.Person_fk == per.Id & p.Date >= DateTime.Today);
+                foreach (var item in delShiftDays)
+                {
+                    db.ShiftDays.Remove(item);
+                }
+
+                var delWeekDays = db.DailyWeeks.Where(p => p.Person_fk == per.Id);
+                foreach (var itemm in delWeekDays)
+                {
+                    db.DailyWeeks.Remove(itemm);
+                }
+
+                db.SaveChanges();
+                panel1.Visible = false;
+                SetLabelStaff();
+            }
+            else if (result3 == DialogResult.No)
+            {
+                lblName.Text = "";
             }
 
-            var delWeekDays = db.DailyWeeks.Where(p => p.Person_fk == per.Id );
-            foreach (var itemm in delWeekDays)
-            {
-                db.DailyWeeks.Remove(itemm);
-            }
 
-            db.SaveChanges();
-            panel1.Visible = false;
-            SetLabelStaff();
 
 
         }
@@ -148,7 +169,7 @@ namespace ManegeShift
 
         private void label5_Click(object sender, EventArgs e)
         {
-
+            lblName.Text = "";
             btnAdd.Visible = true;
 
             btnDelete.Visible = false;
@@ -169,13 +190,35 @@ namespace ManegeShift
 
 
             ClearTextbox();
+            int x = 0;
 
-            db.People.Add(per);
-            db.SaveChanges();
+            if (string.IsNullOrWhiteSpace(per.NickName))
+            {
+                lblName.Text = "Insert NickName";
+                lblName.ForeColor = Color.DarkRed;
+            }
+            else
+            {
+                db.People.Add(per);
+                int saved = db.SaveChanges();
 
-            SetLabelStaff();
+                if (saved != 0)
+                {
+                    SetLabelStaff();
 
-            panel1.Visible = false;
+                    panel1.Visible = false;
+                    lblName.Text = per.Name + " " + per.Lastname + "Added";
+                    lblName.ForeColor = Color.DarkGreen;
+                }
+                else
+                {
+                    lblName.Text = "Warning";
+                    lblName.ForeColor = Color.DarkRed;
+                }
+            }
+
+
+
 
         }
 

@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="HiiiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DailyWeek">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdDay" Type="int" Nullable="false" />
+          <Property Name="Person_fk" Type="int" Nullable="false" />
+          <Property Name="Status_fk" Type="int" Nullable="false" />
+          <Property Name="Mid" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Lastname" Type="nvarchar" MaxLength="50" />
+          <Property Name="NickName" Type="nchar" MaxLength="50" />
+          <Property Name="Level" Type="int" Nullable="false" />
+          <Property Name="IsDelete" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShiftDay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Person_fk" Type="int" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="Status_fk" Type="int" Nullable="false" />
+          <Property Name="mid" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Status" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_DailyWeek_Person">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="DailyWeek" Type="Self.DailyWeek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DailyWeek">
+              <PropertyRef Name="Person_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DailyWeek_Status">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="DailyWeek" Type="Self.DailyWeek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DailyWeek">
+              <PropertyRef Name="Status_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShiftDay_Person">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="ShiftDay" Type="Self.ShiftDay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShiftDay">
+              <PropertyRef Name="Person_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShiftDay_Status">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="ShiftDay" Type="Self.ShiftDay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShiftDay">
+              <PropertyRef Name="Status_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HiiiModelStoreContainer">
+          <EntitySet Name="DailyWeek" EntityType="Self.DailyWeek" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShiftDay" EntityType="Self.ShiftDay" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_DailyWeek_Person" Association="Self.FK_DailyWeek_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="DailyWeek" EntitySet="DailyWeek" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DailyWeek_Status" Association="Self.FK_DailyWeek_Status">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="DailyWeek" EntitySet="DailyWeek" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShiftDay_Person" Association="Self.FK_ShiftDay_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="ShiftDay" EntitySet="ShiftDay" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShiftDay_Status" Association="Self.FK_ShiftDay_Status">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="ShiftDay" EntitySet="ShiftDay" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HiiiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DailyWeek">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdDay" Type="Int32" Nullable="false" />
+          <Property Name="Person_fk" Type="Int32" Nullable="false" />
+          <Property Name="Status_fk" Type="Int32" Nullable="false" />
+          <Property Name="Mid" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Person" Relationship="Self.FK_DailyWeek_Person" FromRole="DailyWeek" ToRole="Person" />
+          <NavigationProperty Name="Status" Relationship="Self.FK_DailyWeek_Status" FromRole="DailyWeek" ToRole="Status" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NickName" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Level" Type="Int32" Nullable="false" />
+          <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="DailyWeeks" Relationship="Self.FK_DailyWeek_Person" FromRole="Person" ToRole="DailyWeek" />
+          <NavigationProperty Name="ShiftDays" Relationship="Self.FK_ShiftDay_Person" FromRole="Person" ToRole="ShiftDay" />
+        </EntityType>
+        <EntityType Name="ShiftDay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Person_fk" Type="Int32" Nullable="false" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Status_fk" Type="Int32" Nullable="false" />
+          <Property Name="mid" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Person" Relationship="Self.FK_ShiftDay_Person" FromRole="ShiftDay" ToRole="Person" />
+          <NavigationProperty Name="Status" Relationship="Self.FK_ShiftDay_Status" FromRole="ShiftDay" ToRole="Status" />
+        </EntityType>
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Status1" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="DailyWeeks" Relationship="Self.FK_DailyWeek_Status" FromRole="Status" ToRole="DailyWeek" />
+          <NavigationProperty Name="ShiftDays" Relationship="Self.FK_ShiftDay_Status" FromRole="Status" ToRole="ShiftDay" />
+        </EntityType>
+        <Association Name="FK_DailyWeek_Person">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="DailyWeek" Type="Self.DailyWeek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DailyWeek">
+              <PropertyRef Name="Person_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DailyWeek_Status">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="DailyWeek" Type="Self.DailyWeek" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="DailyWeek">
+              <PropertyRef Name="Status_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShiftDay_Person">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="ShiftDay" Type="Self.ShiftDay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShiftDay">
+              <PropertyRef Name="Person_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShiftDay_Status">
+          <End Role="Status" Type="Self.Status" Multiplicity="1" />
+          <End Role="ShiftDay" Type="Self.ShiftDay" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Status">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ShiftDay">
+              <PropertyRef Name="Status_fk" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="HiiiEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DailyWeeks" EntityType="Self.DailyWeek" />
+          <EntitySet Name="People" EntityType="Self.Person" />
+          <EntitySet Name="ShiftDays" EntityType="Self.ShiftDay" />
+          <EntitySet Name="Status" EntityType="Self.Status" />
+          <AssociationSet Name="FK_DailyWeek_Person" Association="Self.FK_DailyWeek_Person">
+            <End Role="Person" EntitySet="People" />
+            <End Role="DailyWeek" EntitySet="DailyWeeks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DailyWeek_Status" Association="Self.FK_DailyWeek_Status">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="DailyWeek" EntitySet="DailyWeeks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShiftDay_Person" Association="Self.FK_ShiftDay_Person">
+            <End Role="Person" EntitySet="People" />
+            <End Role="ShiftDay" EntitySet="ShiftDays" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShiftDay_Status" Association="Self.FK_ShiftDay_Status">
+            <End Role="Status" EntitySet="Status" />
+            <End Role="ShiftDay" EntitySet="ShiftDays" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HiiiModelStoreContainer" CdmEntityContainer="HiiiEntities">
+          <EntitySetMapping Name="DailyWeeks">
+            <EntityTypeMapping TypeName="HiiiModel.DailyWeek">
+              <MappingFragment StoreEntitySet="DailyWeek">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IdDay" ColumnName="IdDay" />
+                <ScalarProperty Name="Person_fk" ColumnName="Person_fk" />
+                <ScalarProperty Name="Status_fk" ColumnName="Status_fk" />
+                <ScalarProperty Name="Mid" ColumnName="Mid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="HiiiModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+                <ScalarProperty Name="NickName" ColumnName="NickName" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShiftDays">
+            <EntityTypeMapping TypeName="HiiiModel.ShiftDay">
+              <MappingFragment StoreEntitySet="ShiftDay">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Person_fk" ColumnName="Person_fk" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="Status_fk" ColumnName="Status_fk" />
+                <ScalarProperty Name="mid" ColumnName="mid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Status">
+            <EntityTypeMapping TypeName="HiiiModel.Status">
+              <MappingFragment StoreEntitySet="Status">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Status1" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DailyWeek.cs">
-      <DependentUpon>Mode2.tt</DependentUpon>
+      <DependentUpon>Model19.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -100,9 +100,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Model19.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model19.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model19.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model19.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model19.edmx</DependentUpon>
+    </Compile>
     <Compile Include="MyPersianDate.cs" />
     <Compile Include="Person.cs">
-      <DependentUpon>Mode2.tt</DependentUpon>
+      <DependentUpon>Model19.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -112,7 +127,7 @@
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
     <Compile Include="ShiftDay.cs">
-      <DependentUpon>Mode2.tt</DependentUpon>
+      <DependentUpon>Model19.tt</DependentUpon>
     </Compile>
     <Compile Include="Staff.cs" />
     <Compile Include="StartForm.cs">
@@ -122,7 +137,7 @@
       <DependentUpon>StartForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Status.cs">
-      <DependentUpon>Mode2.tt</DependentUpon>
+      <DependentUpon>Model19.tt</DependentUpon>
     </Compile>
     <Compile Include="WeekForm.cs">
       <SubType>Form</SubType>
@@ -169,6 +184,13 @@
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="Model19.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model19.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model19.edmx.diagram">
+      <DependentUpon>Model19.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -181,7 +203,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Adidas-Wallpaper-For-Background.jpg" />
@@ -206,6 +230,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model19.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model19.edmx</DependentUpon>
+      <LastGenOutput>Model19.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model19.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model19.edmx</DependentUpon>
+      <LastGenOutput>Model19.cs</LastGenOutput>
     </Content>
     <None Include="Resources\pi78y9qbT.jpg" />
   </ItemGroup>
