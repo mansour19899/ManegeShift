@@ -68,8 +68,39 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lblWeek1 = new System.Windows.Forms.Label();
+            this.lblWeek2 = new System.Windows.Forms.Label();
+            this.lblWeek3 = new System.Windows.Forms.Label();
+            this.lblWeek4 = new System.Windows.Forms.Label();
+            this.lblWeek5 = new System.Windows.Forms.Label();
+            this.lblMonth5 = new System.Windows.Forms.Label();
+            this.lblMonth4 = new System.Windows.Forms.Label();
+            this.lblMonth3 = new System.Windows.Forms.Label();
+            this.lblMonth2 = new System.Windows.Forms.Label();
+            this.lblMonth1 = new System.Windows.Forms.Label();
+            this.lblTotal5 = new System.Windows.Forms.Label();
+            this.lblTotal4 = new System.Windows.Forms.Label();
+            this.lblTotal3 = new System.Windows.Forms.Label();
+            this.lblTotal2 = new System.Windows.Forms.Label();
+            this.lblTotal1 = new System.Windows.Forms.Label();
+            this.lblDate5 = new System.Windows.Forms.Label();
+            this.lblDate4 = new System.Windows.Forms.Label();
+            this.lblDate3 = new System.Windows.Forms.Label();
+            this.lblDate2 = new System.Windows.Forms.Label();
+            this.lblDate1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblName
@@ -557,6 +588,361 @@
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lblDate5);
+            this.panel3.Controls.Add(this.lblDate4);
+            this.panel3.Controls.Add(this.lblDate3);
+            this.panel3.Controls.Add(this.lblDate2);
+            this.panel3.Controls.Add(this.lblDate1);
+            this.panel3.Controls.Add(this.lblTotal5);
+            this.panel3.Controls.Add(this.lblTotal4);
+            this.panel3.Controls.Add(this.lblTotal3);
+            this.panel3.Controls.Add(this.lblTotal2);
+            this.panel3.Controls.Add(this.lblTotal1);
+            this.panel3.Controls.Add(this.lblMonth5);
+            this.panel3.Controls.Add(this.lblMonth4);
+            this.panel3.Controls.Add(this.lblMonth3);
+            this.panel3.Controls.Add(this.lblMonth2);
+            this.panel3.Controls.Add(this.lblMonth1);
+            this.panel3.Controls.Add(this.lblWeek5);
+            this.panel3.Controls.Add(this.lblWeek4);
+            this.panel3.Controls.Add(this.lblWeek3);
+            this.panel3.Controls.Add(this.lblWeek2);
+            this.panel3.Controls.Add(this.lblWeek1);
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Location = new System.Drawing.Point(321, 95);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(525, 442);
+            this.panel3.TabIndex = 78;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(429, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 32);
+            this.label6.TabIndex = 84;
+            this.label6.Text = "Morning";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(429, 130);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 32);
+            this.label7.TabIndex = 85;
+            this.label7.Text = "Mid";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(429, 180);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(80, 32);
+            this.label11.TabIndex = 86;
+            this.label11.Text = "Evening";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.White;
+            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(429, 230);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(80, 32);
+            this.label12.TabIndex = 87;
+            this.label12.Text = "Split";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(429, 280);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(80, 32);
+            this.label13.TabIndex = 88;
+            this.label13.Text = "Rest";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.White;
+            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(313, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(80, 32);
+            this.label14.TabIndex = 89;
+            this.label14.Text = "Week";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(212, 29);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(80, 32);
+            this.label15.TabIndex = 90;
+            this.label15.Text = "Month";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.White;
+            this.label16.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(112, 30);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(80, 32);
+            this.label16.TabIndex = 91;
+            this.label16.Text = "Total";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.Color.White;
+            this.label17.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(14, 30);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(80, 32);
+            this.label17.TabIndex = 92;
+            this.label17.Text = "Date";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblWeek1
+            // 
+            this.lblWeek1.BackColor = System.Drawing.Color.White;
+            this.lblWeek1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeek1.Location = new System.Drawing.Point(321, 80);
+            this.lblWeek1.Name = "lblWeek1";
+            this.lblWeek1.Size = new System.Drawing.Size(63, 32);
+            this.lblWeek1.TabIndex = 93;
+            this.lblWeek1.Text = "5555";
+            this.lblWeek1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblWeek2
+            // 
+            this.lblWeek2.BackColor = System.Drawing.Color.White;
+            this.lblWeek2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeek2.Location = new System.Drawing.Point(321, 130);
+            this.lblWeek2.Name = "lblWeek2";
+            this.lblWeek2.Size = new System.Drawing.Size(63, 32);
+            this.lblWeek2.TabIndex = 94;
+            this.lblWeek2.Text = "5555";
+            this.lblWeek2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblWeek3
+            // 
+            this.lblWeek3.BackColor = System.Drawing.Color.White;
+            this.lblWeek3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeek3.Location = new System.Drawing.Point(321, 180);
+            this.lblWeek3.Name = "lblWeek3";
+            this.lblWeek3.Size = new System.Drawing.Size(63, 32);
+            this.lblWeek3.TabIndex = 95;
+            this.lblWeek3.Text = "5555";
+            this.lblWeek3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblWeek4
+            // 
+            this.lblWeek4.BackColor = System.Drawing.Color.White;
+            this.lblWeek4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeek4.Location = new System.Drawing.Point(321, 230);
+            this.lblWeek4.Name = "lblWeek4";
+            this.lblWeek4.Size = new System.Drawing.Size(63, 32);
+            this.lblWeek4.TabIndex = 96;
+            this.lblWeek4.Text = "5555";
+            this.lblWeek4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblWeek5
+            // 
+            this.lblWeek5.BackColor = System.Drawing.Color.White;
+            this.lblWeek5.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeek5.Location = new System.Drawing.Point(321, 280);
+            this.lblWeek5.Name = "lblWeek5";
+            this.lblWeek5.Size = new System.Drawing.Size(63, 32);
+            this.lblWeek5.TabIndex = 97;
+            this.lblWeek5.Text = "5555";
+            this.lblWeek5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMonth5
+            // 
+            this.lblMonth5.BackColor = System.Drawing.Color.White;
+            this.lblMonth5.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonth5.Location = new System.Drawing.Point(222, 280);
+            this.lblMonth5.Name = "lblMonth5";
+            this.lblMonth5.Size = new System.Drawing.Size(63, 32);
+            this.lblMonth5.TabIndex = 102;
+            this.lblMonth5.Text = "5555";
+            this.lblMonth5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMonth4
+            // 
+            this.lblMonth4.BackColor = System.Drawing.Color.White;
+            this.lblMonth4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonth4.Location = new System.Drawing.Point(222, 230);
+            this.lblMonth4.Name = "lblMonth4";
+            this.lblMonth4.Size = new System.Drawing.Size(63, 32);
+            this.lblMonth4.TabIndex = 101;
+            this.lblMonth4.Text = "5555";
+            this.lblMonth4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMonth3
+            // 
+            this.lblMonth3.BackColor = System.Drawing.Color.White;
+            this.lblMonth3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonth3.Location = new System.Drawing.Point(222, 180);
+            this.lblMonth3.Name = "lblMonth3";
+            this.lblMonth3.Size = new System.Drawing.Size(63, 32);
+            this.lblMonth3.TabIndex = 100;
+            this.lblMonth3.Text = "5555";
+            this.lblMonth3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMonth2
+            // 
+            this.lblMonth2.BackColor = System.Drawing.Color.White;
+            this.lblMonth2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonth2.Location = new System.Drawing.Point(222, 130);
+            this.lblMonth2.Name = "lblMonth2";
+            this.lblMonth2.Size = new System.Drawing.Size(63, 32);
+            this.lblMonth2.TabIndex = 99;
+            this.lblMonth2.Text = "5555";
+            this.lblMonth2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMonth1
+            // 
+            this.lblMonth1.BackColor = System.Drawing.Color.White;
+            this.lblMonth1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonth1.Location = new System.Drawing.Point(222, 80);
+            this.lblMonth1.Name = "lblMonth1";
+            this.lblMonth1.Size = new System.Drawing.Size(63, 32);
+            this.lblMonth1.TabIndex = 98;
+            this.lblMonth1.Text = "5555";
+            this.lblMonth1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTotal5
+            // 
+            this.lblTotal5.BackColor = System.Drawing.Color.White;
+            this.lblTotal5.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal5.Location = new System.Drawing.Point(121, 279);
+            this.lblTotal5.Name = "lblTotal5";
+            this.lblTotal5.Size = new System.Drawing.Size(63, 32);
+            this.lblTotal5.TabIndex = 107;
+            this.lblTotal5.Text = "5555";
+            this.lblTotal5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTotal4
+            // 
+            this.lblTotal4.BackColor = System.Drawing.Color.White;
+            this.lblTotal4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal4.Location = new System.Drawing.Point(121, 229);
+            this.lblTotal4.Name = "lblTotal4";
+            this.lblTotal4.Size = new System.Drawing.Size(63, 32);
+            this.lblTotal4.TabIndex = 106;
+            this.lblTotal4.Text = "5555";
+            this.lblTotal4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTotal3
+            // 
+            this.lblTotal3.BackColor = System.Drawing.Color.White;
+            this.lblTotal3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal3.Location = new System.Drawing.Point(121, 179);
+            this.lblTotal3.Name = "lblTotal3";
+            this.lblTotal3.Size = new System.Drawing.Size(63, 32);
+            this.lblTotal3.TabIndex = 105;
+            this.lblTotal3.Text = "5555";
+            this.lblTotal3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTotal2
+            // 
+            this.lblTotal2.BackColor = System.Drawing.Color.White;
+            this.lblTotal2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal2.Location = new System.Drawing.Point(121, 129);
+            this.lblTotal2.Name = "lblTotal2";
+            this.lblTotal2.Size = new System.Drawing.Size(63, 32);
+            this.lblTotal2.TabIndex = 104;
+            this.lblTotal2.Text = "5555";
+            this.lblTotal2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTotal1
+            // 
+            this.lblTotal1.BackColor = System.Drawing.Color.White;
+            this.lblTotal1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal1.Location = new System.Drawing.Point(121, 79);
+            this.lblTotal1.Name = "lblTotal1";
+            this.lblTotal1.Size = new System.Drawing.Size(63, 32);
+            this.lblTotal1.TabIndex = 103;
+            this.lblTotal1.Text = "5555";
+            this.lblTotal1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDate5
+            // 
+            this.lblDate5.BackColor = System.Drawing.Color.White;
+            this.lblDate5.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate5.Location = new System.Drawing.Point(24, 280);
+            this.lblDate5.Name = "lblDate5";
+            this.lblDate5.Size = new System.Drawing.Size(63, 32);
+            this.lblDate5.TabIndex = 112;
+            this.lblDate5.Text = "5555";
+            this.lblDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDate4
+            // 
+            this.lblDate4.BackColor = System.Drawing.Color.White;
+            this.lblDate4.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate4.Location = new System.Drawing.Point(24, 230);
+            this.lblDate4.Name = "lblDate4";
+            this.lblDate4.Size = new System.Drawing.Size(63, 32);
+            this.lblDate4.TabIndex = 111;
+            this.lblDate4.Text = "5555";
+            this.lblDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDate3
+            // 
+            this.lblDate3.BackColor = System.Drawing.Color.White;
+            this.lblDate3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate3.Location = new System.Drawing.Point(24, 180);
+            this.lblDate3.Name = "lblDate3";
+            this.lblDate3.Size = new System.Drawing.Size(63, 32);
+            this.lblDate3.TabIndex = 110;
+            this.lblDate3.Text = "5555";
+            this.lblDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDate2
+            // 
+            this.lblDate2.BackColor = System.Drawing.Color.White;
+            this.lblDate2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate2.Location = new System.Drawing.Point(24, 130);
+            this.lblDate2.Name = "lblDate2";
+            this.lblDate2.Size = new System.Drawing.Size(63, 32);
+            this.lblDate2.TabIndex = 109;
+            this.lblDate2.Text = "5555";
+            this.lblDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblDate1
+            // 
+            this.lblDate1.BackColor = System.Drawing.Color.White;
+            this.lblDate1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate1.Location = new System.Drawing.Point(24, 80);
+            this.lblDate1.Name = "lblDate1";
+            this.lblDate1.Size = new System.Drawing.Size(63, 32);
+            this.lblDate1.TabIndex = 108;
+            this.lblDate1.Text = "5555";
+            this.lblDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -564,6 +950,7 @@
             this.BackgroundImage = global::ManegeShift.Resource1.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(898, 708);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
@@ -579,6 +966,7 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -624,5 +1012,35 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lblDate5;
+        private System.Windows.Forms.Label lblDate4;
+        private System.Windows.Forms.Label lblDate3;
+        private System.Windows.Forms.Label lblDate2;
+        private System.Windows.Forms.Label lblDate1;
+        private System.Windows.Forms.Label lblTotal5;
+        private System.Windows.Forms.Label lblTotal4;
+        private System.Windows.Forms.Label lblTotal3;
+        private System.Windows.Forms.Label lblTotal2;
+        private System.Windows.Forms.Label lblTotal1;
+        private System.Windows.Forms.Label lblMonth5;
+        private System.Windows.Forms.Label lblMonth4;
+        private System.Windows.Forms.Label lblMonth3;
+        private System.Windows.Forms.Label lblMonth2;
+        private System.Windows.Forms.Label lblMonth1;
+        private System.Windows.Forms.Label lblWeek5;
+        private System.Windows.Forms.Label lblWeek4;
+        private System.Windows.Forms.Label lblWeek3;
+        private System.Windows.Forms.Label lblWeek2;
+        private System.Windows.Forms.Label lblWeek1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }

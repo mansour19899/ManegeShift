@@ -81,8 +81,84 @@ namespace ManegeShift
             btnDelete.Visible = true;
             btnEdit.Visible = true;
 
+            SetCounter();
+
+
+
             panel1.Visible = true;
 
+
+        }
+        public List<string> CountShift(string startDate, string endDate)
+        {
+            List<string> temp = new List<string>();
+            DateTime StartDate = startDate.ToGeorgianDateTime();
+            DateTime EndDate = endDate.ToGeorgianDateTime();
+            var list = db.ShiftDays.Where(p => p.Date > StartDate & p.Date < EndDate&p.Person_fk==SelectId).ToList();
+            temp.Add(list.Where(p => p.Status_fk == 1).Count().ToString());
+            temp.Add(list.Where(p => p.Status_fk == 2).Count().ToString());
+            temp.Add(list.Where(p => p.Status_fk == 3).Count().ToString());
+            temp.Add(list.Where(p => p.Status_fk == 4).Count().ToString());
+            temp.Add(list.Where(p => p.Status_fk == 5).Count().ToString());
+            return temp;
+        }
+
+        public void SetCounter()
+        {
+            //DateTime Today = DateTime.Today;
+            DateTime Today = new DateTime(2018, 12, 1);
+            string TodayPersian = Today.ToPersianDateString();
+            int day = Today.ToPersianDateString().ToPersianDayOfWeek();
+            string Year = TodayPersian.Substring(0, 4);
+
+            var t = CountShift(Today.AddDays(-day-6).ToPersianDateString(), Today.AddDays(-day).ToPersianDateString());
+            lblWeek1.Text = t.ElementAt(0);
+            lblWeek2.Text = t.ElementAt(1);
+            lblWeek3.Text = t.ElementAt(2);
+            lblWeek4.Text = t.ElementAt(3);
+            lblWeek5.Text = t.ElementAt(4);
+
+            var monthh =Convert.ToInt16( TodayPersian.Substring(5, 2))-1;
+            if (monthh == 0)
+            {
+                monthh = 12;
+                Year = (Convert.ToInt16(Year) - 1).ToString();
+            }
+                
+
+            string month = "";
+            if (monthh < 10)
+                month = "0" + monthh;
+            else
+                month = monthh.ToString();
+            string StartDate =Year + "/" + month + "/01";
+            string EndDate = "";
+            if(monthh<7)
+            {
+                EndDate = Year + "/" + month + "/31";
+            }
+            else
+            {
+                EndDate= Year + "/" + month + "/30";
+            }
+            if(!StartDate.IsKabiseh()&monthh==12)
+            {
+                EndDate = Year + "/" + month + "/29";
+            }
+
+
+            var tt = CountShift(StartDate, EndDate);
+            lblMonth1.Text = tt.ElementAt(0);
+            lblMonth2.Text = tt.ElementAt(1);
+            lblMonth3.Text = tt.ElementAt(2);
+            lblMonth4.Text = tt.ElementAt(3);
+            lblMonth5.Text = tt.ElementAt(4);
+
+            lblTotal1.Text = db.ShiftDays.Where(p => p.Status_fk == 1 & p.Person_fk == SelectId).Count().ToString();
+            lblTotal2.Text = db.ShiftDays.Where(p => p.Status_fk == 2 & p.Person_fk == SelectId).Count().ToString();
+            lblTotal3.Text = db.ShiftDays.Where(p => p.Status_fk == 3 & p.Person_fk == SelectId).Count().ToString();
+            lblTotal4.Text = db.ShiftDays.Where(p => p.Status_fk == 4 & p.Person_fk == SelectId).Count().ToString();
+            lblTotal5.Text = db.ShiftDays.Where(p => p.Status_fk == 5 & p.Person_fk == SelectId).Count().ToString();
 
         }
 
