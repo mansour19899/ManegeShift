@@ -16,6 +16,8 @@ namespace ManegeShift
         DateTime Date;
         bool IsDate = false;
         HiiiEntities db;
+        List<DailyWeek> dbb;
+
         public Form1()
         {
             InitializeComponent();
@@ -179,15 +181,18 @@ namespace ManegeShift
             else
             {
                 var staffss = db.People.Where(p=>p.IsDelete==false).Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim(),Level=p.Level }).ToList();
-                MorningShift = db.DailyWeeks.Where(p => p.Status_fk == 1 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
-                MidShift = db.DailyWeeks.Where(p => p.Status_fk == 2 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() + "(" + p.Mid.Trim() + ")" , Level=p.Person.Level}).ToList();
-                EveningShift = db.DailyWeeks.Where(p => p.Status_fk == 3 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
-                SpiltShift = db.DailyWeeks.Where(p => p.Status_fk == 4 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
-                Rest = db.DailyWeeks.Where(p => p.Status_fk == 5 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level }).ToList();
+                 dbb = db.DailyWeeks.ToList();
+                MorningShift = dbb.Where(p => p.Status_fk == 1 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();               
+                MidShift = dbb.Where(p => p.Status_fk == 2 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() + "(" + p.Mid.Trim() + ")" , Level=p.Person.Level}).ToList();
+                EveningShift = dbb.Where(p => p.Status_fk == 3 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();
+                SpiltShift = dbb.Where(p => p.Status_fk == 4 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();
+                Rest = dbb.Where(p => p.Status_fk == 5 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();
 
 
                 staffs = staffss.Where(p => !MorningShift.Any(p2 => p2.Id == p.Id) & !MidShift.Any(p2 => p2.Id == p.Id) & !EveningShift.Any(p2 => p2.Id == p.Id)
                 & !SpiltShift.Any(p2 => p2.Id == p.Id) & !Rest.Any(p2 => p2.Id == p.Id)).ToList();
+                
+
             }
 
 
@@ -655,9 +660,47 @@ namespace ManegeShift
         public void SelectStaff(Label label, int Status)
         {
 
-            lblSelectedStaff.Text = label.Text;
+            lblSelectedStaff.Text = label.Text.Split('(')[0];
             IdSelected = Convert.ToInt16(label.Tag.ToString());
             StatusSelected = Status;
+            if(!IsDate)
+            {
+                var t = dbb.Where(p => p.Person_fk == IdSelected).ToList();
+                foreach (var item in t)
+                {
+                    if(item.IdDay==1)
+                    {
+                        lbl1.Text = item.Status.Status1;
+                    }
+                    else if(item.IdDay==2)
+                    {
+                        lbl2.Text = item.Status.Status1;
+                    }
+                    else if (item.IdDay == 3)
+                    {
+                        lbl3.Text = item.Status.Status1;
+                    }
+                    else if (item.IdDay == 4)
+                    {
+                        lbl4.Text = item.Status.Status1;
+                    }
+                    else if (item.IdDay == 5)
+                    {
+                        lbl5.Text = item.Status.Status1;
+                    }
+                    else if (item.IdDay == 6)
+                    {
+                        lbl6.Text = item.Status.Status1;
+                    }
+                    else if (item.IdDay == 7)
+                    {
+                        lbl7.Text = item.Status.Status1;
+
+                    }
+
+                }
+                panel1.Visible = true;
+            }
             panel3.Visible = true;
 
         }

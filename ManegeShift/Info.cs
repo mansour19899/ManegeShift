@@ -17,18 +17,26 @@ namespace ManegeShift
         List<Person> People;
         Person person;
         int SelectId = 0;
+        bool SetComboBoxDate = true;
+        DateTime Today;
+        string TodayPersian;
+        int day;
+        string Year;
+        bool ActiveEvent = true;
+        bool ChangePanel = true;
+
         public Info()
         {
-        
+
             db = new HiiiEntities();
-  
+
             InitializeComponent();
         }
 
         private void Info_Load(object sender, EventArgs e)
         {
             panel1.Visible = false;
-          
+
 
             labelsStaff = new List<Label>
             {
@@ -37,13 +45,18 @@ namespace ManegeShift
             };
             SetLabelStaff();
 
+            Today = new DateTime(2018, 12, 1);
+             TodayPersian = Today.ToPersianDateString();
+            day = Today.ToPersianDateString().ToPersianDayOfWeek();
+             Year = TodayPersian.Substring(0, 4);
 
+          
 
         }
 
         public void SetLabelStaff()
         {
-            People = db.People.Where(p=>p.IsDelete==false).OrderByDescending(p => p.Level).ThenBy(p=>p.Id).ToList();
+            People = db.People.Where(p => p.IsDelete == false).OrderByDescending(p => p.Level).ThenBy(p => p.Id).ToList();
             int i = 0;
             foreach (var item in People)
             {
@@ -73,8 +86,8 @@ namespace ManegeShift
             txtNickName.Text = person.NickName.Trim();
             lblName.ForeColor = Color.Navy;
             lblName.Text = person.Name + "  " + person.Lastname;
-          
-                cmbLevel.Text = person.Level.ToString();
+
+            cmbLevel.Text = person.Level.ToString();
 
 
             btnAdd.Visible = false;
@@ -82,10 +95,19 @@ namespace ManegeShift
             btnEdit.Visible = true;
 
             SetCounter();
+            if(ActiveEvent)
+            {
+                this.cmbStartDay.SelectedIndexChanged += new System.EventHandler(this.cmbStartDay_SelectedIndexChanged);
+                this.cmbEndDay.SelectedIndexChanged += new System.EventHandler(this.cmbEndDay_SelectedIndexChanged);
+                this.cmbEndMonth.SelectedIndexChanged += new System.EventHandler(this.cmbEndMonth_SelectedIndexChanged);
+                this.cmbEndYear.SelectedIndexChanged += new System.EventHandler(this.cmbEndYear_SelectedIndexChanged);
+                this.cmbStartMonth.SelectedIndexChanged += new System.EventHandler(this.cmbStartMonth_SelectedIndexChanged);
+                this.cmbStartYear.SelectedIndexChanged += new System.EventHandler(this.cmbStartYear_SelectedIndexChanged);
+                ActiveEvent = false;
+            }
 
 
-
-            panel1.Visible = true;
+            panel3.Visible = true;
 
 
         }
@@ -94,7 +116,7 @@ namespace ManegeShift
             List<string> temp = new List<string>();
             DateTime StartDate = startDate.ToGeorgianDateTime();
             DateTime EndDate = endDate.ToGeorgianDateTime();
-            var list = db.ShiftDays.Where(p => p.Date > StartDate & p.Date < EndDate&p.Person_fk==SelectId).ToList();
+            var list = db.ShiftDays.Where(p => p.Date >= StartDate & p.Date <= EndDate & p.Person_fk == SelectId).ToList();
             temp.Add(list.Where(p => p.Status_fk == 1).Count().ToString());
             temp.Add(list.Where(p => p.Status_fk == 2).Count().ToString());
             temp.Add(list.Where(p => p.Status_fk == 3).Count().ToString());
@@ -106,44 +128,45 @@ namespace ManegeShift
         public void SetCounter()
         {
             //DateTime Today = DateTime.Today;
-            DateTime Today = new DateTime(2018, 12, 1);
-            string TodayPersian = Today.ToPersianDateString();
-            int day = Today.ToPersianDateString().ToPersianDayOfWeek();
-            string Year = TodayPersian.Substring(0, 4);
 
-            var t = CountShift(Today.AddDays(-day-6).ToPersianDateString(), Today.AddDays(-day).ToPersianDateString());
+
+            var t = CountShift(Today.AddDays(-day - 6).ToPersianDateString(), Today.AddDays(-day).ToPersianDateString());
             lblWeek1.Text = t.ElementAt(0);
             lblWeek2.Text = t.ElementAt(1);
             lblWeek3.Text = t.ElementAt(2);
             lblWeek4.Text = t.ElementAt(3);
             lblWeek5.Text = t.ElementAt(4);
 
-            var monthh =Convert.ToInt16( TodayPersian.Substring(5, 2))-1;
+            var monthh = Convert.ToInt16(TodayPersian.Substring(5, 2)) - 1;
             if (monthh == 0)
             {
                 monthh = 12;
                 Year = (Convert.ToInt16(Year) - 1).ToString();
             }
-                
+
 
             string month = "";
             if (monthh < 10)
                 month = "0" + monthh;
             else
                 month = monthh.ToString();
-            string StartDate =Year + "/" + month + "/01";
+            string StartDate = Year + "/" + month + "/01";
             string EndDate = "";
-            if(monthh<7)
+            if (monthh < 7)
             {
                 EndDate = Year + "/" + month + "/31";
             }
             else
             {
-                EndDate= Year + "/" + month + "/30";
+                EndDate = Year + "/" + month + "/30";
+                cmbStartDay.Items.Remove("31");
+                cmbEndDay.Items.Remove("31");
             }
-            if(!StartDate.IsKabiseh()&monthh==12)
+            if (!StartDate.IsKabiseh() & monthh == 12)
             {
                 EndDate = Year + "/" + month + "/29";
+                cmbStartDay.Items.Remove("30");
+                cmbEndDay.Items.Remove("30");
             }
 
 
@@ -160,6 +183,39 @@ namespace ManegeShift
             lblTotal4.Text = db.ShiftDays.Where(p => p.Status_fk == 4 & p.Person_fk == SelectId).Count().ToString();
             lblTotal5.Text = db.ShiftDays.Where(p => p.Status_fk == 5 & p.Person_fk == SelectId).Count().ToString();
 
+            if (SetComboBoxDate)
+            {
+
+                SetComboBoxDate = false;
+                cmbStartYear.Text = Year.Substring(2,2);
+                cmbStartMonth.Text = TodayPersian.Substring(5,2);
+                cmbStartDay.Text = "01";
+
+                cmbEndYear.Text= Year.Substring(2, 2);
+                cmbEndMonth.Text= TodayPersian.Substring(5, 2);
+                cmbEndDay.Text = TodayPersian.Substring(8,2);
+
+
+            }
+
+            CalculateDate();
+
+
+
+        }
+
+        public void CalculateDate()
+        {
+            string s = "13" + cmbStartYear.Text + "/" + cmbStartMonth.Text + "/" + cmbStartDay.Text;
+            string e = "13" + cmbEndYear.Text + "/" + cmbEndMonth.Text + "/" + cmbEndDay.Text;
+
+            var t = CountShift(s, e);
+
+            lblDate1.Text = t.ElementAt(0);
+            lblDate2.Text = t.ElementAt(1);
+            lblDate3.Text = t.ElementAt(2);
+            lblDate4.Text = t.ElementAt(3);
+            lblDate5.Text = t.ElementAt(4);
         }
 
         private void lblS1_Click(object sender, EventArgs e)
@@ -203,7 +259,7 @@ namespace ManegeShift
             per.IsDelete = true;
 
 
-            DialogResult result3 = MessageBox.Show("Do you want to delete "+per.Name+" "+per.Lastname+"?",
+            DialogResult result3 = MessageBox.Show("Do you want to delete " + per.Name + " " + per.Lastname + "?",
            "The Question",
             MessageBoxButtons.YesNo,
            MessageBoxIcon.Question);
@@ -251,7 +307,7 @@ namespace ManegeShift
             btnDelete.Visible = false;
             btnEdit.Visible = false;
             ClearTextbox();
-
+            panel3.Visible = false;
             panel1.Visible = true;
         }
 
@@ -261,7 +317,7 @@ namespace ManegeShift
             per.Name = txtName.Text;
             per.Lastname = txtLastName.Text;
             per.NickName = txtNickName.Text;
-            per.Level =Convert.ToInt16( cmbLevel.Text);
+            per.Level = Convert.ToInt16(cmbLevel.Text);
             per.IsDelete = false;
 
 
@@ -384,6 +440,125 @@ namespace ManegeShift
         private void lblS20_Click(object sender, EventArgs e)
         {
             Selected(lblS20);
+        }
+
+        private void cmbStartDay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CalculateDate();
+        }
+
+        private void cmbStartMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CalculateDate();
+            if (cmbStartMonth.Text.CompareTo("07") < 0)
+            {
+                if (cmbStartDay.Items.Contains("31"))
+                {
+
+                }
+                else
+                {
+                    if (!cmbStartDay.Items.Contains("30"))
+                    {
+                        cmbStartDay.Items.Add("30");
+                    }
+                    cmbStartDay.Items.Add("31");
+                }
+            }
+            else
+            {
+                if (cmbStartDay.Items.Contains("31"))
+                {
+                    cmbStartDay.Items.Remove("31");
+                }
+                else
+                {
+
+                }
+                if (cmbStartMonth.Text.CompareTo("12") == 0)
+                {
+                    cmbStartDay.Items.Remove("30");
+                }
+                else
+                {
+
+                }
+
+            }
+        }
+
+        private void cmbStartYear_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CalculateDate();
+        }
+
+        private void cmbEndDay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CalculateDate();
+        }
+
+        private void cmbEndMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CalculateDate();
+            if (cmbEndMonth.Text.CompareTo("07") < 0)
+            {
+                if(cmbEndDay.Items.Contains("31"))
+                {
+
+                }
+                else
+                {
+                    if (!cmbEndDay.Items.Contains("30"))
+                    {
+                        cmbEndDay.Items.Add("30");
+                    }
+                    cmbEndDay.Items.Add("31");
+                }
+            }
+            else
+            {
+                if (cmbEndDay.Items.Contains("31"))
+                {
+                    cmbEndDay.Items.Remove("31");
+                }
+                else
+                {
+                  
+                }
+                if (cmbEndMonth.Text.CompareTo("12") == 0)
+                {
+                    cmbEndDay.Items.Remove("30");
+                }
+                else
+                {
+
+                }
+
+            }
+
+        }
+
+        private void cmbEndYear_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CalculateDate();
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+            if(ChangePanel)
+            {
+                panel3.Visible = false;
+                panel1.Visible = true;
+
+                ChangePanel = false;
+            }
+            else
+            {
+                panel1.Visible = false;
+                panel3.Visible = true;
+
+                ChangePanel = true;
+            }
         }
     }
 }
