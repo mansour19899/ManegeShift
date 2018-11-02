@@ -85,6 +85,21 @@
             this.lblS17 = new System.Windows.Forms.Label();
             this.lblS18 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.cmbTimeToHour = new System.Windows.Forms.ComboBox();
             this.cmbTimeFromMinte = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -122,21 +137,6 @@
             this.lblCountRest = new System.Windows.Forms.Label();
             this.lblCountStaff = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.lbl7 = new System.Windows.Forms.Label();
-            this.lbl6 = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
-            this.lbl4 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -145,7 +145,7 @@
             // lblS1
             // 
             this.lblS1.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS1.Location = new System.Drawing.Point(42, 13);
             this.lblS1.Name = "lblS1";
             this.lblS1.Size = new System.Drawing.Size(104, 35);
@@ -157,7 +157,7 @@
             // lblS2
             // 
             this.lblS2.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS2.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS2.Location = new System.Drawing.Point(42, 52);
             this.lblS2.Name = "lblS2";
             this.lblS2.Size = new System.Drawing.Size(104, 35);
@@ -169,7 +169,7 @@
             // lblS3
             // 
             this.lblS3.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS3.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS3.Location = new System.Drawing.Point(42, 96);
             this.lblS3.Name = "lblS3";
             this.lblS3.Size = new System.Drawing.Size(104, 35);
@@ -181,7 +181,7 @@
             // lblS4
             // 
             this.lblS4.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS4.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS4.Location = new System.Drawing.Point(42, 138);
             this.lblS4.Name = "lblS4";
             this.lblS4.Size = new System.Drawing.Size(104, 35);
@@ -193,7 +193,7 @@
             // lblS5
             // 
             this.lblS5.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS5.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS5.Location = new System.Drawing.Point(42, 181);
             this.lblS5.Name = "lblS5";
             this.lblS5.Size = new System.Drawing.Size(104, 35);
@@ -205,7 +205,7 @@
             // lblS6
             // 
             this.lblS6.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS6.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS6.Location = new System.Drawing.Point(42, 220);
             this.lblS6.Name = "lblS6";
             this.lblS6.Size = new System.Drawing.Size(104, 35);
@@ -217,7 +217,7 @@
             // lblS7
             // 
             this.lblS7.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS7.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS7.Location = new System.Drawing.Point(42, 261);
             this.lblS7.Name = "lblS7";
             this.lblS7.Size = new System.Drawing.Size(104, 35);
@@ -229,7 +229,7 @@
             // lblS8
             // 
             this.lblS8.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS8.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS8.Location = new System.Drawing.Point(42, 307);
             this.lblS8.Name = "lblS8";
             this.lblS8.Size = new System.Drawing.Size(104, 35);
@@ -241,7 +241,7 @@
             // lblS9
             // 
             this.lblS9.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS9.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS9.Location = new System.Drawing.Point(42, 348);
             this.lblS9.Name = "lblS9";
             this.lblS9.Size = new System.Drawing.Size(104, 35);
@@ -253,8 +253,8 @@
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.label9.Location = new System.Drawing.Point(36, 31);
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(40, 31);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(141, 35);
             this.label9.TabIndex = 9;
@@ -264,40 +264,40 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(237, 31);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(237, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 35);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Morning Shift";
+            this.label1.Text = "Morning";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(390, 31);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(390, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 35);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Mid Shift";
+            this.label2.Text = "Mid";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(541, 31);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(541, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 35);
+            this.label3.Size = new System.Drawing.Size(116, 35);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Evening Shift";
+            this.label3.Text = "Evening";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblM9
             // 
             this.lblM9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM9.Location = new System.Drawing.Point(237, 493);
             this.lblM9.Name = "lblM9";
             this.lblM9.Size = new System.Drawing.Size(104, 35);
@@ -309,7 +309,7 @@
             // lblM8
             // 
             this.lblM8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM8.Location = new System.Drawing.Point(237, 443);
             this.lblM8.Name = "lblM8";
             this.lblM8.Size = new System.Drawing.Size(104, 35);
@@ -321,7 +321,7 @@
             // lblM7
             // 
             this.lblM7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM7.Location = new System.Drawing.Point(237, 393);
             this.lblM7.Name = "lblM7";
             this.lblM7.Size = new System.Drawing.Size(104, 35);
@@ -333,7 +333,7 @@
             // lblM6
             // 
             this.lblM6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM6.Location = new System.Drawing.Point(237, 343);
             this.lblM6.Name = "lblM6";
             this.lblM6.Size = new System.Drawing.Size(104, 35);
@@ -345,7 +345,7 @@
             // lblM5
             // 
             this.lblM5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM5.Location = new System.Drawing.Point(237, 293);
             this.lblM5.Name = "lblM5";
             this.lblM5.Size = new System.Drawing.Size(104, 35);
@@ -357,7 +357,7 @@
             // lblM4
             // 
             this.lblM4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM4.Location = new System.Drawing.Point(237, 243);
             this.lblM4.Name = "lblM4";
             this.lblM4.Size = new System.Drawing.Size(104, 35);
@@ -369,7 +369,7 @@
             // lblM3
             // 
             this.lblM3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM3.Location = new System.Drawing.Point(237, 193);
             this.lblM3.Name = "lblM3";
             this.lblM3.Size = new System.Drawing.Size(104, 35);
@@ -381,7 +381,7 @@
             // lblM2
             // 
             this.lblM2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM2.Location = new System.Drawing.Point(237, 143);
             this.lblM2.Name = "lblM2";
             this.lblM2.Size = new System.Drawing.Size(104, 35);
@@ -393,7 +393,7 @@
             // lblM1
             // 
             this.lblM1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lblM1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblM1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblM1.Location = new System.Drawing.Point(237, 93);
             this.lblM1.Name = "lblM1";
             this.lblM1.Size = new System.Drawing.Size(104, 35);
@@ -405,7 +405,7 @@
             // lblMi9
             // 
             this.lblMi9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi9.Location = new System.Drawing.Point(350, 493);
             this.lblMi9.Name = "lblMi9";
             this.lblMi9.Size = new System.Drawing.Size(186, 35);
@@ -417,7 +417,7 @@
             // lblMi8
             // 
             this.lblMi8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi8.Location = new System.Drawing.Point(350, 443);
             this.lblMi8.Name = "lblMi8";
             this.lblMi8.Size = new System.Drawing.Size(186, 35);
@@ -429,7 +429,7 @@
             // lblMi7
             // 
             this.lblMi7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi7.Location = new System.Drawing.Point(350, 393);
             this.lblMi7.Name = "lblMi7";
             this.lblMi7.Size = new System.Drawing.Size(186, 35);
@@ -441,7 +441,7 @@
             // lblMi6
             // 
             this.lblMi6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi6.Location = new System.Drawing.Point(350, 343);
             this.lblMi6.Name = "lblMi6";
             this.lblMi6.Size = new System.Drawing.Size(186, 35);
@@ -453,7 +453,7 @@
             // lblMi5
             // 
             this.lblMi5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi5.Location = new System.Drawing.Point(350, 293);
             this.lblMi5.Name = "lblMi5";
             this.lblMi5.Size = new System.Drawing.Size(186, 35);
@@ -465,7 +465,7 @@
             // lblMi4
             // 
             this.lblMi4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi4.Location = new System.Drawing.Point(350, 243);
             this.lblMi4.Name = "lblMi4";
             this.lblMi4.Size = new System.Drawing.Size(186, 35);
@@ -477,7 +477,7 @@
             // lblMi3
             // 
             this.lblMi3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi3.Location = new System.Drawing.Point(350, 193);
             this.lblMi3.Name = "lblMi3";
             this.lblMi3.Size = new System.Drawing.Size(186, 35);
@@ -489,7 +489,7 @@
             // lblMi2
             // 
             this.lblMi2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi2.Location = new System.Drawing.Point(350, 143);
             this.lblMi2.Name = "lblMi2";
             this.lblMi2.Size = new System.Drawing.Size(186, 35);
@@ -501,7 +501,7 @@
             // lblMi1
             // 
             this.lblMi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblMi1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMi1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMi1.Location = new System.Drawing.Point(350, 93);
             this.lblMi1.Name = "lblMi1";
             this.lblMi1.Size = new System.Drawing.Size(186, 35);
@@ -513,7 +513,7 @@
             // lblE9
             // 
             this.lblE9.BackColor = System.Drawing.Color.Navy;
-            this.lblE9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE9.ForeColor = System.Drawing.Color.White;
             this.lblE9.Location = new System.Drawing.Point(543, 493);
             this.lblE9.Name = "lblE9";
@@ -526,7 +526,7 @@
             // lblE8
             // 
             this.lblE8.BackColor = System.Drawing.Color.Navy;
-            this.lblE8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE8.ForeColor = System.Drawing.Color.White;
             this.lblE8.Location = new System.Drawing.Point(543, 443);
             this.lblE8.Name = "lblE8";
@@ -539,7 +539,7 @@
             // lblE7
             // 
             this.lblE7.BackColor = System.Drawing.Color.Navy;
-            this.lblE7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE7.ForeColor = System.Drawing.Color.White;
             this.lblE7.Location = new System.Drawing.Point(543, 393);
             this.lblE7.Name = "lblE7";
@@ -552,7 +552,7 @@
             // lblE6
             // 
             this.lblE6.BackColor = System.Drawing.Color.Navy;
-            this.lblE6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE6.ForeColor = System.Drawing.Color.White;
             this.lblE6.Location = new System.Drawing.Point(542, 345);
             this.lblE6.Name = "lblE6";
@@ -565,7 +565,7 @@
             // lblE5
             // 
             this.lblE5.BackColor = System.Drawing.Color.Navy;
-            this.lblE5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE5.ForeColor = System.Drawing.Color.White;
             this.lblE5.Location = new System.Drawing.Point(542, 293);
             this.lblE5.Name = "lblE5";
@@ -578,7 +578,7 @@
             // lblE4
             // 
             this.lblE4.BackColor = System.Drawing.Color.Navy;
-            this.lblE4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE4.ForeColor = System.Drawing.Color.White;
             this.lblE4.Location = new System.Drawing.Point(542, 243);
             this.lblE4.Name = "lblE4";
@@ -591,7 +591,7 @@
             // lblE3
             // 
             this.lblE3.BackColor = System.Drawing.Color.Navy;
-            this.lblE3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE3.ForeColor = System.Drawing.Color.White;
             this.lblE3.Location = new System.Drawing.Point(543, 193);
             this.lblE3.Name = "lblE3";
@@ -604,7 +604,7 @@
             // lblE2
             // 
             this.lblE2.BackColor = System.Drawing.Color.Navy;
-            this.lblE2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE2.ForeColor = System.Drawing.Color.White;
             this.lblE2.Location = new System.Drawing.Point(542, 143);
             this.lblE2.Name = "lblE2";
@@ -617,7 +617,7 @@
             // lblE1
             // 
             this.lblE1.BackColor = System.Drawing.Color.Navy;
-            this.lblE1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblE1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblE1.ForeColor = System.Drawing.Color.White;
             this.lblE1.Location = new System.Drawing.Point(542, 93);
             this.lblE1.Name = "lblE1";
@@ -630,7 +630,7 @@
             // lblSelectedStaff
             // 
             this.lblSelectedStaff.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblSelectedStaff.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectedStaff.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSelectedStaff.Location = new System.Drawing.Point(293, 51);
             this.lblSelectedStaff.Name = "lblSelectedStaff";
             this.lblSelectedStaff.Size = new System.Drawing.Size(363, 70);
@@ -710,8 +710,8 @@
             // lblS20
             // 
             this.lblS20.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS20.Location = new System.Drawing.Point(42, 796);
+            this.lblS20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblS20.Location = new System.Drawing.Point(41, 796);
             this.lblS20.Name = "lblS20";
             this.lblS20.Size = new System.Drawing.Size(104, 35);
             this.lblS20.TabIndex = 20;
@@ -721,7 +721,7 @@
             // lblS19
             // 
             this.lblS19.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblS19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS19.Location = new System.Drawing.Point(40, 758);
             this.lblS19.Name = "lblS19";
             this.lblS19.Size = new System.Drawing.Size(104, 35);
@@ -732,7 +732,7 @@
             // lblS10
             // 
             this.lblS10.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS10.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblS10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS10.Location = new System.Drawing.Point(42, 385);
             this.lblS10.Name = "lblS10";
             this.lblS10.Size = new System.Drawing.Size(104, 35);
@@ -743,7 +743,7 @@
             // lblS11
             // 
             this.lblS11.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblS11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS11.Location = new System.Drawing.Point(42, 422);
             this.lblS11.Name = "lblS11";
             this.lblS11.Size = new System.Drawing.Size(104, 35);
@@ -754,7 +754,7 @@
             // lblS12
             // 
             this.lblS12.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblS12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS12.Location = new System.Drawing.Point(42, 466);
             this.lblS12.Name = "lblS12";
             this.lblS12.Size = new System.Drawing.Size(104, 35);
@@ -765,7 +765,7 @@
             // lblS13
             // 
             this.lblS13.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblS13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS13.Location = new System.Drawing.Point(42, 508);
             this.lblS13.Name = "lblS13";
             this.lblS13.Size = new System.Drawing.Size(104, 35);
@@ -776,7 +776,7 @@
             // lblS14
             // 
             this.lblS14.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblS14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS14.Location = new System.Drawing.Point(42, 551);
             this.lblS14.Name = "lblS14";
             this.lblS14.Size = new System.Drawing.Size(104, 35);
@@ -787,7 +787,7 @@
             // lblS15
             // 
             this.lblS15.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblS15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS15.Location = new System.Drawing.Point(42, 590);
             this.lblS15.Name = "lblS15";
             this.lblS15.Size = new System.Drawing.Size(104, 35);
@@ -798,8 +798,8 @@
             // lblS16
             // 
             this.lblS16.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblS16.Location = new System.Drawing.Point(42, 635);
+            this.lblS16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblS16.Location = new System.Drawing.Point(42, 634);
             this.lblS16.Name = "lblS16";
             this.lblS16.Size = new System.Drawing.Size(104, 35);
             this.lblS16.TabIndex = 15;
@@ -809,7 +809,7 @@
             // lblS17
             // 
             this.lblS17.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblS17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS17.Location = new System.Drawing.Point(42, 677);
             this.lblS17.Name = "lblS17";
             this.lblS17.Size = new System.Drawing.Size(104, 35);
@@ -820,7 +820,7 @@
             // lblS18
             // 
             this.lblS18.BackColor = System.Drawing.Color.LimeGreen;
-            this.lblS18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblS18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.lblS18.Location = new System.Drawing.Point(42, 718);
             this.lblS18.Name = "lblS18";
             this.lblS18.Size = new System.Drawing.Size(104, 35);
@@ -845,10 +845,186 @@
             this.panel3.Controls.Add(this.btnMid);
             this.panel3.Controls.Add(this.lblSelectedStaff);
             this.panel3.Controls.Add(this.btnMorning);
-            this.panel3.Location = new System.Drawing.Point(5, 2);
+            this.panel3.Location = new System.Drawing.Point(5, 6);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(887, 526);
             this.panel3.TabIndex = 42;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.lbl7);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.lbl6);
+            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.lbl5);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.lbl4);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.lbl2);
+            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.lbl3);
+            this.panel1.Controls.Add(this.label17);
+            this.panel1.Controls.Add(this.lbl1);
+            this.panel1.Location = new System.Drawing.Point(10, 74);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(264, 374);
+            this.panel1.TabIndex = 68;
+            this.panel1.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(15, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(113, 35);
+            this.label11.TabIndex = 54;
+            this.label11.Text = "Saturday";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbl7
+            // 
+            this.lbl7.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbl7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl7.Location = new System.Drawing.Point(130, 305);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(104, 35);
+            this.lbl7.TabIndex = 67;
+            this.lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(15, 119);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(113, 35);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "Monday";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbl6
+            // 
+            this.lbl6.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbl6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl6.Location = new System.Drawing.Point(130, 257);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(104, 35);
+            this.lbl6.TabIndex = 66;
+            this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(15, 71);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(113, 35);
+            this.label13.TabIndex = 56;
+            this.label13.Text = "Sunday";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbl5
+            // 
+            this.lbl5.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbl5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl5.Location = new System.Drawing.Point(130, 209);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(104, 35);
+            this.lbl5.TabIndex = 65;
+            this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(15, 164);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(113, 35);
+            this.label14.TabIndex = 57;
+            this.label14.Text = "Tuesday";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbl4
+            // 
+            this.lbl4.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbl4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl4.Location = new System.Drawing.Point(130, 164);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(104, 35);
+            this.lbl4.TabIndex = 64;
+            this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(15, 209);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(113, 35);
+            this.label15.TabIndex = 58;
+            this.label15.Text = "Wednesday";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbl2
+            // 
+            this.lbl2.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbl2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl2.Location = new System.Drawing.Point(130, 71);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(104, 35);
+            this.lbl2.TabIndex = 63;
+            this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(15, 257);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(113, 35);
+            this.label16.TabIndex = 59;
+            this.label16.Text = "Thursday";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbl3
+            // 
+            this.lbl3.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbl3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl3.Location = new System.Drawing.Point(130, 119);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(104, 35);
+            this.lbl3.TabIndex = 62;
+            this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(15, 305);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(113, 35);
+            this.label17.TabIndex = 60;
+            this.label17.Text = "Friday";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbl1
+            // 
+            this.lbl1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.lbl1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbl1.Location = new System.Drawing.Point(130, 22);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(104, 35);
+            this.lbl1.TabIndex = 61;
+            this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // cmbTimeToHour
             // 
@@ -977,18 +1153,18 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(651, 31);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(653, 34);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 35);
             this.label4.TabIndex = 43;
-            this.label4.Text = "Split Shift";
+            this.label4.Text = "Split";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSp9
             // 
             this.lblSp9.BackColor = System.Drawing.Color.Teal;
-            this.lblSp9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp9.ForeColor = System.Drawing.Color.White;
             this.lblSp9.Location = new System.Drawing.Point(653, 493);
             this.lblSp9.Name = "lblSp9";
@@ -1001,7 +1177,7 @@
             // lblSp8
             // 
             this.lblSp8.BackColor = System.Drawing.Color.Teal;
-            this.lblSp8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp8.ForeColor = System.Drawing.Color.White;
             this.lblSp8.Location = new System.Drawing.Point(653, 443);
             this.lblSp8.Name = "lblSp8";
@@ -1014,7 +1190,7 @@
             // lblSp7
             // 
             this.lblSp7.BackColor = System.Drawing.Color.Teal;
-            this.lblSp7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp7.ForeColor = System.Drawing.Color.White;
             this.lblSp7.Location = new System.Drawing.Point(653, 393);
             this.lblSp7.Name = "lblSp7";
@@ -1027,7 +1203,7 @@
             // lblSp6
             // 
             this.lblSp6.BackColor = System.Drawing.Color.Teal;
-            this.lblSp6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp6.ForeColor = System.Drawing.Color.White;
             this.lblSp6.Location = new System.Drawing.Point(652, 345);
             this.lblSp6.Name = "lblSp6";
@@ -1040,7 +1216,7 @@
             // lblSp5
             // 
             this.lblSp5.BackColor = System.Drawing.Color.Teal;
-            this.lblSp5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp5.ForeColor = System.Drawing.Color.White;
             this.lblSp5.Location = new System.Drawing.Point(652, 293);
             this.lblSp5.Name = "lblSp5";
@@ -1053,7 +1229,7 @@
             // lblSp4
             // 
             this.lblSp4.BackColor = System.Drawing.Color.Teal;
-            this.lblSp4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp4.ForeColor = System.Drawing.Color.White;
             this.lblSp4.Location = new System.Drawing.Point(652, 243);
             this.lblSp4.Name = "lblSp4";
@@ -1066,7 +1242,7 @@
             // lblSp3
             // 
             this.lblSp3.BackColor = System.Drawing.Color.Teal;
-            this.lblSp3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp3.ForeColor = System.Drawing.Color.White;
             this.lblSp3.Location = new System.Drawing.Point(653, 193);
             this.lblSp3.Name = "lblSp3";
@@ -1079,7 +1255,7 @@
             // lblSp2
             // 
             this.lblSp2.BackColor = System.Drawing.Color.Teal;
-            this.lblSp2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp2.ForeColor = System.Drawing.Color.White;
             this.lblSp2.Location = new System.Drawing.Point(652, 143);
             this.lblSp2.Name = "lblSp2";
@@ -1092,7 +1268,7 @@
             // lblSp1
             // 
             this.lblSp1.BackColor = System.Drawing.Color.Teal;
-            this.lblSp1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSp1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSp1.ForeColor = System.Drawing.Color.White;
             this.lblSp1.Location = new System.Drawing.Point(652, 93);
             this.lblSp1.Name = "lblSp1";
@@ -1105,7 +1281,7 @@
             // lblR1
             // 
             this.lblR1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR1.ForeColor = System.Drawing.Color.White;
             this.lblR1.Location = new System.Drawing.Point(763, 93);
             this.lblR1.Name = "lblR1";
@@ -1118,7 +1294,7 @@
             // lblR2
             // 
             this.lblR2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR2.ForeColor = System.Drawing.Color.White;
             this.lblR2.Location = new System.Drawing.Point(763, 143);
             this.lblR2.Name = "lblR2";
@@ -1131,8 +1307,8 @@
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(764, 31);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(763, 34);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(104, 35);
             this.label7.TabIndex = 53;
@@ -1142,7 +1318,7 @@
             // lblR3
             // 
             this.lblR3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR3.ForeColor = System.Drawing.Color.White;
             this.lblR3.Location = new System.Drawing.Point(764, 193);
             this.lblR3.Name = "lblR3";
@@ -1155,7 +1331,7 @@
             // lblR4
             // 
             this.lblR4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR4.ForeColor = System.Drawing.Color.White;
             this.lblR4.Location = new System.Drawing.Point(763, 243);
             this.lblR4.Name = "lblR4";
@@ -1168,7 +1344,7 @@
             // lblR5
             // 
             this.lblR5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR5.ForeColor = System.Drawing.Color.White;
             this.lblR5.Location = new System.Drawing.Point(763, 293);
             this.lblR5.Name = "lblR5";
@@ -1181,7 +1357,7 @@
             // lblR6
             // 
             this.lblR6.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR6.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR6.ForeColor = System.Drawing.Color.White;
             this.lblR6.Location = new System.Drawing.Point(763, 345);
             this.lblR6.Name = "lblR6";
@@ -1194,7 +1370,7 @@
             // lblR7
             // 
             this.lblR7.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR7.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR7.ForeColor = System.Drawing.Color.White;
             this.lblR7.Location = new System.Drawing.Point(764, 393);
             this.lblR7.Name = "lblR7";
@@ -1207,7 +1383,7 @@
             // lblR8
             // 
             this.lblR8.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR8.ForeColor = System.Drawing.Color.White;
             this.lblR8.Location = new System.Drawing.Point(764, 443);
             this.lblR8.Name = "lblR8";
@@ -1220,7 +1396,7 @@
             // lblR9
             // 
             this.lblR9.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.lblR9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblR9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblR9.ForeColor = System.Drawing.Color.White;
             this.lblR9.Location = new System.Drawing.Point(764, 493);
             this.lblR9.Name = "lblR9";
@@ -1233,7 +1409,7 @@
             // lblDayName
             // 
             this.lblDayName.BackColor = System.Drawing.Color.Transparent;
-            this.lblDayName.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDayName.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDayName.Location = new System.Drawing.Point(256, 571);
             this.lblDayName.Name = "lblDayName";
             this.lblDayName.Size = new System.Drawing.Size(363, 128);
@@ -1254,8 +1430,8 @@
             // lblCountMid
             // 
             this.lblCountMid.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountMid.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountMid.Location = new System.Drawing.Point(431, 56);
+            this.lblCountMid.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountMid.Location = new System.Drawing.Point(424, 64);
             this.lblCountMid.Name = "lblCountMid";
             this.lblCountMid.Size = new System.Drawing.Size(41, 21);
             this.lblCountMid.TabIndex = 66;
@@ -1265,8 +1441,8 @@
             // lblCountMorning
             // 
             this.lblCountMorning.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountMorning.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountMorning.Location = new System.Drawing.Point(271, 56);
+            this.lblCountMorning.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountMorning.Location = new System.Drawing.Point(270, 64);
             this.lblCountMorning.Name = "lblCountMorning";
             this.lblCountMorning.Size = new System.Drawing.Size(41, 21);
             this.lblCountMorning.TabIndex = 67;
@@ -1276,8 +1452,8 @@
             // lblCountEvening
             // 
             this.lblCountEvening.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountEvening.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountEvening.Location = new System.Drawing.Point(575, 56);
+            this.lblCountEvening.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountEvening.Location = new System.Drawing.Point(575, 64);
             this.lblCountEvening.Name = "lblCountEvening";
             this.lblCountEvening.Size = new System.Drawing.Size(41, 21);
             this.lblCountEvening.TabIndex = 68;
@@ -1287,8 +1463,8 @@
             // lblCountSplit
             // 
             this.lblCountSplit.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountSplit.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountSplit.Location = new System.Drawing.Point(685, 56);
+            this.lblCountSplit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountSplit.Location = new System.Drawing.Point(684, 64);
             this.lblCountSplit.Name = "lblCountSplit";
             this.lblCountSplit.Size = new System.Drawing.Size(41, 21);
             this.lblCountSplit.TabIndex = 69;
@@ -1298,8 +1474,8 @@
             // lblCountRest
             // 
             this.lblCountRest.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountRest.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountRest.Location = new System.Drawing.Point(794, 56);
+            this.lblCountRest.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountRest.Location = new System.Drawing.Point(794, 64);
             this.lblCountRest.Name = "lblCountRest";
             this.lblCountRest.Size = new System.Drawing.Size(41, 21);
             this.lblCountRest.TabIndex = 70;
@@ -1309,7 +1485,7 @@
             // lblCountStaff
             // 
             this.lblCountStaff.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountStaff.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountStaff.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountStaff.Location = new System.Drawing.Point(78, 56);
             this.lblCountStaff.Name = "lblCountStaff";
             this.lblCountStaff.Size = new System.Drawing.Size(41, 21);
@@ -1327,182 +1503,6 @@
             this.label10.TabIndex = 72;
             this.label10.Text = "Hyper Star";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.label11.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(15, 22);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(113, 35);
-            this.label11.TabIndex = 54;
-            this.label11.Text = "Saturday";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.label12.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(15, 119);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(113, 35);
-            this.label12.TabIndex = 55;
-            this.label12.Text = "Monday";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(15, 71);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(113, 35);
-            this.label13.TabIndex = 56;
-            this.label13.Text = "Sunday";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(15, 164);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(113, 35);
-            this.label14.TabIndex = 57;
-            this.label14.Text = "Tuesday";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.label15.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(15, 209);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(113, 35);
-            this.label15.TabIndex = 58;
-            this.label15.Text = "Wednesday";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.label16.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(15, 257);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(113, 35);
-            this.label16.TabIndex = 59;
-            this.label16.Text = "Thursday";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.label17.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(15, 305);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(113, 35);
-            this.label17.TabIndex = 60;
-            this.label17.Text = "Friday";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lbl7
-            // 
-            this.lbl7.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lbl7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl7.Location = new System.Drawing.Point(130, 305);
-            this.lbl7.Name = "lbl7";
-            this.lbl7.Size = new System.Drawing.Size(104, 35);
-            this.lbl7.TabIndex = 67;
-            this.lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl6
-            // 
-            this.lbl6.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lbl6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl6.Location = new System.Drawing.Point(130, 257);
-            this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(104, 35);
-            this.lbl6.TabIndex = 66;
-            this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl5
-            // 
-            this.lbl5.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lbl5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl5.Location = new System.Drawing.Point(130, 209);
-            this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(104, 35);
-            this.lbl5.TabIndex = 65;
-            this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl4
-            // 
-            this.lbl4.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lbl4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl4.Location = new System.Drawing.Point(130, 164);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(104, 35);
-            this.lbl4.TabIndex = 64;
-            this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl2
-            // 
-            this.lbl2.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lbl2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl2.Location = new System.Drawing.Point(130, 71);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(104, 35);
-            this.lbl2.TabIndex = 63;
-            this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl3
-            // 
-            this.lbl3.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lbl3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl3.Location = new System.Drawing.Point(130, 119);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(104, 35);
-            this.lbl3.TabIndex = 62;
-            this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl1
-            // 
-            this.lbl1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.lbl1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl1.Location = new System.Drawing.Point(130, 22);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(104, 35);
-            this.lbl1.TabIndex = 61;
-            this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.lbl7);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.lbl6);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.lbl5);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.lbl4);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.lbl2);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.lbl3);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.lbl1);
-            this.panel1.Location = new System.Drawing.Point(10, 74);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(264, 374);
-            this.panel1.TabIndex = 68;
-            this.panel1.Visible = false;
             // 
             // Form1
             // 

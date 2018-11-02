@@ -65,23 +65,6 @@ namespace ManegeShift
             SpiltShift = new List<Staff>();
             Rest = new List<Staff>();
 
-            //staffs = new List<Staff>
-            //{
-            //    new Staff(1,"ali"),
-            //    new Staff(2,"mohammad"),
-            //    new Staff(3,"javad"),
-            //    new Staff(4,"hassan"),
-            //    new Staff(5,"shima"),
-            //    new Staff(6,"maryam"),
-            //    new Staff(8,"kosar"),
-            //    new Staff(9,"Faezeh"),
-            //    new Staff(10,"yasamin"),
-            //      new Staff(11,"mohsen"),
-            //      new Staff(11,"Reza"),
-
-
-            //};
-
 
             SetList();
 
