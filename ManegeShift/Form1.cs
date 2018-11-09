@@ -66,6 +66,8 @@ namespace ManegeShift
             Rest = new List<Staff>();
 
 
+
+
             SetList();
 
             labelsStaff = new List<Label>

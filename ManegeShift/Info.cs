@@ -24,6 +24,7 @@ namespace ManegeShift
         string Year;
         bool ActiveEvent = true;
         bool ChangePanel = true;
+        bool IsShowShift = false;
 
         public Info()
         {
@@ -43,9 +44,10 @@ namespace ManegeShift
                 lblS1,lblS2,lblS3,lblS4,lblS5,lblS6,lblS7,lblS8,lblS9,lblS10,lblS11
                 ,lblS12,lblS13,lblS14,lblS15,lblS16,lblS17,lblS18,lblS19,lblS20
             };
+
             SetLabelStaff();
 
-            Today = new DateTime(2018, 12, 1);
+            Today = DateTime.Today;
              TodayPersian = Today.ToPersianDateString();
             day = Today.ToPersianDateString().ToPersianDayOfWeek();
              Year = TodayPersian.Substring(0, 4);
@@ -106,7 +108,7 @@ namespace ManegeShift
                 ActiveEvent = false;
             }
 
-
+            IsShowShift = true;
             panel3.Visible = true;
 
 
@@ -206,8 +208,8 @@ namespace ManegeShift
 
         public void CalculateDate()
         {
-            string s = "13" + cmbStartYear.Text + "/" + cmbStartMonth.Text + "/" + cmbStartDay.Text;
-            string e = "13" + cmbEndYear.Text + "/" + cmbEndMonth.Text + "/" + cmbEndDay.Text;
+            string s = ("13" + cmbStartYear.Text + "/" + cmbStartMonth.Text + "/" + cmbStartDay.Text);
+            string e = ("13" + cmbEndYear.Text + "/" + cmbEndMonth.Text + "/" + cmbEndDay.Text);
 
             var t = CountShift(s, e);
 
@@ -216,6 +218,53 @@ namespace ManegeShift
             lblDate3.Text = t.ElementAt(2);
             lblDate4.Text = t.ElementAt(3);
             lblDate5.Text = t.ElementAt(4);
+        }
+
+        public void ShowShift()
+        {
+          
+
+            List<Label> FlistStaff = new List<Label>() {lbl1,lbl2,lbl3,lbl4,lbl5,lbl6,lbl7,lbl8,lbl9,lbl10,lbl11,lbl12,lbl13,lbl14,lbl15,lbl16,lbl17,lbl18,lbl19,lbl20 };
+            List<Label> FlistMorning= new List<Label>() { lblM1, lblM2, lblM3, lblM4, lblM5, lblM6, lblM7, lblM8, lblM9, lblM10, lblM11, lblM12, lblM13, lblM14, lblM15, lblM16, lblM17, lblM18, lblM19, lblM20 };
+            List<Label> FlistMid= new List<Label>() { lblMi1, lblMi2, lblMi3, lblMi4, lblMi5, lblMi6, lblMi7, lblMi8, lblMi9, lblMi10, lblMi11, lblMi12, lblMi13, lblMi14, lblMi15, lblMi16, lblMi17, lblMi18, lblMi19, lblMi20 };
+            List<Label> FlistEvening = new List<Label>() { lblE1, lblE2, lblE3, lblE4, lblE5, lblE6, lblE7, lblE8, lblE9, lblE10, lblE11, lblE12, lblE13, lblE14, lblE15, lblE16, lblE17, lblE18, lblE19, lblE20 };
+            List<Label> FlistSpilt= new List<Label>() { lblSp1, lblSp2, lblSp3, lblSp4, lblSp5, lblSp6, lblSp7, lblSp8, lblSp9, lblSp10, lblSp11, lblSp12, lblSp13, lblSp14, lblSp15, lblSp16, lblSp17, lblSp18, lblSp19, lblSp20 };
+            List<Label> FlistRest= new List<Label>() { lblR1, lblR2, lblR3, lblR4, lblR5, lblR6, lblR7, lblR8, lblR9, lblR10, lblR11, lblR12, lblR13, lblR14, lblR15, lblR16, lblR17, lblR18, lblR19, lblR20 };
+
+            string s = "13" + cmbStartYear.Text + "/" + cmbStartMonth.Text + "/" + cmbStartDay.Text;
+            string e = "13" + cmbEndYear.Text + "/" + cmbEndMonth.Text + "/" + cmbEndDay.Text;
+
+            List<string> t=new List<string>();
+            int i = 0;
+            foreach (var item in People)
+            {
+                SelectId = item.Id;
+                t.Clear();
+                t = CountShift(s, e);
+
+                FlistStaff.ElementAt(i).Text = item.NickName.Trim();
+                FlistMorning.ElementAt(i).Text = t.ElementAt(0);
+                FlistMid.ElementAt(i).Text = t.ElementAt(1);
+                FlistEvening.ElementAt(i).Text = t.ElementAt(2);
+                FlistSpilt.ElementAt(i).Text = t.ElementAt(3);
+                FlistRest.ElementAt(i).Text = t.ElementAt(4);
+                i = i + 1;
+            }
+
+            for (int j= i; i < 20; i++)
+            {
+                FlistStaff.ElementAt(i).Visible = false;
+                FlistMorning.ElementAt(i).Visible = false;
+                FlistMid.ElementAt(i).Visible = false;
+                FlistEvening.ElementAt(i).Visible = false;
+                FlistSpilt.ElementAt(i).Visible = false;
+                FlistRest.ElementAt(i).Visible = false;
+
+            }
+
+            lblDateToDate.Text = s + "---------" + e;
+            panel4.Visible = true;
+
         }
 
         private void lblS1_Click(object sender, EventArgs e)
@@ -559,6 +608,230 @@ namespace ManegeShift
 
                 ChangePanel = true;
             }
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            if(IsShowShift)
+            {
+                lblNameStatus.Text = "";
+                listView1.Visible = false;
+                ShowShift();
+            }
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = false;
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = false;
+        }
+
+        public void ShowDetailsShift(int id,int status)
+        {
+            var Id = People.ElementAt(id).Id;
+            DateTime s = lblDateToDate.Text.Split('-')[0].ToGeorgianDateTime();
+            DateTime e = lblDateToDate.Text.Split('-')[9].ToGeorgianDateTime();
+            string statusname = "";
+            switch (status)
+            {
+                case 1:
+                    statusname = "(Morning)";
+                    break;
+                case 2:
+                    statusname = "(Mid)";
+                    break;
+                case 3:
+                    statusname = "(Evening)";
+                    break;
+                case 4:
+                    statusname = "(Split)";
+                    break;
+                case 5:
+                    statusname = "(Rest)";
+                    break;
+
+                default:
+                    break;
+            }
+
+            lblNameStatus.Text = People.ElementAt(id).NickName.Trim()+"\n"+statusname;
+            var list = db.ShiftDays.Where(p => p.Person_fk == Id & p.Date >= s & p.Date <= e & p.Status_fk == status).ToList();
+            listView1.Clear();
+            foreach (var item in list)
+            {
+                listView1.Items.Add(item.Date.ToPersianDateString());
+            }
+
+            listView1.Visible = true;
+
+        }
+
+
+
+        private void lblM1_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(0,1);
+        }
+
+        private void lblMi1_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(0, 2);
+        }
+
+        private void lblE1_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(0, 3);
+        }
+
+        private void lblSp1_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(0, 4);
+        }
+
+        private void lblR1_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(0, 5);
+        }
+
+        private void lblNameStatus_Click(object sender, EventArgs e)
+        {
+            lblNameStatus.Text = "";
+            listView1.Visible = false;
+        }
+
+        private void lblM2_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(1, 1);
+        }
+
+        private void lblMi2_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(1, 2);
+        }
+
+        private void lblE2_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(1, 3);
+        }
+
+        private void lblSp2_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(1, 4);
+        }
+
+        private void lblR2_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(1, 5);
+        }
+
+        private void lblM3_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(2, 1);
+        }
+
+        private void lblMi3_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(2,2 );
+        }
+
+        private void lblE3_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(2,3 );
+        }
+
+        private void lblSp3_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(2,4 );
+        }
+
+        private void lblR3_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(2,5 );
+        }
+
+        private void lblM4_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(3, 1);
+        }
+
+        private void lblMi4_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(3, 2);
+        }
+
+        private void lblE4_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(3, 3);
+        }
+
+        private void lblSp4_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(3, 4);
+        }
+
+        private void lblR4_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(3, 5);
+        }
+
+        private void lblM5_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(4, 1);
+        }
+
+        private void lblMi5_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(4, 2);
+        }
+
+        private void lblE5_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(4,3 );
+        }
+
+        private void lblSp5_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(4,4 );
+        }
+
+        private void lblR5_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(4, 5);
+        }
+
+        private void lblM6_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(5,1 );
+        }
+
+        private void lblMi6_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(5, 2);
+        }
+
+        private void lblE6_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(5, 3);
+        }
+
+        private void lblSp6_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(5, 4);
+        }
+
+        private void lblR6_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(5, 5);
         }
     }
 }

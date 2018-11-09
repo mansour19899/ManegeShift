@@ -108,9 +108,136 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.lblDateToDate = new System.Windows.Forms.Label();
+            this.lblE20 = new System.Windows.Forms.Label();
+            this.lblMi20 = new System.Windows.Forms.Label();
+            this.lblM20 = new System.Windows.Forms.Label();
+            this.lblSp20 = new System.Windows.Forms.Label();
+            this.lblR20 = new System.Windows.Forms.Label();
+            this.lbl20 = new System.Windows.Forms.Label();
+            this.lblE19 = new System.Windows.Forms.Label();
+            this.lblMi19 = new System.Windows.Forms.Label();
+            this.lblM19 = new System.Windows.Forms.Label();
+            this.lblSp19 = new System.Windows.Forms.Label();
+            this.lblR19 = new System.Windows.Forms.Label();
+            this.lbl19 = new System.Windows.Forms.Label();
+            this.lblE18 = new System.Windows.Forms.Label();
+            this.lblMi18 = new System.Windows.Forms.Label();
+            this.lblM18 = new System.Windows.Forms.Label();
+            this.lblSp18 = new System.Windows.Forms.Label();
+            this.lblR18 = new System.Windows.Forms.Label();
+            this.lbl18 = new System.Windows.Forms.Label();
+            this.lblE17 = new System.Windows.Forms.Label();
+            this.lblMi17 = new System.Windows.Forms.Label();
+            this.lblM17 = new System.Windows.Forms.Label();
+            this.lblSp17 = new System.Windows.Forms.Label();
+            this.lblR17 = new System.Windows.Forms.Label();
+            this.lbl17 = new System.Windows.Forms.Label();
+            this.lblE16 = new System.Windows.Forms.Label();
+            this.lblMi16 = new System.Windows.Forms.Label();
+            this.lblM16 = new System.Windows.Forms.Label();
+            this.lblSp16 = new System.Windows.Forms.Label();
+            this.lblR16 = new System.Windows.Forms.Label();
+            this.lbl16 = new System.Windows.Forms.Label();
+            this.lblE15 = new System.Windows.Forms.Label();
+            this.lblMi15 = new System.Windows.Forms.Label();
+            this.lblM15 = new System.Windows.Forms.Label();
+            this.lblSp15 = new System.Windows.Forms.Label();
+            this.lblR15 = new System.Windows.Forms.Label();
+            this.lbl15 = new System.Windows.Forms.Label();
+            this.lblE14 = new System.Windows.Forms.Label();
+            this.lblMi14 = new System.Windows.Forms.Label();
+            this.lblM14 = new System.Windows.Forms.Label();
+            this.lblSp14 = new System.Windows.Forms.Label();
+            this.lblR14 = new System.Windows.Forms.Label();
+            this.lbl14 = new System.Windows.Forms.Label();
+            this.lblE13 = new System.Windows.Forms.Label();
+            this.lblMi13 = new System.Windows.Forms.Label();
+            this.lblM13 = new System.Windows.Forms.Label();
+            this.lblSp13 = new System.Windows.Forms.Label();
+            this.lblR13 = new System.Windows.Forms.Label();
+            this.lbl13 = new System.Windows.Forms.Label();
+            this.lblE12 = new System.Windows.Forms.Label();
+            this.lblMi12 = new System.Windows.Forms.Label();
+            this.lblM12 = new System.Windows.Forms.Label();
+            this.lblSp12 = new System.Windows.Forms.Label();
+            this.lblR12 = new System.Windows.Forms.Label();
+            this.lbl12 = new System.Windows.Forms.Label();
+            this.lblE11 = new System.Windows.Forms.Label();
+            this.lblMi11 = new System.Windows.Forms.Label();
+            this.lblM11 = new System.Windows.Forms.Label();
+            this.lblSp11 = new System.Windows.Forms.Label();
+            this.lblR11 = new System.Windows.Forms.Label();
+            this.lbl11 = new System.Windows.Forms.Label();
+            this.lblE10 = new System.Windows.Forms.Label();
+            this.lblMi10 = new System.Windows.Forms.Label();
+            this.lblM10 = new System.Windows.Forms.Label();
+            this.lblSp10 = new System.Windows.Forms.Label();
+            this.lblR10 = new System.Windows.Forms.Label();
+            this.lbl10 = new System.Windows.Forms.Label();
+            this.lblE9 = new System.Windows.Forms.Label();
+            this.lblMi9 = new System.Windows.Forms.Label();
+            this.lblM9 = new System.Windows.Forms.Label();
+            this.lblSp9 = new System.Windows.Forms.Label();
+            this.lblR9 = new System.Windows.Forms.Label();
+            this.lbl9 = new System.Windows.Forms.Label();
+            this.lblE8 = new System.Windows.Forms.Label();
+            this.lblMi8 = new System.Windows.Forms.Label();
+            this.lblM8 = new System.Windows.Forms.Label();
+            this.lblSp8 = new System.Windows.Forms.Label();
+            this.lblR8 = new System.Windows.Forms.Label();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.lblE7 = new System.Windows.Forms.Label();
+            this.lblMi7 = new System.Windows.Forms.Label();
+            this.lblM7 = new System.Windows.Forms.Label();
+            this.lblSp7 = new System.Windows.Forms.Label();
+            this.lblR7 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.lblE6 = new System.Windows.Forms.Label();
+            this.lblMi6 = new System.Windows.Forms.Label();
+            this.lblM6 = new System.Windows.Forms.Label();
+            this.lblSp6 = new System.Windows.Forms.Label();
+            this.lblR6 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lblE5 = new System.Windows.Forms.Label();
+            this.lblMi5 = new System.Windows.Forms.Label();
+            this.lblM5 = new System.Windows.Forms.Label();
+            this.lblSp5 = new System.Windows.Forms.Label();
+            this.lblR5 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lblE4 = new System.Windows.Forms.Label();
+            this.lblMi4 = new System.Windows.Forms.Label();
+            this.lblM4 = new System.Windows.Forms.Label();
+            this.lblSp4 = new System.Windows.Forms.Label();
+            this.lblR4 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lblE3 = new System.Windows.Forms.Label();
+            this.lblMi3 = new System.Windows.Forms.Label();
+            this.lblM3 = new System.Windows.Forms.Label();
+            this.lblSp3 = new System.Windows.Forms.Label();
+            this.lblR3 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lblE2 = new System.Windows.Forms.Label();
+            this.lblMi2 = new System.Windows.Forms.Label();
+            this.lblM2 = new System.Windows.Forms.Label();
+            this.lblSp2 = new System.Windows.Forms.Label();
+            this.lblR2 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lblE1 = new System.Windows.Forms.Label();
+            this.lblMi1 = new System.Windows.Forms.Label();
+            this.lblM1 = new System.Windows.Forms.Label();
+            this.lblSp1 = new System.Windows.Forms.Label();
+            this.lblR1 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.lblNameStatus = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblName
@@ -415,6 +542,7 @@
             this.label9.TabIndex = 73;
             this.label9.Text = "StaffName";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel1
             // 
@@ -577,6 +705,7 @@
             this.label10.TabIndex = 75;
             this.label10.Text = "Hyper Star";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label8
             // 
@@ -1187,6 +1316,1605 @@
             this.label6.Text = "Morning";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel4
+            // 
+            this.panel4.AutoScroll = true;
+            this.panel4.BackgroundImage = global::ManegeShift.Resource1.Background;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Controls.Add(this.lblNameStatus);
+            this.panel4.Controls.Add(this.listView1);
+            this.panel4.Controls.Add(this.label23);
+            this.panel4.Controls.Add(this.label22);
+            this.panel4.Controls.Add(this.lblDateToDate);
+            this.panel4.Controls.Add(this.lblE20);
+            this.panel4.Controls.Add(this.lblMi20);
+            this.panel4.Controls.Add(this.lblM20);
+            this.panel4.Controls.Add(this.lblSp20);
+            this.panel4.Controls.Add(this.lblR20);
+            this.panel4.Controls.Add(this.lbl20);
+            this.panel4.Controls.Add(this.lblE19);
+            this.panel4.Controls.Add(this.lblMi19);
+            this.panel4.Controls.Add(this.lblM19);
+            this.panel4.Controls.Add(this.lblSp19);
+            this.panel4.Controls.Add(this.lblR19);
+            this.panel4.Controls.Add(this.lbl19);
+            this.panel4.Controls.Add(this.lblE18);
+            this.panel4.Controls.Add(this.lblMi18);
+            this.panel4.Controls.Add(this.lblM18);
+            this.panel4.Controls.Add(this.lblSp18);
+            this.panel4.Controls.Add(this.lblR18);
+            this.panel4.Controls.Add(this.lbl18);
+            this.panel4.Controls.Add(this.lblE17);
+            this.panel4.Controls.Add(this.lblMi17);
+            this.panel4.Controls.Add(this.lblM17);
+            this.panel4.Controls.Add(this.lblSp17);
+            this.panel4.Controls.Add(this.lblR17);
+            this.panel4.Controls.Add(this.lbl17);
+            this.panel4.Controls.Add(this.lblE16);
+            this.panel4.Controls.Add(this.lblMi16);
+            this.panel4.Controls.Add(this.lblM16);
+            this.panel4.Controls.Add(this.lblSp16);
+            this.panel4.Controls.Add(this.lblR16);
+            this.panel4.Controls.Add(this.lbl16);
+            this.panel4.Controls.Add(this.lblE15);
+            this.panel4.Controls.Add(this.lblMi15);
+            this.panel4.Controls.Add(this.lblM15);
+            this.panel4.Controls.Add(this.lblSp15);
+            this.panel4.Controls.Add(this.lblR15);
+            this.panel4.Controls.Add(this.lbl15);
+            this.panel4.Controls.Add(this.lblE14);
+            this.panel4.Controls.Add(this.lblMi14);
+            this.panel4.Controls.Add(this.lblM14);
+            this.panel4.Controls.Add(this.lblSp14);
+            this.panel4.Controls.Add(this.lblR14);
+            this.panel4.Controls.Add(this.lbl14);
+            this.panel4.Controls.Add(this.lblE13);
+            this.panel4.Controls.Add(this.lblMi13);
+            this.panel4.Controls.Add(this.lblM13);
+            this.panel4.Controls.Add(this.lblSp13);
+            this.panel4.Controls.Add(this.lblR13);
+            this.panel4.Controls.Add(this.lbl13);
+            this.panel4.Controls.Add(this.lblE12);
+            this.panel4.Controls.Add(this.lblMi12);
+            this.panel4.Controls.Add(this.lblM12);
+            this.panel4.Controls.Add(this.lblSp12);
+            this.panel4.Controls.Add(this.lblR12);
+            this.panel4.Controls.Add(this.lbl12);
+            this.panel4.Controls.Add(this.lblE11);
+            this.panel4.Controls.Add(this.lblMi11);
+            this.panel4.Controls.Add(this.lblM11);
+            this.panel4.Controls.Add(this.lblSp11);
+            this.panel4.Controls.Add(this.lblR11);
+            this.panel4.Controls.Add(this.lbl11);
+            this.panel4.Controls.Add(this.lblE10);
+            this.panel4.Controls.Add(this.lblMi10);
+            this.panel4.Controls.Add(this.lblM10);
+            this.panel4.Controls.Add(this.lblSp10);
+            this.panel4.Controls.Add(this.lblR10);
+            this.panel4.Controls.Add(this.lbl10);
+            this.panel4.Controls.Add(this.lblE9);
+            this.panel4.Controls.Add(this.lblMi9);
+            this.panel4.Controls.Add(this.lblM9);
+            this.panel4.Controls.Add(this.lblSp9);
+            this.panel4.Controls.Add(this.lblR9);
+            this.panel4.Controls.Add(this.lbl9);
+            this.panel4.Controls.Add(this.lblE8);
+            this.panel4.Controls.Add(this.lblMi8);
+            this.panel4.Controls.Add(this.lblM8);
+            this.panel4.Controls.Add(this.lblSp8);
+            this.panel4.Controls.Add(this.lblR8);
+            this.panel4.Controls.Add(this.lbl8);
+            this.panel4.Controls.Add(this.lblE7);
+            this.panel4.Controls.Add(this.lblMi7);
+            this.panel4.Controls.Add(this.lblM7);
+            this.panel4.Controls.Add(this.lblSp7);
+            this.panel4.Controls.Add(this.lblR7);
+            this.panel4.Controls.Add(this.lbl7);
+            this.panel4.Controls.Add(this.lblE6);
+            this.panel4.Controls.Add(this.lblMi6);
+            this.panel4.Controls.Add(this.lblM6);
+            this.panel4.Controls.Add(this.lblSp6);
+            this.panel4.Controls.Add(this.lblR6);
+            this.panel4.Controls.Add(this.lbl6);
+            this.panel4.Controls.Add(this.lblE5);
+            this.panel4.Controls.Add(this.lblMi5);
+            this.panel4.Controls.Add(this.lblM5);
+            this.panel4.Controls.Add(this.lblSp5);
+            this.panel4.Controls.Add(this.lblR5);
+            this.panel4.Controls.Add(this.lbl5);
+            this.panel4.Controls.Add(this.lblE4);
+            this.panel4.Controls.Add(this.lblMi4);
+            this.panel4.Controls.Add(this.lblM4);
+            this.panel4.Controls.Add(this.lblSp4);
+            this.panel4.Controls.Add(this.lblR4);
+            this.panel4.Controls.Add(this.lbl4);
+            this.panel4.Controls.Add(this.lblE3);
+            this.panel4.Controls.Add(this.lblMi3);
+            this.panel4.Controls.Add(this.lblM3);
+            this.panel4.Controls.Add(this.lblSp3);
+            this.panel4.Controls.Add(this.lblR3);
+            this.panel4.Controls.Add(this.lbl3);
+            this.panel4.Controls.Add(this.lblE2);
+            this.panel4.Controls.Add(this.lblMi2);
+            this.panel4.Controls.Add(this.lblM2);
+            this.panel4.Controls.Add(this.lblSp2);
+            this.panel4.Controls.Add(this.lblR2);
+            this.panel4.Controls.Add(this.lbl2);
+            this.panel4.Controls.Add(this.lblE1);
+            this.panel4.Controls.Add(this.lblMi1);
+            this.panel4.Controls.Add(this.lblM1);
+            this.panel4.Controls.Add(this.lblSp1);
+            this.panel4.Controls.Add(this.lblR1);
+            this.panel4.Controls.Add(this.lbl1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(898, 708);
+            this.panel4.TabIndex = 79;
+            this.panel4.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.Transparent;
+            this.label23.Location = new System.Drawing.Point(803, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(80, 42);
+            this.label23.TabIndex = 176;
+            this.label23.Click += new System.EventHandler(this.label23_Click);
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Location = new System.Drawing.Point(667, 840);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(211, 263);
+            this.label22.TabIndex = 175;
+            this.label22.Click += new System.EventHandler(this.label22_Click);
+            // 
+            // lblDateToDate
+            // 
+            this.lblDateToDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDateToDate.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateToDate.Location = new System.Drawing.Point(185, 27);
+            this.lblDateToDate.Name = "lblDateToDate";
+            this.lblDateToDate.Size = new System.Drawing.Size(487, 69);
+            this.lblDateToDate.TabIndex = 174;
+            this.lblDateToDate.Text = "label1";
+            this.lblDateToDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE20
+            // 
+            this.lblE20.BackColor = System.Drawing.Color.Navy;
+            this.lblE20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE20.ForeColor = System.Drawing.Color.White;
+            this.lblE20.Location = new System.Drawing.Point(444, 1073);
+            this.lblE20.Name = "lblE20";
+            this.lblE20.Size = new System.Drawing.Size(60, 35);
+            this.lblE20.TabIndex = 171;
+            this.lblE20.Text = "999";
+            this.lblE20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi20
+            // 
+            this.lblMi20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi20.Location = new System.Drawing.Point(368, 1073);
+            this.lblMi20.Name = "lblMi20";
+            this.lblMi20.Size = new System.Drawing.Size(60, 35);
+            this.lblMi20.TabIndex = 170;
+            this.lblMi20.Text = "999";
+            this.lblMi20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM20
+            // 
+            this.lblM20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM20.Location = new System.Drawing.Point(284, 1072);
+            this.lblM20.Name = "lblM20";
+            this.lblM20.Size = new System.Drawing.Size(60, 35);
+            this.lblM20.TabIndex = 169;
+            this.lblM20.Text = "999";
+            this.lblM20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp20
+            // 
+            this.lblSp20.BackColor = System.Drawing.Color.Teal;
+            this.lblSp20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp20.ForeColor = System.Drawing.Color.White;
+            this.lblSp20.Location = new System.Drawing.Point(522, 1073);
+            this.lblSp20.Name = "lblSp20";
+            this.lblSp20.Size = new System.Drawing.Size(60, 35);
+            this.lblSp20.TabIndex = 172;
+            this.lblSp20.Text = "999";
+            this.lblSp20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR20
+            // 
+            this.lblR20.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR20.ForeColor = System.Drawing.Color.White;
+            this.lblR20.Location = new System.Drawing.Point(598, 1073);
+            this.lblR20.Name = "lblR20";
+            this.lblR20.Size = new System.Drawing.Size(60, 35);
+            this.lblR20.TabIndex = 173;
+            this.lblR20.Text = "999";
+            this.lblR20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl20
+            // 
+            this.lbl20.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl20.Location = new System.Drawing.Point(123, 1072);
+            this.lbl20.Name = "lbl20";
+            this.lbl20.Size = new System.Drawing.Size(129, 35);
+            this.lbl20.TabIndex = 168;
+            this.lbl20.Text = "label1";
+            this.lbl20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE19
+            // 
+            this.lblE19.BackColor = System.Drawing.Color.Navy;
+            this.lblE19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE19.ForeColor = System.Drawing.Color.White;
+            this.lblE19.Location = new System.Drawing.Point(444, 1020);
+            this.lblE19.Name = "lblE19";
+            this.lblE19.Size = new System.Drawing.Size(60, 35);
+            this.lblE19.TabIndex = 165;
+            this.lblE19.Text = "999";
+            this.lblE19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi19
+            // 
+            this.lblMi19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi19.Location = new System.Drawing.Point(368, 1020);
+            this.lblMi19.Name = "lblMi19";
+            this.lblMi19.Size = new System.Drawing.Size(60, 35);
+            this.lblMi19.TabIndex = 164;
+            this.lblMi19.Text = "999";
+            this.lblMi19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM19
+            // 
+            this.lblM19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM19.Location = new System.Drawing.Point(284, 1019);
+            this.lblM19.Name = "lblM19";
+            this.lblM19.Size = new System.Drawing.Size(60, 35);
+            this.lblM19.TabIndex = 163;
+            this.lblM19.Text = "999";
+            this.lblM19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp19
+            // 
+            this.lblSp19.BackColor = System.Drawing.Color.Teal;
+            this.lblSp19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp19.ForeColor = System.Drawing.Color.White;
+            this.lblSp19.Location = new System.Drawing.Point(522, 1020);
+            this.lblSp19.Name = "lblSp19";
+            this.lblSp19.Size = new System.Drawing.Size(60, 35);
+            this.lblSp19.TabIndex = 166;
+            this.lblSp19.Text = "999";
+            this.lblSp19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR19
+            // 
+            this.lblR19.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR19.ForeColor = System.Drawing.Color.White;
+            this.lblR19.Location = new System.Drawing.Point(598, 1020);
+            this.lblR19.Name = "lblR19";
+            this.lblR19.Size = new System.Drawing.Size(60, 35);
+            this.lblR19.TabIndex = 167;
+            this.lblR19.Text = "999";
+            this.lblR19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl19
+            // 
+            this.lbl19.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl19.Location = new System.Drawing.Point(123, 1019);
+            this.lbl19.Name = "lbl19";
+            this.lbl19.Size = new System.Drawing.Size(129, 35);
+            this.lbl19.TabIndex = 162;
+            this.lbl19.Text = "label1";
+            this.lbl19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE18
+            // 
+            this.lblE18.BackColor = System.Drawing.Color.Navy;
+            this.lblE18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE18.ForeColor = System.Drawing.Color.White;
+            this.lblE18.Location = new System.Drawing.Point(444, 970);
+            this.lblE18.Name = "lblE18";
+            this.lblE18.Size = new System.Drawing.Size(60, 35);
+            this.lblE18.TabIndex = 159;
+            this.lblE18.Text = "999";
+            this.lblE18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi18
+            // 
+            this.lblMi18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi18.Location = new System.Drawing.Point(368, 970);
+            this.lblMi18.Name = "lblMi18";
+            this.lblMi18.Size = new System.Drawing.Size(60, 35);
+            this.lblMi18.TabIndex = 158;
+            this.lblMi18.Text = "999";
+            this.lblMi18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM18
+            // 
+            this.lblM18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM18.Location = new System.Drawing.Point(284, 969);
+            this.lblM18.Name = "lblM18";
+            this.lblM18.Size = new System.Drawing.Size(60, 35);
+            this.lblM18.TabIndex = 157;
+            this.lblM18.Text = "999";
+            this.lblM18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp18
+            // 
+            this.lblSp18.BackColor = System.Drawing.Color.Teal;
+            this.lblSp18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp18.ForeColor = System.Drawing.Color.White;
+            this.lblSp18.Location = new System.Drawing.Point(522, 970);
+            this.lblSp18.Name = "lblSp18";
+            this.lblSp18.Size = new System.Drawing.Size(60, 35);
+            this.lblSp18.TabIndex = 160;
+            this.lblSp18.Text = "999";
+            this.lblSp18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR18
+            // 
+            this.lblR18.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR18.ForeColor = System.Drawing.Color.White;
+            this.lblR18.Location = new System.Drawing.Point(598, 970);
+            this.lblR18.Name = "lblR18";
+            this.lblR18.Size = new System.Drawing.Size(60, 35);
+            this.lblR18.TabIndex = 161;
+            this.lblR18.Text = "999";
+            this.lblR18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl18
+            // 
+            this.lbl18.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl18.Location = new System.Drawing.Point(123, 969);
+            this.lbl18.Name = "lbl18";
+            this.lbl18.Size = new System.Drawing.Size(129, 35);
+            this.lbl18.TabIndex = 156;
+            this.lbl18.Text = "label1";
+            this.lbl18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE17
+            // 
+            this.lblE17.BackColor = System.Drawing.Color.Navy;
+            this.lblE17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE17.ForeColor = System.Drawing.Color.White;
+            this.lblE17.Location = new System.Drawing.Point(444, 922);
+            this.lblE17.Name = "lblE17";
+            this.lblE17.Size = new System.Drawing.Size(60, 35);
+            this.lblE17.TabIndex = 153;
+            this.lblE17.Text = "999";
+            this.lblE17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi17
+            // 
+            this.lblMi17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi17.Location = new System.Drawing.Point(368, 922);
+            this.lblMi17.Name = "lblMi17";
+            this.lblMi17.Size = new System.Drawing.Size(60, 35);
+            this.lblMi17.TabIndex = 152;
+            this.lblMi17.Text = "999";
+            this.lblMi17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM17
+            // 
+            this.lblM17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM17.Location = new System.Drawing.Point(284, 921);
+            this.lblM17.Name = "lblM17";
+            this.lblM17.Size = new System.Drawing.Size(60, 35);
+            this.lblM17.TabIndex = 151;
+            this.lblM17.Text = "999";
+            this.lblM17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp17
+            // 
+            this.lblSp17.BackColor = System.Drawing.Color.Teal;
+            this.lblSp17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp17.ForeColor = System.Drawing.Color.White;
+            this.lblSp17.Location = new System.Drawing.Point(522, 922);
+            this.lblSp17.Name = "lblSp17";
+            this.lblSp17.Size = new System.Drawing.Size(60, 35);
+            this.lblSp17.TabIndex = 154;
+            this.lblSp17.Text = "999";
+            this.lblSp17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR17
+            // 
+            this.lblR17.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR17.ForeColor = System.Drawing.Color.White;
+            this.lblR17.Location = new System.Drawing.Point(598, 922);
+            this.lblR17.Name = "lblR17";
+            this.lblR17.Size = new System.Drawing.Size(60, 35);
+            this.lblR17.TabIndex = 155;
+            this.lblR17.Text = "999";
+            this.lblR17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl17
+            // 
+            this.lbl17.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl17.Location = new System.Drawing.Point(123, 921);
+            this.lbl17.Name = "lbl17";
+            this.lbl17.Size = new System.Drawing.Size(129, 35);
+            this.lbl17.TabIndex = 150;
+            this.lbl17.Text = "label1";
+            this.lbl17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE16
+            // 
+            this.lblE16.BackColor = System.Drawing.Color.Navy;
+            this.lblE16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE16.ForeColor = System.Drawing.Color.White;
+            this.lblE16.Location = new System.Drawing.Point(444, 875);
+            this.lblE16.Name = "lblE16";
+            this.lblE16.Size = new System.Drawing.Size(60, 35);
+            this.lblE16.TabIndex = 147;
+            this.lblE16.Text = "999";
+            this.lblE16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi16
+            // 
+            this.lblMi16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi16.Location = new System.Drawing.Point(368, 875);
+            this.lblMi16.Name = "lblMi16";
+            this.lblMi16.Size = new System.Drawing.Size(60, 35);
+            this.lblMi16.TabIndex = 146;
+            this.lblMi16.Text = "999";
+            this.lblMi16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM16
+            // 
+            this.lblM16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM16.Location = new System.Drawing.Point(284, 874);
+            this.lblM16.Name = "lblM16";
+            this.lblM16.Size = new System.Drawing.Size(60, 35);
+            this.lblM16.TabIndex = 145;
+            this.lblM16.Text = "999";
+            this.lblM16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp16
+            // 
+            this.lblSp16.BackColor = System.Drawing.Color.Teal;
+            this.lblSp16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp16.ForeColor = System.Drawing.Color.White;
+            this.lblSp16.Location = new System.Drawing.Point(522, 875);
+            this.lblSp16.Name = "lblSp16";
+            this.lblSp16.Size = new System.Drawing.Size(60, 35);
+            this.lblSp16.TabIndex = 148;
+            this.lblSp16.Text = "999";
+            this.lblSp16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR16
+            // 
+            this.lblR16.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR16.ForeColor = System.Drawing.Color.White;
+            this.lblR16.Location = new System.Drawing.Point(598, 875);
+            this.lblR16.Name = "lblR16";
+            this.lblR16.Size = new System.Drawing.Size(60, 35);
+            this.lblR16.TabIndex = 149;
+            this.lblR16.Text = "999";
+            this.lblR16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl16
+            // 
+            this.lbl16.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl16.Location = new System.Drawing.Point(123, 874);
+            this.lbl16.Name = "lbl16";
+            this.lbl16.Size = new System.Drawing.Size(129, 35);
+            this.lbl16.TabIndex = 144;
+            this.lbl16.Text = "label1";
+            this.lbl16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE15
+            // 
+            this.lblE15.BackColor = System.Drawing.Color.Navy;
+            this.lblE15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE15.ForeColor = System.Drawing.Color.White;
+            this.lblE15.Location = new System.Drawing.Point(444, 823);
+            this.lblE15.Name = "lblE15";
+            this.lblE15.Size = new System.Drawing.Size(60, 35);
+            this.lblE15.TabIndex = 141;
+            this.lblE15.Text = "999";
+            this.lblE15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi15
+            // 
+            this.lblMi15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi15.Location = new System.Drawing.Point(368, 823);
+            this.lblMi15.Name = "lblMi15";
+            this.lblMi15.Size = new System.Drawing.Size(60, 35);
+            this.lblMi15.TabIndex = 140;
+            this.lblMi15.Text = "999";
+            this.lblMi15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM15
+            // 
+            this.lblM15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM15.Location = new System.Drawing.Point(284, 822);
+            this.lblM15.Name = "lblM15";
+            this.lblM15.Size = new System.Drawing.Size(60, 35);
+            this.lblM15.TabIndex = 139;
+            this.lblM15.Text = "999";
+            this.lblM15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp15
+            // 
+            this.lblSp15.BackColor = System.Drawing.Color.Teal;
+            this.lblSp15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp15.ForeColor = System.Drawing.Color.White;
+            this.lblSp15.Location = new System.Drawing.Point(522, 823);
+            this.lblSp15.Name = "lblSp15";
+            this.lblSp15.Size = new System.Drawing.Size(60, 35);
+            this.lblSp15.TabIndex = 142;
+            this.lblSp15.Text = "999";
+            this.lblSp15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR15
+            // 
+            this.lblR15.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR15.ForeColor = System.Drawing.Color.White;
+            this.lblR15.Location = new System.Drawing.Point(598, 823);
+            this.lblR15.Name = "lblR15";
+            this.lblR15.Size = new System.Drawing.Size(60, 35);
+            this.lblR15.TabIndex = 143;
+            this.lblR15.Text = "999";
+            this.lblR15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl15
+            // 
+            this.lbl15.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl15.Location = new System.Drawing.Point(123, 822);
+            this.lbl15.Name = "lbl15";
+            this.lbl15.Size = new System.Drawing.Size(129, 35);
+            this.lbl15.TabIndex = 138;
+            this.lbl15.Text = "label1";
+            this.lbl15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE14
+            // 
+            this.lblE14.BackColor = System.Drawing.Color.Navy;
+            this.lblE14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE14.ForeColor = System.Drawing.Color.White;
+            this.lblE14.Location = new System.Drawing.Point(444, 770);
+            this.lblE14.Name = "lblE14";
+            this.lblE14.Size = new System.Drawing.Size(60, 35);
+            this.lblE14.TabIndex = 135;
+            this.lblE14.Text = "999";
+            this.lblE14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi14
+            // 
+            this.lblMi14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi14.Location = new System.Drawing.Point(368, 770);
+            this.lblMi14.Name = "lblMi14";
+            this.lblMi14.Size = new System.Drawing.Size(60, 35);
+            this.lblMi14.TabIndex = 134;
+            this.lblMi14.Text = "999";
+            this.lblMi14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM14
+            // 
+            this.lblM14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM14.Location = new System.Drawing.Point(284, 769);
+            this.lblM14.Name = "lblM14";
+            this.lblM14.Size = new System.Drawing.Size(60, 35);
+            this.lblM14.TabIndex = 133;
+            this.lblM14.Text = "999";
+            this.lblM14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp14
+            // 
+            this.lblSp14.BackColor = System.Drawing.Color.Teal;
+            this.lblSp14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp14.ForeColor = System.Drawing.Color.White;
+            this.lblSp14.Location = new System.Drawing.Point(522, 770);
+            this.lblSp14.Name = "lblSp14";
+            this.lblSp14.Size = new System.Drawing.Size(60, 35);
+            this.lblSp14.TabIndex = 136;
+            this.lblSp14.Text = "999";
+            this.lblSp14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR14
+            // 
+            this.lblR14.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR14.ForeColor = System.Drawing.Color.White;
+            this.lblR14.Location = new System.Drawing.Point(598, 770);
+            this.lblR14.Name = "lblR14";
+            this.lblR14.Size = new System.Drawing.Size(60, 35);
+            this.lblR14.TabIndex = 137;
+            this.lblR14.Text = "999";
+            this.lblR14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl14
+            // 
+            this.lbl14.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl14.Location = new System.Drawing.Point(123, 769);
+            this.lbl14.Name = "lbl14";
+            this.lbl14.Size = new System.Drawing.Size(129, 35);
+            this.lbl14.TabIndex = 132;
+            this.lbl14.Text = "label1";
+            this.lbl14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE13
+            // 
+            this.lblE13.BackColor = System.Drawing.Color.Navy;
+            this.lblE13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE13.ForeColor = System.Drawing.Color.White;
+            this.lblE13.Location = new System.Drawing.Point(444, 720);
+            this.lblE13.Name = "lblE13";
+            this.lblE13.Size = new System.Drawing.Size(60, 35);
+            this.lblE13.TabIndex = 129;
+            this.lblE13.Text = "999";
+            this.lblE13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi13
+            // 
+            this.lblMi13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi13.Location = new System.Drawing.Point(368, 720);
+            this.lblMi13.Name = "lblMi13";
+            this.lblMi13.Size = new System.Drawing.Size(60, 35);
+            this.lblMi13.TabIndex = 128;
+            this.lblMi13.Text = "999";
+            this.lblMi13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM13
+            // 
+            this.lblM13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM13.Location = new System.Drawing.Point(284, 719);
+            this.lblM13.Name = "lblM13";
+            this.lblM13.Size = new System.Drawing.Size(60, 35);
+            this.lblM13.TabIndex = 127;
+            this.lblM13.Text = "999";
+            this.lblM13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp13
+            // 
+            this.lblSp13.BackColor = System.Drawing.Color.Teal;
+            this.lblSp13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp13.ForeColor = System.Drawing.Color.White;
+            this.lblSp13.Location = new System.Drawing.Point(522, 720);
+            this.lblSp13.Name = "lblSp13";
+            this.lblSp13.Size = new System.Drawing.Size(60, 35);
+            this.lblSp13.TabIndex = 130;
+            this.lblSp13.Text = "999";
+            this.lblSp13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR13
+            // 
+            this.lblR13.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR13.ForeColor = System.Drawing.Color.White;
+            this.lblR13.Location = new System.Drawing.Point(598, 720);
+            this.lblR13.Name = "lblR13";
+            this.lblR13.Size = new System.Drawing.Size(60, 35);
+            this.lblR13.TabIndex = 131;
+            this.lblR13.Text = "999";
+            this.lblR13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl13
+            // 
+            this.lbl13.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl13.Location = new System.Drawing.Point(123, 719);
+            this.lbl13.Name = "lbl13";
+            this.lbl13.Size = new System.Drawing.Size(129, 35);
+            this.lbl13.TabIndex = 126;
+            this.lbl13.Text = "label1";
+            this.lbl13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE12
+            // 
+            this.lblE12.BackColor = System.Drawing.Color.Navy;
+            this.lblE12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE12.ForeColor = System.Drawing.Color.White;
+            this.lblE12.Location = new System.Drawing.Point(444, 672);
+            this.lblE12.Name = "lblE12";
+            this.lblE12.Size = new System.Drawing.Size(60, 35);
+            this.lblE12.TabIndex = 123;
+            this.lblE12.Text = "999";
+            this.lblE12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi12
+            // 
+            this.lblMi12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi12.Location = new System.Drawing.Point(368, 672);
+            this.lblMi12.Name = "lblMi12";
+            this.lblMi12.Size = new System.Drawing.Size(60, 35);
+            this.lblMi12.TabIndex = 122;
+            this.lblMi12.Text = "999";
+            this.lblMi12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM12
+            // 
+            this.lblM12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM12.Location = new System.Drawing.Point(284, 671);
+            this.lblM12.Name = "lblM12";
+            this.lblM12.Size = new System.Drawing.Size(60, 35);
+            this.lblM12.TabIndex = 121;
+            this.lblM12.Text = "999";
+            this.lblM12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp12
+            // 
+            this.lblSp12.BackColor = System.Drawing.Color.Teal;
+            this.lblSp12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp12.ForeColor = System.Drawing.Color.White;
+            this.lblSp12.Location = new System.Drawing.Point(522, 672);
+            this.lblSp12.Name = "lblSp12";
+            this.lblSp12.Size = new System.Drawing.Size(60, 35);
+            this.lblSp12.TabIndex = 124;
+            this.lblSp12.Text = "999";
+            this.lblSp12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR12
+            // 
+            this.lblR12.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR12.ForeColor = System.Drawing.Color.White;
+            this.lblR12.Location = new System.Drawing.Point(598, 672);
+            this.lblR12.Name = "lblR12";
+            this.lblR12.Size = new System.Drawing.Size(60, 35);
+            this.lblR12.TabIndex = 125;
+            this.lblR12.Text = "999";
+            this.lblR12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl12
+            // 
+            this.lbl12.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl12.Location = new System.Drawing.Point(123, 671);
+            this.lbl12.Name = "lbl12";
+            this.lbl12.Size = new System.Drawing.Size(129, 35);
+            this.lbl12.TabIndex = 120;
+            this.lbl12.Text = "label1";
+            this.lbl12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE11
+            // 
+            this.lblE11.BackColor = System.Drawing.Color.Navy;
+            this.lblE11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE11.ForeColor = System.Drawing.Color.White;
+            this.lblE11.Location = new System.Drawing.Point(444, 625);
+            this.lblE11.Name = "lblE11";
+            this.lblE11.Size = new System.Drawing.Size(60, 35);
+            this.lblE11.TabIndex = 117;
+            this.lblE11.Text = "999";
+            this.lblE11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi11
+            // 
+            this.lblMi11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi11.Location = new System.Drawing.Point(368, 625);
+            this.lblMi11.Name = "lblMi11";
+            this.lblMi11.Size = new System.Drawing.Size(60, 35);
+            this.lblMi11.TabIndex = 116;
+            this.lblMi11.Text = "999";
+            this.lblMi11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM11
+            // 
+            this.lblM11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM11.Location = new System.Drawing.Point(284, 624);
+            this.lblM11.Name = "lblM11";
+            this.lblM11.Size = new System.Drawing.Size(60, 35);
+            this.lblM11.TabIndex = 115;
+            this.lblM11.Text = "999";
+            this.lblM11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp11
+            // 
+            this.lblSp11.BackColor = System.Drawing.Color.Teal;
+            this.lblSp11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp11.ForeColor = System.Drawing.Color.White;
+            this.lblSp11.Location = new System.Drawing.Point(522, 625);
+            this.lblSp11.Name = "lblSp11";
+            this.lblSp11.Size = new System.Drawing.Size(60, 35);
+            this.lblSp11.TabIndex = 118;
+            this.lblSp11.Text = "999";
+            this.lblSp11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR11
+            // 
+            this.lblR11.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR11.ForeColor = System.Drawing.Color.White;
+            this.lblR11.Location = new System.Drawing.Point(598, 625);
+            this.lblR11.Name = "lblR11";
+            this.lblR11.Size = new System.Drawing.Size(60, 35);
+            this.lblR11.TabIndex = 119;
+            this.lblR11.Text = "999";
+            this.lblR11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl11
+            // 
+            this.lbl11.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl11.Location = new System.Drawing.Point(123, 624);
+            this.lbl11.Name = "lbl11";
+            this.lbl11.Size = new System.Drawing.Size(129, 35);
+            this.lbl11.TabIndex = 114;
+            this.lbl11.Text = "label1";
+            this.lbl11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE10
+            // 
+            this.lblE10.BackColor = System.Drawing.Color.Navy;
+            this.lblE10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE10.ForeColor = System.Drawing.Color.White;
+            this.lblE10.Location = new System.Drawing.Point(444, 572);
+            this.lblE10.Name = "lblE10";
+            this.lblE10.Size = new System.Drawing.Size(60, 35);
+            this.lblE10.TabIndex = 111;
+            this.lblE10.Text = "999";
+            this.lblE10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi10
+            // 
+            this.lblMi10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi10.Location = new System.Drawing.Point(368, 572);
+            this.lblMi10.Name = "lblMi10";
+            this.lblMi10.Size = new System.Drawing.Size(60, 35);
+            this.lblMi10.TabIndex = 110;
+            this.lblMi10.Text = "999";
+            this.lblMi10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM10
+            // 
+            this.lblM10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM10.Location = new System.Drawing.Point(284, 571);
+            this.lblM10.Name = "lblM10";
+            this.lblM10.Size = new System.Drawing.Size(60, 35);
+            this.lblM10.TabIndex = 109;
+            this.lblM10.Text = "999";
+            this.lblM10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp10
+            // 
+            this.lblSp10.BackColor = System.Drawing.Color.Teal;
+            this.lblSp10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp10.ForeColor = System.Drawing.Color.White;
+            this.lblSp10.Location = new System.Drawing.Point(522, 572);
+            this.lblSp10.Name = "lblSp10";
+            this.lblSp10.Size = new System.Drawing.Size(60, 35);
+            this.lblSp10.TabIndex = 112;
+            this.lblSp10.Text = "999";
+            this.lblSp10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR10
+            // 
+            this.lblR10.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR10.ForeColor = System.Drawing.Color.White;
+            this.lblR10.Location = new System.Drawing.Point(598, 572);
+            this.lblR10.Name = "lblR10";
+            this.lblR10.Size = new System.Drawing.Size(60, 35);
+            this.lblR10.TabIndex = 113;
+            this.lblR10.Text = "999";
+            this.lblR10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl10
+            // 
+            this.lbl10.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl10.Location = new System.Drawing.Point(123, 571);
+            this.lbl10.Name = "lbl10";
+            this.lbl10.Size = new System.Drawing.Size(129, 35);
+            this.lbl10.TabIndex = 108;
+            this.lbl10.Text = "label1";
+            this.lbl10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE9
+            // 
+            this.lblE9.BackColor = System.Drawing.Color.Navy;
+            this.lblE9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE9.ForeColor = System.Drawing.Color.White;
+            this.lblE9.Location = new System.Drawing.Point(444, 519);
+            this.lblE9.Name = "lblE9";
+            this.lblE9.Size = new System.Drawing.Size(60, 35);
+            this.lblE9.TabIndex = 105;
+            this.lblE9.Text = "999";
+            this.lblE9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi9
+            // 
+            this.lblMi9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi9.Location = new System.Drawing.Point(368, 519);
+            this.lblMi9.Name = "lblMi9";
+            this.lblMi9.Size = new System.Drawing.Size(60, 35);
+            this.lblMi9.TabIndex = 104;
+            this.lblMi9.Text = "999";
+            this.lblMi9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM9
+            // 
+            this.lblM9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM9.Location = new System.Drawing.Point(284, 518);
+            this.lblM9.Name = "lblM9";
+            this.lblM9.Size = new System.Drawing.Size(60, 35);
+            this.lblM9.TabIndex = 103;
+            this.lblM9.Text = "999";
+            this.lblM9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp9
+            // 
+            this.lblSp9.BackColor = System.Drawing.Color.Teal;
+            this.lblSp9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp9.ForeColor = System.Drawing.Color.White;
+            this.lblSp9.Location = new System.Drawing.Point(522, 519);
+            this.lblSp9.Name = "lblSp9";
+            this.lblSp9.Size = new System.Drawing.Size(60, 35);
+            this.lblSp9.TabIndex = 106;
+            this.lblSp9.Text = "999";
+            this.lblSp9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR9
+            // 
+            this.lblR9.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR9.ForeColor = System.Drawing.Color.White;
+            this.lblR9.Location = new System.Drawing.Point(598, 519);
+            this.lblR9.Name = "lblR9";
+            this.lblR9.Size = new System.Drawing.Size(60, 35);
+            this.lblR9.TabIndex = 107;
+            this.lblR9.Text = "999";
+            this.lblR9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl9
+            // 
+            this.lbl9.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl9.Location = new System.Drawing.Point(123, 518);
+            this.lbl9.Name = "lbl9";
+            this.lbl9.Size = new System.Drawing.Size(129, 35);
+            this.lbl9.TabIndex = 102;
+            this.lbl9.Text = "label1";
+            this.lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE8
+            // 
+            this.lblE8.BackColor = System.Drawing.Color.Navy;
+            this.lblE8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE8.ForeColor = System.Drawing.Color.White;
+            this.lblE8.Location = new System.Drawing.Point(444, 469);
+            this.lblE8.Name = "lblE8";
+            this.lblE8.Size = new System.Drawing.Size(60, 35);
+            this.lblE8.TabIndex = 99;
+            this.lblE8.Text = "999";
+            this.lblE8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi8
+            // 
+            this.lblMi8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi8.Location = new System.Drawing.Point(368, 469);
+            this.lblMi8.Name = "lblMi8";
+            this.lblMi8.Size = new System.Drawing.Size(60, 35);
+            this.lblMi8.TabIndex = 98;
+            this.lblMi8.Text = "999";
+            this.lblMi8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM8
+            // 
+            this.lblM8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM8.Location = new System.Drawing.Point(284, 468);
+            this.lblM8.Name = "lblM8";
+            this.lblM8.Size = new System.Drawing.Size(60, 35);
+            this.lblM8.TabIndex = 97;
+            this.lblM8.Text = "999";
+            this.lblM8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp8
+            // 
+            this.lblSp8.BackColor = System.Drawing.Color.Teal;
+            this.lblSp8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp8.ForeColor = System.Drawing.Color.White;
+            this.lblSp8.Location = new System.Drawing.Point(522, 469);
+            this.lblSp8.Name = "lblSp8";
+            this.lblSp8.Size = new System.Drawing.Size(60, 35);
+            this.lblSp8.TabIndex = 100;
+            this.lblSp8.Text = "999";
+            this.lblSp8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR8
+            // 
+            this.lblR8.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR8.ForeColor = System.Drawing.Color.White;
+            this.lblR8.Location = new System.Drawing.Point(598, 469);
+            this.lblR8.Name = "lblR8";
+            this.lblR8.Size = new System.Drawing.Size(60, 35);
+            this.lblR8.TabIndex = 101;
+            this.lblR8.Text = "999";
+            this.lblR8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl8
+            // 
+            this.lbl8.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl8.Location = new System.Drawing.Point(123, 468);
+            this.lbl8.Name = "lbl8";
+            this.lbl8.Size = new System.Drawing.Size(129, 35);
+            this.lbl8.TabIndex = 96;
+            this.lbl8.Text = "label1";
+            this.lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE7
+            // 
+            this.lblE7.BackColor = System.Drawing.Color.Navy;
+            this.lblE7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE7.ForeColor = System.Drawing.Color.White;
+            this.lblE7.Location = new System.Drawing.Point(444, 421);
+            this.lblE7.Name = "lblE7";
+            this.lblE7.Size = new System.Drawing.Size(60, 35);
+            this.lblE7.TabIndex = 93;
+            this.lblE7.Text = "999";
+            this.lblE7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblMi7
+            // 
+            this.lblMi7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi7.Location = new System.Drawing.Point(368, 421);
+            this.lblMi7.Name = "lblMi7";
+            this.lblMi7.Size = new System.Drawing.Size(60, 35);
+            this.lblMi7.TabIndex = 92;
+            this.lblMi7.Text = "999";
+            this.lblMi7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblM7
+            // 
+            this.lblM7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM7.Location = new System.Drawing.Point(284, 420);
+            this.lblM7.Name = "lblM7";
+            this.lblM7.Size = new System.Drawing.Size(60, 35);
+            this.lblM7.TabIndex = 91;
+            this.lblM7.Text = "999";
+            this.lblM7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSp7
+            // 
+            this.lblSp7.BackColor = System.Drawing.Color.Teal;
+            this.lblSp7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp7.ForeColor = System.Drawing.Color.White;
+            this.lblSp7.Location = new System.Drawing.Point(522, 421);
+            this.lblSp7.Name = "lblSp7";
+            this.lblSp7.Size = new System.Drawing.Size(60, 35);
+            this.lblSp7.TabIndex = 94;
+            this.lblSp7.Text = "999";
+            this.lblSp7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblR7
+            // 
+            this.lblR7.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR7.ForeColor = System.Drawing.Color.White;
+            this.lblR7.Location = new System.Drawing.Point(598, 421);
+            this.lblR7.Name = "lblR7";
+            this.lblR7.Size = new System.Drawing.Size(60, 35);
+            this.lblR7.TabIndex = 95;
+            this.lblR7.Text = "999";
+            this.lblR7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl7
+            // 
+            this.lbl7.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl7.Location = new System.Drawing.Point(123, 420);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(129, 35);
+            this.lbl7.TabIndex = 90;
+            this.lbl7.Text = "label1";
+            this.lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE6
+            // 
+            this.lblE6.BackColor = System.Drawing.Color.Navy;
+            this.lblE6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE6.ForeColor = System.Drawing.Color.White;
+            this.lblE6.Location = new System.Drawing.Point(444, 374);
+            this.lblE6.Name = "lblE6";
+            this.lblE6.Size = new System.Drawing.Size(60, 35);
+            this.lblE6.TabIndex = 87;
+            this.lblE6.Text = "999";
+            this.lblE6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblE6.Click += new System.EventHandler(this.lblE6_Click);
+            // 
+            // lblMi6
+            // 
+            this.lblMi6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi6.Location = new System.Drawing.Point(368, 374);
+            this.lblMi6.Name = "lblMi6";
+            this.lblMi6.Size = new System.Drawing.Size(60, 35);
+            this.lblMi6.TabIndex = 86;
+            this.lblMi6.Text = "999";
+            this.lblMi6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMi6.Click += new System.EventHandler(this.lblMi6_Click);
+            // 
+            // lblM6
+            // 
+            this.lblM6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM6.Location = new System.Drawing.Point(284, 373);
+            this.lblM6.Name = "lblM6";
+            this.lblM6.Size = new System.Drawing.Size(60, 35);
+            this.lblM6.TabIndex = 85;
+            this.lblM6.Text = "999";
+            this.lblM6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblM6.Click += new System.EventHandler(this.lblM6_Click);
+            // 
+            // lblSp6
+            // 
+            this.lblSp6.BackColor = System.Drawing.Color.Teal;
+            this.lblSp6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp6.ForeColor = System.Drawing.Color.White;
+            this.lblSp6.Location = new System.Drawing.Point(522, 374);
+            this.lblSp6.Name = "lblSp6";
+            this.lblSp6.Size = new System.Drawing.Size(60, 35);
+            this.lblSp6.TabIndex = 88;
+            this.lblSp6.Text = "999";
+            this.lblSp6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSp6.Click += new System.EventHandler(this.lblSp6_Click);
+            // 
+            // lblR6
+            // 
+            this.lblR6.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR6.ForeColor = System.Drawing.Color.White;
+            this.lblR6.Location = new System.Drawing.Point(598, 374);
+            this.lblR6.Name = "lblR6";
+            this.lblR6.Size = new System.Drawing.Size(60, 35);
+            this.lblR6.TabIndex = 89;
+            this.lblR6.Text = "999";
+            this.lblR6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl6
+            // 
+            this.lbl6.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl6.Location = new System.Drawing.Point(123, 373);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(129, 35);
+            this.lbl6.TabIndex = 84;
+            this.lbl6.Text = "label1";
+            this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE5
+            // 
+            this.lblE5.BackColor = System.Drawing.Color.Navy;
+            this.lblE5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE5.ForeColor = System.Drawing.Color.White;
+            this.lblE5.Location = new System.Drawing.Point(444, 322);
+            this.lblE5.Name = "lblE5";
+            this.lblE5.Size = new System.Drawing.Size(60, 35);
+            this.lblE5.TabIndex = 81;
+            this.lblE5.Text = "999";
+            this.lblE5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblE5.Click += new System.EventHandler(this.lblE5_Click);
+            // 
+            // lblMi5
+            // 
+            this.lblMi5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi5.Location = new System.Drawing.Point(368, 322);
+            this.lblMi5.Name = "lblMi5";
+            this.lblMi5.Size = new System.Drawing.Size(60, 35);
+            this.lblMi5.TabIndex = 80;
+            this.lblMi5.Text = "999";
+            this.lblMi5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMi5.Click += new System.EventHandler(this.lblMi5_Click);
+            // 
+            // lblM5
+            // 
+            this.lblM5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM5.Location = new System.Drawing.Point(284, 321);
+            this.lblM5.Name = "lblM5";
+            this.lblM5.Size = new System.Drawing.Size(60, 35);
+            this.lblM5.TabIndex = 79;
+            this.lblM5.Text = "999";
+            this.lblM5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblM5.Click += new System.EventHandler(this.lblM5_Click);
+            // 
+            // lblSp5
+            // 
+            this.lblSp5.BackColor = System.Drawing.Color.Teal;
+            this.lblSp5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp5.ForeColor = System.Drawing.Color.White;
+            this.lblSp5.Location = new System.Drawing.Point(522, 322);
+            this.lblSp5.Name = "lblSp5";
+            this.lblSp5.Size = new System.Drawing.Size(60, 35);
+            this.lblSp5.TabIndex = 82;
+            this.lblSp5.Text = "999";
+            this.lblSp5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSp5.Click += new System.EventHandler(this.lblSp5_Click);
+            // 
+            // lblR5
+            // 
+            this.lblR5.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR5.ForeColor = System.Drawing.Color.White;
+            this.lblR5.Location = new System.Drawing.Point(598, 322);
+            this.lblR5.Name = "lblR5";
+            this.lblR5.Size = new System.Drawing.Size(60, 35);
+            this.lblR5.TabIndex = 83;
+            this.lblR5.Text = "999";
+            this.lblR5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblR5.Click += new System.EventHandler(this.lblR5_Click);
+            // 
+            // lbl5
+            // 
+            this.lbl5.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl5.Location = new System.Drawing.Point(123, 321);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(129, 35);
+            this.lbl5.TabIndex = 78;
+            this.lbl5.Text = "label1";
+            this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE4
+            // 
+            this.lblE4.BackColor = System.Drawing.Color.Navy;
+            this.lblE4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE4.ForeColor = System.Drawing.Color.White;
+            this.lblE4.Location = new System.Drawing.Point(444, 269);
+            this.lblE4.Name = "lblE4";
+            this.lblE4.Size = new System.Drawing.Size(60, 35);
+            this.lblE4.TabIndex = 75;
+            this.lblE4.Text = "999";
+            this.lblE4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblE4.Click += new System.EventHandler(this.lblE4_Click);
+            // 
+            // lblMi4
+            // 
+            this.lblMi4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi4.Location = new System.Drawing.Point(368, 269);
+            this.lblMi4.Name = "lblMi4";
+            this.lblMi4.Size = new System.Drawing.Size(60, 35);
+            this.lblMi4.TabIndex = 74;
+            this.lblMi4.Text = "999";
+            this.lblMi4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMi4.Click += new System.EventHandler(this.lblMi4_Click);
+            // 
+            // lblM4
+            // 
+            this.lblM4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM4.Location = new System.Drawing.Point(284, 268);
+            this.lblM4.Name = "lblM4";
+            this.lblM4.Size = new System.Drawing.Size(60, 35);
+            this.lblM4.TabIndex = 73;
+            this.lblM4.Text = "999";
+            this.lblM4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblM4.Click += new System.EventHandler(this.lblM4_Click);
+            // 
+            // lblSp4
+            // 
+            this.lblSp4.BackColor = System.Drawing.Color.Teal;
+            this.lblSp4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp4.ForeColor = System.Drawing.Color.White;
+            this.lblSp4.Location = new System.Drawing.Point(522, 269);
+            this.lblSp4.Name = "lblSp4";
+            this.lblSp4.Size = new System.Drawing.Size(60, 35);
+            this.lblSp4.TabIndex = 76;
+            this.lblSp4.Text = "999";
+            this.lblSp4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSp4.Click += new System.EventHandler(this.lblSp4_Click);
+            // 
+            // lblR4
+            // 
+            this.lblR4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR4.ForeColor = System.Drawing.Color.White;
+            this.lblR4.Location = new System.Drawing.Point(598, 269);
+            this.lblR4.Name = "lblR4";
+            this.lblR4.Size = new System.Drawing.Size(60, 35);
+            this.lblR4.TabIndex = 77;
+            this.lblR4.Text = "999";
+            this.lblR4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblR4.Click += new System.EventHandler(this.lblR4_Click);
+            // 
+            // lbl4
+            // 
+            this.lbl4.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl4.Location = new System.Drawing.Point(123, 268);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(129, 35);
+            this.lbl4.TabIndex = 72;
+            this.lbl4.Text = "label1";
+            this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE3
+            // 
+            this.lblE3.BackColor = System.Drawing.Color.Navy;
+            this.lblE3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE3.ForeColor = System.Drawing.Color.White;
+            this.lblE3.Location = new System.Drawing.Point(444, 219);
+            this.lblE3.Name = "lblE3";
+            this.lblE3.Size = new System.Drawing.Size(60, 35);
+            this.lblE3.TabIndex = 69;
+            this.lblE3.Text = "999";
+            this.lblE3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblE3.Click += new System.EventHandler(this.lblE3_Click);
+            // 
+            // lblMi3
+            // 
+            this.lblMi3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi3.Location = new System.Drawing.Point(368, 219);
+            this.lblMi3.Name = "lblMi3";
+            this.lblMi3.Size = new System.Drawing.Size(60, 35);
+            this.lblMi3.TabIndex = 68;
+            this.lblMi3.Text = "999";
+            this.lblMi3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMi3.Click += new System.EventHandler(this.lblMi3_Click);
+            // 
+            // lblM3
+            // 
+            this.lblM3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM3.Location = new System.Drawing.Point(284, 218);
+            this.lblM3.Name = "lblM3";
+            this.lblM3.Size = new System.Drawing.Size(60, 35);
+            this.lblM3.TabIndex = 67;
+            this.lblM3.Text = "999";
+            this.lblM3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblM3.Click += new System.EventHandler(this.lblM3_Click);
+            // 
+            // lblSp3
+            // 
+            this.lblSp3.BackColor = System.Drawing.Color.Teal;
+            this.lblSp3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp3.ForeColor = System.Drawing.Color.White;
+            this.lblSp3.Location = new System.Drawing.Point(522, 219);
+            this.lblSp3.Name = "lblSp3";
+            this.lblSp3.Size = new System.Drawing.Size(60, 35);
+            this.lblSp3.TabIndex = 70;
+            this.lblSp3.Text = "999";
+            this.lblSp3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSp3.Click += new System.EventHandler(this.lblSp3_Click);
+            // 
+            // lblR3
+            // 
+            this.lblR3.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR3.ForeColor = System.Drawing.Color.White;
+            this.lblR3.Location = new System.Drawing.Point(598, 219);
+            this.lblR3.Name = "lblR3";
+            this.lblR3.Size = new System.Drawing.Size(60, 35);
+            this.lblR3.TabIndex = 71;
+            this.lblR3.Text = "999";
+            this.lblR3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblR3.Click += new System.EventHandler(this.lblR3_Click);
+            // 
+            // lbl3
+            // 
+            this.lbl3.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl3.Location = new System.Drawing.Point(123, 218);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(129, 35);
+            this.lbl3.TabIndex = 66;
+            this.lbl3.Text = "label1";
+            this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE2
+            // 
+            this.lblE2.BackColor = System.Drawing.Color.Navy;
+            this.lblE2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE2.ForeColor = System.Drawing.Color.White;
+            this.lblE2.Location = new System.Drawing.Point(444, 171);
+            this.lblE2.Name = "lblE2";
+            this.lblE2.Size = new System.Drawing.Size(60, 35);
+            this.lblE2.TabIndex = 63;
+            this.lblE2.Text = "999";
+            this.lblE2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblE2.Click += new System.EventHandler(this.lblE2_Click);
+            // 
+            // lblMi2
+            // 
+            this.lblMi2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi2.Location = new System.Drawing.Point(368, 171);
+            this.lblMi2.Name = "lblMi2";
+            this.lblMi2.Size = new System.Drawing.Size(60, 35);
+            this.lblMi2.TabIndex = 62;
+            this.lblMi2.Text = "999";
+            this.lblMi2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMi2.Click += new System.EventHandler(this.lblMi2_Click);
+            // 
+            // lblM2
+            // 
+            this.lblM2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM2.Location = new System.Drawing.Point(284, 170);
+            this.lblM2.Name = "lblM2";
+            this.lblM2.Size = new System.Drawing.Size(60, 35);
+            this.lblM2.TabIndex = 61;
+            this.lblM2.Text = "999";
+            this.lblM2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblM2.Click += new System.EventHandler(this.lblM2_Click);
+            // 
+            // lblSp2
+            // 
+            this.lblSp2.BackColor = System.Drawing.Color.Teal;
+            this.lblSp2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp2.ForeColor = System.Drawing.Color.White;
+            this.lblSp2.Location = new System.Drawing.Point(522, 171);
+            this.lblSp2.Name = "lblSp2";
+            this.lblSp2.Size = new System.Drawing.Size(60, 35);
+            this.lblSp2.TabIndex = 64;
+            this.lblSp2.Text = "999";
+            this.lblSp2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSp2.Click += new System.EventHandler(this.lblSp2_Click);
+            // 
+            // lblR2
+            // 
+            this.lblR2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR2.ForeColor = System.Drawing.Color.White;
+            this.lblR2.Location = new System.Drawing.Point(598, 171);
+            this.lblR2.Name = "lblR2";
+            this.lblR2.Size = new System.Drawing.Size(60, 35);
+            this.lblR2.TabIndex = 65;
+            this.lblR2.Text = "999";
+            this.lblR2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblR2.Click += new System.EventHandler(this.lblR2_Click);
+            // 
+            // lbl2
+            // 
+            this.lbl2.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl2.Location = new System.Drawing.Point(123, 170);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(129, 35);
+            this.lbl2.TabIndex = 60;
+            this.lbl2.Text = "label1";
+            this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblE1
+            // 
+            this.lblE1.BackColor = System.Drawing.Color.Navy;
+            this.lblE1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblE1.ForeColor = System.Drawing.Color.White;
+            this.lblE1.Location = new System.Drawing.Point(444, 124);
+            this.lblE1.Name = "lblE1";
+            this.lblE1.Size = new System.Drawing.Size(60, 35);
+            this.lblE1.TabIndex = 57;
+            this.lblE1.Text = "999";
+            this.lblE1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblE1.Click += new System.EventHandler(this.lblE1_Click);
+            // 
+            // lblMi1
+            // 
+            this.lblMi1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblMi1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblMi1.Location = new System.Drawing.Point(368, 124);
+            this.lblMi1.Name = "lblMi1";
+            this.lblMi1.Size = new System.Drawing.Size(60, 35);
+            this.lblMi1.TabIndex = 56;
+            this.lblMi1.Text = "999";
+            this.lblMi1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMi1.Click += new System.EventHandler(this.lblMi1_Click);
+            // 
+            // lblM1
+            // 
+            this.lblM1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lblM1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblM1.Location = new System.Drawing.Point(284, 123);
+            this.lblM1.Name = "lblM1";
+            this.lblM1.Size = new System.Drawing.Size(60, 35);
+            this.lblM1.TabIndex = 55;
+            this.lblM1.Text = "999";
+            this.lblM1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblM1.Click += new System.EventHandler(this.lblM1_Click);
+            // 
+            // lblSp1
+            // 
+            this.lblSp1.BackColor = System.Drawing.Color.Teal;
+            this.lblSp1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblSp1.ForeColor = System.Drawing.Color.White;
+            this.lblSp1.Location = new System.Drawing.Point(522, 124);
+            this.lblSp1.Name = "lblSp1";
+            this.lblSp1.Size = new System.Drawing.Size(60, 35);
+            this.lblSp1.TabIndex = 58;
+            this.lblSp1.Text = "999";
+            this.lblSp1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSp1.Click += new System.EventHandler(this.lblSp1_Click);
+            // 
+            // lblR1
+            // 
+            this.lblR1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.lblR1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblR1.ForeColor = System.Drawing.Color.White;
+            this.lblR1.Location = new System.Drawing.Point(598, 124);
+            this.lblR1.Name = "lblR1";
+            this.lblR1.Size = new System.Drawing.Size(60, 35);
+            this.lblR1.TabIndex = 59;
+            this.lblR1.Text = "999";
+            this.lblR1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblR1.Click += new System.EventHandler(this.lblR1_Click);
+            // 
+            // lbl1
+            // 
+            this.lbl1.BackColor = System.Drawing.Color.LimeGreen;
+            this.lbl1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl1.Location = new System.Drawing.Point(123, 123);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(129, 35);
+            this.lbl1.TabIndex = 1;
+            this.lbl1.Text = "label1";
+            this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // listView1
+            // 
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listView1.Location = new System.Drawing.Point(712, 124);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(127, 482);
+            this.listView1.TabIndex = 179;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
+            this.listView1.Visible = false;
+            // 
+            // lblNameStatus
+            // 
+            this.lblNameStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblNameStatus.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameStatus.Location = new System.Drawing.Point(695, 48);
+            this.lblNameStatus.Name = "lblNameStatus";
+            this.lblNameStatus.Size = new System.Drawing.Size(164, 59);
+            this.lblNameStatus.TabIndex = 180;
+            this.lblNameStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNameStatus.Click += new System.EventHandler(this.lblNameStatus_Click);
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1194,15 +2922,16 @@
             this.BackgroundImage = global::ManegeShift.Resource1.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(898, 708);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblCountStaff);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.Name = "Info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Info";
@@ -1211,6 +2940,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1296,5 +3026,131 @@
         private System.Windows.Forms.ComboBox cmbEndMonth;
         private System.Windows.Forms.ComboBox cmbEndYear;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label lblE1;
+        private System.Windows.Forms.Label lblMi1;
+        private System.Windows.Forms.Label lblM1;
+        private System.Windows.Forms.Label lblSp1;
+        private System.Windows.Forms.Label lblR1;
+        private System.Windows.Forms.Label lblE20;
+        private System.Windows.Forms.Label lblMi20;
+        private System.Windows.Forms.Label lblM20;
+        private System.Windows.Forms.Label lblSp20;
+        private System.Windows.Forms.Label lblR20;
+        private System.Windows.Forms.Label lbl20;
+        private System.Windows.Forms.Label lblE19;
+        private System.Windows.Forms.Label lblMi19;
+        private System.Windows.Forms.Label lblM19;
+        private System.Windows.Forms.Label lblSp19;
+        private System.Windows.Forms.Label lblR19;
+        private System.Windows.Forms.Label lbl19;
+        private System.Windows.Forms.Label lblE18;
+        private System.Windows.Forms.Label lblMi18;
+        private System.Windows.Forms.Label lblM18;
+        private System.Windows.Forms.Label lblSp18;
+        private System.Windows.Forms.Label lblR18;
+        private System.Windows.Forms.Label lbl18;
+        private System.Windows.Forms.Label lblE17;
+        private System.Windows.Forms.Label lblMi17;
+        private System.Windows.Forms.Label lblM17;
+        private System.Windows.Forms.Label lblSp17;
+        private System.Windows.Forms.Label lblR17;
+        private System.Windows.Forms.Label lbl17;
+        private System.Windows.Forms.Label lblE16;
+        private System.Windows.Forms.Label lblMi16;
+        private System.Windows.Forms.Label lblM16;
+        private System.Windows.Forms.Label lblSp16;
+        private System.Windows.Forms.Label lblR16;
+        private System.Windows.Forms.Label lbl16;
+        private System.Windows.Forms.Label lblE15;
+        private System.Windows.Forms.Label lblMi15;
+        private System.Windows.Forms.Label lblM15;
+        private System.Windows.Forms.Label lblSp15;
+        private System.Windows.Forms.Label lblR15;
+        private System.Windows.Forms.Label lbl15;
+        private System.Windows.Forms.Label lblE14;
+        private System.Windows.Forms.Label lblMi14;
+        private System.Windows.Forms.Label lblM14;
+        private System.Windows.Forms.Label lblSp14;
+        private System.Windows.Forms.Label lblR14;
+        private System.Windows.Forms.Label lbl14;
+        private System.Windows.Forms.Label lblE13;
+        private System.Windows.Forms.Label lblMi13;
+        private System.Windows.Forms.Label lblM13;
+        private System.Windows.Forms.Label lblSp13;
+        private System.Windows.Forms.Label lblR13;
+        private System.Windows.Forms.Label lbl13;
+        private System.Windows.Forms.Label lblE12;
+        private System.Windows.Forms.Label lblMi12;
+        private System.Windows.Forms.Label lblM12;
+        private System.Windows.Forms.Label lblSp12;
+        private System.Windows.Forms.Label lblR12;
+        private System.Windows.Forms.Label lbl12;
+        private System.Windows.Forms.Label lblE11;
+        private System.Windows.Forms.Label lblMi11;
+        private System.Windows.Forms.Label lblM11;
+        private System.Windows.Forms.Label lblSp11;
+        private System.Windows.Forms.Label lblR11;
+        private System.Windows.Forms.Label lbl11;
+        private System.Windows.Forms.Label lblE10;
+        private System.Windows.Forms.Label lblMi10;
+        private System.Windows.Forms.Label lblM10;
+        private System.Windows.Forms.Label lblSp10;
+        private System.Windows.Forms.Label lblR10;
+        private System.Windows.Forms.Label lbl10;
+        private System.Windows.Forms.Label lblE9;
+        private System.Windows.Forms.Label lblMi9;
+        private System.Windows.Forms.Label lblM9;
+        private System.Windows.Forms.Label lblSp9;
+        private System.Windows.Forms.Label lblR9;
+        private System.Windows.Forms.Label lbl9;
+        private System.Windows.Forms.Label lblE8;
+        private System.Windows.Forms.Label lblMi8;
+        private System.Windows.Forms.Label lblM8;
+        private System.Windows.Forms.Label lblSp8;
+        private System.Windows.Forms.Label lblR8;
+        private System.Windows.Forms.Label lbl8;
+        private System.Windows.Forms.Label lblE7;
+        private System.Windows.Forms.Label lblMi7;
+        private System.Windows.Forms.Label lblM7;
+        private System.Windows.Forms.Label lblSp7;
+        private System.Windows.Forms.Label lblR7;
+        private System.Windows.Forms.Label lbl7;
+        private System.Windows.Forms.Label lblE6;
+        private System.Windows.Forms.Label lblMi6;
+        private System.Windows.Forms.Label lblM6;
+        private System.Windows.Forms.Label lblSp6;
+        private System.Windows.Forms.Label lblR6;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.Label lblE5;
+        private System.Windows.Forms.Label lblMi5;
+        private System.Windows.Forms.Label lblM5;
+        private System.Windows.Forms.Label lblSp5;
+        private System.Windows.Forms.Label lblR5;
+        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.Label lblE4;
+        private System.Windows.Forms.Label lblMi4;
+        private System.Windows.Forms.Label lblM4;
+        private System.Windows.Forms.Label lblSp4;
+        private System.Windows.Forms.Label lblR4;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lblE3;
+        private System.Windows.Forms.Label lblMi3;
+        private System.Windows.Forms.Label lblM3;
+        private System.Windows.Forms.Label lblSp3;
+        private System.Windows.Forms.Label lblR3;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lblE2;
+        private System.Windows.Forms.Label lblMi2;
+        private System.Windows.Forms.Label lblM2;
+        private System.Windows.Forms.Label lblSp2;
+        private System.Windows.Forms.Label lblR2;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lblDateToDate;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Label lblNameStatus;
     }
 }

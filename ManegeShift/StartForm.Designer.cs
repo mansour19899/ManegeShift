@@ -59,6 +59,7 @@
             this.btnSetWeek = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -70,7 +71,7 @@
             this.btnWeek.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWeek.FlatAppearance.BorderSize = 0;
             this.btnWeek.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWeek.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWeek.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.btnWeek.Location = new System.Drawing.Point(211, 225);
             this.btnWeek.Margin = new System.Windows.Forms.Padding(2);
             this.btnWeek.Name = "btnWeek";
@@ -87,7 +88,7 @@
             this.btnDay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDay.FlatAppearance.BorderSize = 0;
             this.btnDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDay.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDay.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.btnDay.Location = new System.Drawing.Point(451, 225);
             this.btnDay.Margin = new System.Windows.Forms.Padding(2);
             this.btnDay.Name = "btnDay";
@@ -113,7 +114,7 @@
             this.panel1.Controls.Add(this.cmbMonthStart);
             this.panel1.Controls.Add(this.cmbYearStart);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(211, 165);
+            this.panel1.Location = new System.Drawing.Point(182, 179);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(506, 249);
             this.panel1.TabIndex = 3;
@@ -127,7 +128,7 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(201, 160);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
@@ -140,8 +141,8 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(36, 85);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(53, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 49);
             this.label3.TabIndex = 73;
@@ -236,8 +237,8 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 22);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(53, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(93, 49);
             this.label2.TabIndex = 67;
@@ -333,7 +334,7 @@
             // lblDateShamsi
             // 
             this.lblDateShamsi.BackColor = System.Drawing.Color.Transparent;
-            this.lblDateShamsi.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateShamsi.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateShamsi.Location = new System.Drawing.Point(316, 9);
             this.lblDateShamsi.Name = "lblDateShamsi";
             this.lblDateShamsi.Size = new System.Drawing.Size(242, 49);
@@ -344,7 +345,7 @@
             // lblDateDay
             // 
             this.lblDateDay.BackColor = System.Drawing.Color.Transparent;
-            this.lblDateDay.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateDay.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateDay.Location = new System.Drawing.Point(651, 9);
             this.lblDateDay.Name = "lblDateDay";
             this.lblDateDay.Size = new System.Drawing.Size(242, 49);
@@ -355,7 +356,7 @@
             // lblDateMiladi
             // 
             this.lblDateMiladi.BackColor = System.Drawing.Color.Transparent;
-            this.lblDateMiladi.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateMiladi.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateMiladi.Location = new System.Drawing.Point(-1, 9);
             this.lblDateMiladi.Name = "lblDateMiladi";
             this.lblDateMiladi.Size = new System.Drawing.Size(242, 49);
@@ -373,7 +374,7 @@
             this.panel2.Controls.Add(this.cmbMonth);
             this.panel2.Controls.Add(this.cmbYear);
             this.panel2.Controls.Add(this.label12);
-            this.panel2.Location = new System.Drawing.Point(211, 165);
+            this.panel2.Location = new System.Drawing.Point(182, 178);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(506, 249);
             this.panel2.TabIndex = 67;
@@ -386,7 +387,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(196, 90);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
@@ -509,7 +510,7 @@
             this.btnSetWeek.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSetWeek.FlatAppearance.BorderSize = 0;
             this.btnSetWeek.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetWeek.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetWeek.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetWeek.Location = new System.Drawing.Point(21, 603);
             this.btnSetWeek.Margin = new System.Windows.Forms.Padding(2);
             this.btnSetWeek.Name = "btnSetWeek";
@@ -538,7 +539,7 @@
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(211, 603);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
@@ -548,6 +549,23 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.DarkGreen;
+            this.button4.BackgroundImage = global::ManegeShift.Resource1.pi78y9qbT;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(397, 603);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(161, 70);
+            this.button4.TabIndex = 76;
+            this.button4.Text = "Calendar";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -555,6 +573,7 @@
             this.BackgroundImage = global::ManegeShift.Resource1.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(898, 708);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnSetWeek);
@@ -610,5 +629,6 @@
         private System.Windows.Forms.Button btnSetWeek;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

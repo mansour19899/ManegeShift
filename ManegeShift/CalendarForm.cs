@@ -123,6 +123,10 @@ namespace ManegeShift
             {
                 MessageBox.Show(" It is impossible");
             }
+            else if(Date.CompareTo(DateTime.Today.AddDays(-7)) ==-1)
+            {
+                MessageBox.Show(" It is impossible");
+            }
             else
             {
                 Form1 frm = new Form1(Date);
@@ -286,6 +290,16 @@ namespace ManegeShift
         private void lbl31_Click(object sender, EventArgs e)
         {
             CreateShift(lbl31);
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -129,5 +129,27 @@ namespace ManegeShift
                 return false;
         }
 
+        public static List<string> ReturnDaysOfMonth(this string persianDate)
+        {
+            List<string> listDays = new List<string>() {"01","02","03","04","05","06","07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"
+            ,"20","21", "22", "23", "24", "25", "26", "27", "28", "29"};
+            var month = persianDate.Substring(5,2);
+            if (month.CompareTo("07") < 0)
+            {
+                listDays.Add("30");
+                listDays.Add("31");
+            }
+            else
+            {
+                listDays.Add("30");
+            }
+            if (!persianDate.IsKabiseh() & month.CompareTo("12") == 0)
+            {
+                listDays.RemoveAt(29);
+            }
+
+            return listDays;
+        }
+
     }
 }

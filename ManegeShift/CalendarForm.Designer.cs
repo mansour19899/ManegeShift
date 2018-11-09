@@ -62,6 +62,8 @@
             this.cmbStartMonth = new System.Windows.Forms.ComboBox();
             this.cmbStartYear = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl1
@@ -487,6 +489,27 @@
             this.label19.Text = "/";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(670, 650);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(211, 61);
+            this.label10.TabIndex = 89;
+            this.label10.Text = "Hyper Star";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(689, 540);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(181, 159);
+            this.label8.TabIndex = 90;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // CalendarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -494,6 +517,7 @@
             this.BackgroundImage = global::ManegeShift.Resource1.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(898, 708);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.cmbStartMonth);
             this.Controls.Add(this.cmbStartYear);
             this.Controls.Add(this.label19);
@@ -528,6 +552,7 @@
             this.Controls.Add(this.lbl3);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.label8);
             this.Name = "CalendarForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalendarForm";
@@ -572,5 +597,7 @@
         private System.Windows.Forms.ComboBox cmbStartMonth;
         private System.Windows.Forms.ComboBox cmbStartYear;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label8;
     }
 }

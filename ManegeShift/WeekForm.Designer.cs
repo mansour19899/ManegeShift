@@ -46,7 +46,7 @@
             this.btnSaturday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSaturday.FlatAppearance.BorderSize = 0;
             this.btnSaturday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaturday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaturday.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaturday.Location = new System.Drawing.Point(65, 19);
             this.btnSaturday.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaturday.Name = "btnSaturday";
@@ -63,7 +63,7 @@
             this.btnSunday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSunday.FlatAppearance.BorderSize = 0;
             this.btnSunday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSunday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSunday.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSunday.Location = new System.Drawing.Point(65, 118);
             this.btnSunday.Margin = new System.Windows.Forms.Padding(2);
             this.btnSunday.Name = "btnSunday";
@@ -80,7 +80,7 @@
             this.btnMonday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMonday.FlatAppearance.BorderSize = 0;
             this.btnMonday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMonday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMonday.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMonday.Location = new System.Drawing.Point(65, 213);
             this.btnMonday.Margin = new System.Windows.Forms.Padding(2);
             this.btnMonday.Name = "btnMonday";
@@ -97,7 +97,7 @@
             this.btnTuesday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTuesday.FlatAppearance.BorderSize = 0;
             this.btnTuesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTuesday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuesday.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTuesday.Location = new System.Drawing.Point(65, 314);
             this.btnTuesday.Margin = new System.Windows.Forms.Padding(2);
             this.btnTuesday.Name = "btnTuesday";
@@ -114,13 +114,13 @@
             this.btnWednesday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnWednesday.FlatAppearance.BorderSize = 0;
             this.btnWednesday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWednesday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWednesday.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWednesday.Location = new System.Drawing.Point(65, 409);
             this.btnWednesday.Margin = new System.Windows.Forms.Padding(2);
             this.btnWednesday.Name = "btnWednesday";
             this.btnWednesday.Size = new System.Drawing.Size(154, 76);
             this.btnWednesday.TabIndex = 4;
-            this.btnWednesday.Text = "Wednesday";
+            this.btnWednesday.Text = "  Wednesday";
             this.btnWednesday.UseVisualStyleBackColor = false;
             this.btnWednesday.Click += new System.EventHandler(this.btnWednesday_Click);
             // 
@@ -131,7 +131,7 @@
             this.btnThursday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnThursday.FlatAppearance.BorderSize = 0;
             this.btnThursday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThursday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThursday.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThursday.Location = new System.Drawing.Point(65, 509);
             this.btnThursday.Margin = new System.Windows.Forms.Padding(2);
             this.btnThursday.Name = "btnThursday";
@@ -148,7 +148,7 @@
             this.btnFriday.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFriday.FlatAppearance.BorderSize = 0;
             this.btnFriday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFriday.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFriday.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFriday.Location = new System.Drawing.Point(65, 603);
             this.btnFriday.Margin = new System.Windows.Forms.Padding(2);
             this.btnFriday.Name = "btnFriday";
