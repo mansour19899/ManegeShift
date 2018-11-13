@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ServiceProcess;
 
 namespace ManegeShift
 {
@@ -125,42 +126,86 @@ namespace ManegeShift
 
         private void StartForm_Load(object sender, EventArgs e)
         {
-            lblDateShamsi.Text = Today.ToPersianDateString();
-            lblDateDay.Text = Today.DayOfWeek.ToString();
-            lblDateMiladi.Text = Today.Year.ToString() + "/" + Today.Month.ToString() + "/" + Today.Day.ToString();
 
-            cmbYearStart.Items.Add(YearStart);
-            cmbYearEnd.Items.Add(YearStart);
-            cmbYear.Items.Add(YearStart);
-            if(YearStart!=YearEnd)
+           if(CheckRunSql())
             {
-                cmbYearStart.Items.Add(YearEnd);
-                cmbYearEnd.Items.Add(YearEnd);
-                cmbYear.Items.Add(YearEnd);
-            }
+                lblDateShamsi.Text = Today.ToPersianDateString();
+                lblDateDay.Text = Today.DayOfWeek.ToString();
+                lblDateMiladi.Text = Today.Year.ToString() + "/" + Today.Month.ToString() + "/" + Today.Day.ToString();
 
-            cmbMonthStart.Items.Add(MonthStart);
-            cmbMonthEnd.Items.Add(MonthStart);
-            cmbMonth.Items.Add(MonthStart);
-            if (MonthStart!=MonthEnd)
+                cmbYearStart.Items.Add(YearStart);
+                cmbYearEnd.Items.Add(YearStart);
+                cmbYear.Items.Add(YearStart);
+                if (YearStart != YearEnd)
+                {
+                    cmbYearStart.Items.Add(YearEnd);
+                    cmbYearEnd.Items.Add(YearEnd);
+                    cmbYear.Items.Add(YearEnd);
+                }
+
+                cmbMonthStart.Items.Add(MonthStart);
+                cmbMonthEnd.Items.Add(MonthStart);
+                cmbMonth.Items.Add(MonthStart);
+                if (MonthStart != MonthEnd)
+                {
+                    cmbMonthStart.Items.Add(MonthEnd);
+                    cmbMonthEnd.Items.Add(MonthEnd);
+                    cmbMonth.Items.Add(MonthEnd);
+                }
+
+
+                cmbYearStart.Text = YearStart;
+                cmbYearEnd.Text = YearEnd;
+                cmbMonthStart.Text = MonthStart;
+                cmbMonthEnd.Text = MonthEnd;
+                cmbDayStart.Text = DayStart;
+                cmbDayEnd.Text = DayEnd;
+
+                cmbYear.Text = YearStart;
+                cmbMonth.Text = MonthStart;
+                cmbDay.Text = DayStart;
+            }
+           else
             {
-                cmbMonthStart.Items.Add(MonthEnd);
-                cmbMonthEnd.Items.Add(MonthEnd);
-                cmbMonth.Items.Add(MonthEnd);
+                MessageBox.Show("Try again");
+                this.Close();
             }
-             
+           
 
-            cmbYearStart.Text = YearStart;
-            cmbYearEnd.Text = YearEnd;
-            cmbMonthStart.Text = MonthStart;
-            cmbMonthEnd.Text = MonthEnd;
-            cmbDayStart.Text = DayStart;
-            cmbDayEnd.Text = DayEnd;
+        }
 
-            cmbYear.Text = YearStart;
-            cmbMonth.Text = MonthStart;
-            cmbDay.Text = DayStart;
+        public bool CheckRunSql()
+        {
 
+            try
+            {
+                ServiceController sc = new ServiceController("MSSQL$SQLEXPRESS");
+
+                switch (sc.Status)
+                {
+                    case ServiceControllerStatus.Running:
+                        return true;
+                    case ServiceControllerStatus.Stopped:
+                        sc.Start();
+                        return true;
+                    case ServiceControllerStatus.Paused:
+                        sc.Stop();
+                        return false;
+                    case ServiceControllerStatus.StopPending:
+                        return false;
+                    case ServiceControllerStatus.StartPending:
+                        return false;
+                    default:
+                        return false;
+                }
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Check Database");
+                return false;
+            }
+          
         }
 
         public void SetShift(DateTime date)
