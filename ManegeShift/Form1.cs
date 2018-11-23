@@ -1098,6 +1098,22 @@ namespace ManegeShift
             this.Close();
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MorningShift.Clear();
+            MidShift.Clear();
+            EveningShift.Clear();
+            SpiltShift.Clear();
+            Rest.Clear();
+            staffs.Clear();
+            staffs = db.People.Where(p => p.IsDelete == false).Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim(), Level = p.Level }).ToList();
 
+            SetLabels(staffs, 0);
+            SetLabels(MorningShift, 1);
+            SetLabels(MidShift, 2);
+            SetLabels(EveningShift, 3);
+            SetLabels(SpiltShift, 4);
+            SetLabels(Rest, 5);
+        }
     }
 }
