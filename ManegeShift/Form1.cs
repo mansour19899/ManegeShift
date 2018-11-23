@@ -35,6 +35,15 @@ namespace ManegeShift
             db = new HiiiEntities();
             InitializeComponent();
         }
+
+        public Form1(DateTime date,bool clean)
+        {
+            Date = date;
+            IsDate = !clean;
+            db = new HiiiEntities();
+            InitializeComponent();
+        }
+
         List<Staff> staffs;
         List<Staff> MorningShift;
         List<Staff> MidShift;
@@ -141,8 +150,13 @@ namespace ManegeShift
                     break;
 
             }
-            if(IsDate)
-            lblDayName.Text = Date.DayOfWeek + "\n" + Date.ToShortDateString();
+  
+            lblDayName.Text = Date.DayOfWeek + "\n" + Date.ToPersianDateString();
+            var ISExistShift = db.ShiftDays.Any(p => p.Date == Date);
+            if (ISExistShift)
+                lblDayName.ForeColor = Color.DarkRed;
+            else
+                lblDayName.ForeColor = Color.DarkGreen;
         }
 
         public void SetList()
@@ -165,17 +179,9 @@ namespace ManegeShift
             }
             else
             {
-                var staffss = db.People.Where(p=>p.IsDelete==false).Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim(),Level=p.Level }).ToList();
-                 dbb = db.DailyWeeks.ToList();
-                MorningShift = dbb.Where(p => p.Status_fk == 1 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();               
-                MidShift = dbb.Where(p => p.Status_fk == 2 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() + "(" + p.Mid.Trim() + ")" , Level=p.Person.Level}).ToList();
-                EveningShift = dbb.Where(p => p.Status_fk == 3 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();
-                SpiltShift = dbb.Where(p => p.Status_fk == 4 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();
-                Rest = dbb.Where(p => p.Status_fk == 5 & p.IdDay == Day).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();
+                 staffs = db.People.Where(p=>p.IsDelete==false).Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim(),Level=p.Level }).ToList();
 
-
-                staffs = staffss.Where(p => !MorningShift.Any(p2 => p2.Id == p.Id) & !MidShift.Any(p2 => p2.Id == p.Id) & !EveningShift.Any(p2 => p2.Id == p.Id)
-                & !SpiltShift.Any(p2 => p2.Id == p.Id) & !Rest.Any(p2 => p2.Id == p.Id)).ToList();
+                int x = 0;
                 
 
             }
@@ -641,6 +647,70 @@ namespace ManegeShift
             }
             panel3.Visible = false;
         }
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            switch (StatusSelected)
+            {
+                case 0:
+
+                    break;
+
+                case 1:
+                    var ss = MorningShift.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    ss.Status = 0;
+                    MorningShift.Remove(ss);
+                    staffs.Add(ss);
+
+                    SetLabels(MorningShift, 1);
+                    SetLabels(staffs, 0);
+                    break;
+                case 2:
+                    var sss = MidShift.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    sss.Status = 0;
+                    MidShift.Remove(sss);
+                    sss.Name = sss.Name.Split('(')[0];
+                    staffs.Add(sss);
+
+                    SetLabels(MidShift, 2);
+                    SetLabels(staffs, 0);
+                    break;
+
+                case 3:
+                    var ssss = EveningShift.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    ssss.Status = 0;
+                    EveningShift.Remove(ssss);
+                    staffs.Add(ssss);
+
+                    SetLabels(EveningShift, 3);
+                    SetLabels(staffs, 0);
+                    break;
+                case 4:
+                    var sa = SpiltShift.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    sa.Status =0;
+                    SpiltShift.Remove(sa);
+                    staffs.Add(sa);
+
+                    SetLabels(SpiltShift, 4);
+                    SetLabels(staffs, 0);
+                    break;
+
+                case 5:
+                    var s = staffs.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    s.Status = 0;
+                    Rest.Remove(s);
+                    staffs.Add(s);
+
+                  
+                    SetLabels(Rest, 5);
+                      SetLabels(staffs, 0);
+                    break;
+
+
+                default:
+                    break;
+            }
+            panel3.Visible = false;
+        }
 
         public void SelectStaff(Label label, int Status)
         {
@@ -648,44 +718,11 @@ namespace ManegeShift
             lblSelectedStaff.Text = label.Text.Split('(')[0];
             IdSelected = Convert.ToInt16(label.Tag.ToString());
             StatusSelected = Status;
-            if(!IsDate)
-            {
-                var t = dbb.Where(p => p.Person_fk == IdSelected).ToList();
-                foreach (var item in t)
-                {
-                    if(item.IdDay==1)
-                    {
-                        lbl1.Text = item.Status.Status1;
-                    }
-                    else if(item.IdDay==2)
-                    {
-                        lbl2.Text = item.Status.Status1;
-                    }
-                    else if (item.IdDay == 3)
-                    {
-                        lbl3.Text = item.Status.Status1;
-                    }
-                    else if (item.IdDay == 4)
-                    {
-                        lbl4.Text = item.Status.Status1;
-                    }
-                    else if (item.IdDay == 5)
-                    {
-                        lbl5.Text = item.Status.Status1;
-                    }
-                    else if (item.IdDay == 6)
-                    {
-                        lbl6.Text = item.Status.Status1;
-                    }
-                    else if (item.IdDay == 7)
-                    {
-                        lbl7.Text = item.Status.Status1;
+            //if(!IsDate)
+            //{
 
-                    }
-
-                }
-                panel1.Visible = true;
-            }
+            //    panel1.Visible = false;
+            //}
             panel3.Visible = true;
 
         }
@@ -970,8 +1007,18 @@ namespace ManegeShift
             lblDayName.Enabled = false;
             var eee = new DailyWeek();
             var fff = new ShiftDay();
-            if(IsDate)
+            if(true)
             {
+                foreach (var item in staffs)
+                {
+                    fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                    if (fff == null)
+                    {
+                     
+                    }
+                    else
+                        db.ShiftDays.Remove(fff);
+                }
                 foreach (var item in MorningShift)
                 {
                     fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
@@ -1039,74 +1086,7 @@ namespace ManegeShift
                 }
 
             }
-            else
-            {
-                foreach (var item in MorningShift)
-                {
-                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                    if (eee == null)
-                    {
-                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 1 });
-                    }
-                    else
-                        eee.Status_fk = 1;
-                }
 
-                foreach (var item in MidShift)
-                {
-                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                    if (eee == null)
-                    {
-                        mid = item.Name.Split('(')[1].Split(')')[0];
-                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 2, Mid = mid });
-                    }
-                    else
-                    {
-                        mid = item.Name.Split('(')[1].Split(')')[0];
-                        eee.Status_fk = 2;
-                        eee.Mid = mid;
-                    }
-
-
-
-
-
-                }
-
-                foreach (var item in EveningShift)
-                {
-                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                    if (eee == null)
-                    {
-                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 3 });
-                    }
-                    else
-                        eee.Status_fk = 3;
-
-                }
-                foreach (var item in SpiltShift)
-                {
-                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                    if (eee == null)
-                    {
-                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 4 });
-                    }
-                    else
-                        eee.Status_fk = 4;
-
-                }
-                foreach (var item in Rest)
-                {
-                    eee = db.DailyWeeks.Where(u => u.Person_fk == item.Id & u.IdDay == Day).FirstOrDefault();
-                    if (eee == null)
-                    {
-                        db.DailyWeeks.Add(new DailyWeek { IdDay = Day, Person_fk = item.Id, Status_fk = 5 });
-                    }
-                    else
-                        eee.Status_fk = 5;
-
-                }
-            }
 
 
             db.SaveChanges();
@@ -1117,5 +1097,7 @@ namespace ManegeShift
         {
             this.Close();
         }
+
+
     }
 }
