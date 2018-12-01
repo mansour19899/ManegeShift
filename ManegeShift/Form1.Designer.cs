@@ -137,8 +137,9 @@
             this.lblCountSplit = new System.Windows.Forms.Label();
             this.lblCountRest = new System.Windows.Forms.Label();
             this.lblCountStaff = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -148,10 +149,10 @@
             // 
             this.lblS1.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS1.Location = new System.Drawing.Point(56, 16);
+            this.lblS1.Location = new System.Drawing.Point(39, 16);
             this.lblS1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS1.Name = "lblS1";
-            this.lblS1.Size = new System.Drawing.Size(139, 43);
+            this.lblS1.Size = new System.Drawing.Size(170, 43);
             this.lblS1.TabIndex = 0;
             this.lblS1.Text = "label1";
             this.lblS1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,10 +162,10 @@
             // 
             this.lblS2.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS2.Location = new System.Drawing.Point(56, 64);
+            this.lblS2.Location = new System.Drawing.Point(39, 64);
             this.lblS2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS2.Name = "lblS2";
-            this.lblS2.Size = new System.Drawing.Size(139, 43);
+            this.lblS2.Size = new System.Drawing.Size(170, 43);
             this.lblS2.TabIndex = 1;
             this.lblS2.Text = "label1";
             this.lblS2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -174,10 +175,10 @@
             // 
             this.lblS3.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS3.Location = new System.Drawing.Point(56, 118);
+            this.lblS3.Location = new System.Drawing.Point(39, 118);
             this.lblS3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS3.Name = "lblS3";
-            this.lblS3.Size = new System.Drawing.Size(139, 43);
+            this.lblS3.Size = new System.Drawing.Size(170, 43);
             this.lblS3.TabIndex = 2;
             this.lblS3.Text = "label1";
             this.lblS3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,10 +188,10 @@
             // 
             this.lblS4.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS4.Location = new System.Drawing.Point(56, 170);
+            this.lblS4.Location = new System.Drawing.Point(39, 170);
             this.lblS4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS4.Name = "lblS4";
-            this.lblS4.Size = new System.Drawing.Size(139, 43);
+            this.lblS4.Size = new System.Drawing.Size(170, 43);
             this.lblS4.TabIndex = 3;
             this.lblS4.Text = "label1";
             this.lblS4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -200,10 +201,10 @@
             // 
             this.lblS5.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS5.Location = new System.Drawing.Point(56, 223);
+            this.lblS5.Location = new System.Drawing.Point(39, 223);
             this.lblS5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS5.Name = "lblS5";
-            this.lblS5.Size = new System.Drawing.Size(139, 43);
+            this.lblS5.Size = new System.Drawing.Size(170, 43);
             this.lblS5.TabIndex = 4;
             this.lblS5.Text = "label1";
             this.lblS5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,10 +214,10 @@
             // 
             this.lblS6.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS6.Location = new System.Drawing.Point(56, 271);
+            this.lblS6.Location = new System.Drawing.Point(39, 271);
             this.lblS6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS6.Name = "lblS6";
-            this.lblS6.Size = new System.Drawing.Size(139, 43);
+            this.lblS6.Size = new System.Drawing.Size(170, 43);
             this.lblS6.TabIndex = 5;
             this.lblS6.Text = "label1";
             this.lblS6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,10 +227,10 @@
             // 
             this.lblS7.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS7.Location = new System.Drawing.Point(56, 321);
+            this.lblS7.Location = new System.Drawing.Point(39, 321);
             this.lblS7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS7.Name = "lblS7";
-            this.lblS7.Size = new System.Drawing.Size(139, 43);
+            this.lblS7.Size = new System.Drawing.Size(170, 43);
             this.lblS7.TabIndex = 6;
             this.lblS7.Text = "label1";
             this.lblS7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -239,10 +240,10 @@
             // 
             this.lblS8.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS8.Location = new System.Drawing.Point(56, 378);
+            this.lblS8.Location = new System.Drawing.Point(39, 378);
             this.lblS8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS8.Name = "lblS8";
-            this.lblS8.Size = new System.Drawing.Size(139, 43);
+            this.lblS8.Size = new System.Drawing.Size(170, 43);
             this.lblS8.TabIndex = 7;
             this.lblS8.Text = "label1";
             this.lblS8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -252,10 +253,10 @@
             // 
             this.lblS9.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS9.Location = new System.Drawing.Point(56, 428);
+            this.lblS9.Location = new System.Drawing.Point(39, 428);
             this.lblS9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS9.Name = "lblS9";
-            this.lblS9.Size = new System.Drawing.Size(139, 43);
+            this.lblS9.Size = new System.Drawing.Size(170, 43);
             this.lblS9.TabIndex = 8;
             this.lblS9.Text = "label1";
             this.lblS9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -758,133 +759,144 @@
             // 
             this.lblS20.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS20.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS20.Location = new System.Drawing.Point(55, 980);
+            this.lblS20.Location = new System.Drawing.Point(38, 980);
             this.lblS20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS20.Name = "lblS20";
-            this.lblS20.Size = new System.Drawing.Size(139, 43);
+            this.lblS20.Size = new System.Drawing.Size(170, 43);
             this.lblS20.TabIndex = 20;
             this.lblS20.Text = "label1";
             this.lblS20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS20.Click += new System.EventHandler(this.lblS20_Click);
             // 
             // lblS19
             // 
             this.lblS19.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS19.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS19.Location = new System.Drawing.Point(53, 933);
+            this.lblS19.Location = new System.Drawing.Point(36, 933);
             this.lblS19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS19.Name = "lblS19";
-            this.lblS19.Size = new System.Drawing.Size(139, 43);
+            this.lblS19.Size = new System.Drawing.Size(170, 43);
             this.lblS19.TabIndex = 19;
             this.lblS19.Text = "label1";
             this.lblS19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS19.Click += new System.EventHandler(this.lblS19_Click);
             // 
             // lblS10
             // 
             this.lblS10.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS10.Location = new System.Drawing.Point(56, 474);
+            this.lblS10.Location = new System.Drawing.Point(39, 474);
             this.lblS10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS10.Name = "lblS10";
-            this.lblS10.Size = new System.Drawing.Size(139, 43);
+            this.lblS10.Size = new System.Drawing.Size(170, 43);
             this.lblS10.TabIndex = 9;
             this.lblS10.Text = "label1";
             this.lblS10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS10.Click += new System.EventHandler(this.lblS10_Click);
             // 
             // lblS11
             // 
             this.lblS11.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS11.Location = new System.Drawing.Point(56, 519);
+            this.lblS11.Location = new System.Drawing.Point(39, 519);
             this.lblS11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS11.Name = "lblS11";
-            this.lblS11.Size = new System.Drawing.Size(139, 43);
+            this.lblS11.Size = new System.Drawing.Size(170, 43);
             this.lblS11.TabIndex = 10;
             this.lblS11.Text = "label1";
             this.lblS11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS11.Click += new System.EventHandler(this.lblS11_Click);
             // 
             // lblS12
             // 
             this.lblS12.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS12.Location = new System.Drawing.Point(56, 574);
+            this.lblS12.Location = new System.Drawing.Point(39, 574);
             this.lblS12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS12.Name = "lblS12";
-            this.lblS12.Size = new System.Drawing.Size(139, 43);
+            this.lblS12.Size = new System.Drawing.Size(170, 43);
             this.lblS12.TabIndex = 11;
             this.lblS12.Text = "label1";
             this.lblS12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS12.Click += new System.EventHandler(this.lblS12_Click);
             // 
             // lblS13
             // 
             this.lblS13.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS13.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS13.Location = new System.Drawing.Point(56, 625);
+            this.lblS13.Location = new System.Drawing.Point(39, 625);
             this.lblS13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS13.Name = "lblS13";
-            this.lblS13.Size = new System.Drawing.Size(139, 43);
+            this.lblS13.Size = new System.Drawing.Size(170, 43);
             this.lblS13.TabIndex = 12;
             this.lblS13.Text = "label1";
             this.lblS13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS13.Click += new System.EventHandler(this.lblS13_Click);
             // 
             // lblS14
             // 
             this.lblS14.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS14.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS14.Location = new System.Drawing.Point(56, 678);
+            this.lblS14.Location = new System.Drawing.Point(39, 678);
             this.lblS14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS14.Name = "lblS14";
-            this.lblS14.Size = new System.Drawing.Size(139, 43);
+            this.lblS14.Size = new System.Drawing.Size(170, 43);
             this.lblS14.TabIndex = 13;
             this.lblS14.Text = "label1";
             this.lblS14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS14.Click += new System.EventHandler(this.lblS14_Click);
             // 
             // lblS15
             // 
             this.lblS15.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS15.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS15.Location = new System.Drawing.Point(56, 726);
+            this.lblS15.Location = new System.Drawing.Point(39, 726);
             this.lblS15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS15.Name = "lblS15";
-            this.lblS15.Size = new System.Drawing.Size(139, 43);
+            this.lblS15.Size = new System.Drawing.Size(170, 43);
             this.lblS15.TabIndex = 14;
             this.lblS15.Text = "label1";
             this.lblS15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS15.Click += new System.EventHandler(this.lblS15_Click);
             // 
             // lblS16
             // 
             this.lblS16.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS16.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS16.Location = new System.Drawing.Point(56, 780);
+            this.lblS16.Location = new System.Drawing.Point(39, 780);
             this.lblS16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS16.Name = "lblS16";
-            this.lblS16.Size = new System.Drawing.Size(139, 43);
+            this.lblS16.Size = new System.Drawing.Size(170, 43);
             this.lblS16.TabIndex = 15;
             this.lblS16.Text = "label1";
             this.lblS16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS16.Click += new System.EventHandler(this.lblS16_Click);
             // 
             // lblS17
             // 
             this.lblS17.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS17.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS17.Location = new System.Drawing.Point(56, 833);
+            this.lblS17.Location = new System.Drawing.Point(39, 833);
             this.lblS17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS17.Name = "lblS17";
-            this.lblS17.Size = new System.Drawing.Size(139, 43);
+            this.lblS17.Size = new System.Drawing.Size(170, 43);
             this.lblS17.TabIndex = 16;
             this.lblS17.Text = "label1";
             this.lblS17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS17.Click += new System.EventHandler(this.lblS17_Click);
             // 
             // lblS18
             // 
             this.lblS18.BackColor = System.Drawing.Color.LimeGreen;
             this.lblS18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblS18.Location = new System.Drawing.Point(56, 884);
+            this.lblS18.Location = new System.Drawing.Point(39, 884);
             this.lblS18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblS18.Name = "lblS18";
-            this.lblS18.Size = new System.Drawing.Size(139, 43);
+            this.lblS18.Size = new System.Drawing.Size(170, 43);
             this.lblS18.TabIndex = 17;
             this.lblS18.Text = "label1";
             this.lblS18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblS18.Click += new System.EventHandler(this.lblS18_Click);
             // 
             // panel3
             // 
@@ -904,10 +916,10 @@
             this.panel3.Controls.Add(this.btnMid);
             this.panel3.Controls.Add(this.lblSelectedStaff);
             this.panel3.Controls.Add(this.btnMorning);
-            this.panel3.Location = new System.Drawing.Point(7, 7);
+            this.panel3.Location = new System.Drawing.Point(5, 2);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1183, 643);
+            this.panel3.Size = new System.Drawing.Size(1189, 659);
             this.panel3.TabIndex = 42;
             // 
             // BtnDelete
@@ -1618,18 +1630,6 @@
             this.lblCountStaff.Text = "(15)";
             this.lblCountStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(908, 799);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(281, 75);
-            this.label10.TabIndex = 72;
-            this.label10.Text = "Hyper Star";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Teal;
@@ -1644,6 +1644,32 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label10.Location = new System.Drawing.Point(6, 2);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(139, 43);
+            this.label10.TabIndex = 74;
+            this.label10.Text = "Previous";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label18.Location = new System.Drawing.Point(1055, 1);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(139, 43);
+            this.label18.TabIndex = 75;
+            this.label18.Text = "Next";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1652,7 +1678,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 871);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblDayName);
             this.Controls.Add(this.panel3);
@@ -1711,10 +1736,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.lblCountStaff);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.label9);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Controls.Add(this.label7);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1822,7 +1848,6 @@
         private System.Windows.Forms.Label lblCountSplit;
         private System.Windows.Forms.Label lblCountRest;
         private System.Windows.Forms.Label lblCountStaff;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lbl7;
@@ -1840,6 +1865,8 @@
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label18;
     }
 }
 

@@ -39,6 +39,26 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2012.1.1300.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SoftwerProgramming\Stimulsoft.Reports.Ultimate.Suite.2015.2.Retail\1\Net\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2012.1.1300.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SoftwerProgramming\Stimulsoft.Reports.Ultimate.Suite.2015.2.Retail\1\Net\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2012.1.1300.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SoftwerProgramming\Stimulsoft.Reports.Ultimate.Suite.2015.2.Retail\1\Net\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2012.1.1300.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SoftwerProgramming\Stimulsoft.Reports.Ultimate.Suite.2015.2.Retail\1\Net\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2012.1.1300.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SoftwerProgramming\Stimulsoft.Reports.Ultimate.Suite.2015.2.Retail\1\Net\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -133,6 +153,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
+    <Compile Include="Shift.cs" />
     <Compile Include="ShiftDay.cs">
       <DependentUpon>Model19.tt</DependentUpon>
     </Compile>

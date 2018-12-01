@@ -695,7 +695,7 @@ namespace ManegeShift
                     break;
 
                 case 5:
-                    var s = staffs.Where(p => p.Id == IdSelected).FirstOrDefault();
+                    var s = Rest.Where(p => p.Id == IdSelected).FirstOrDefault();
                     s.Status = 0;
                     Rest.Remove(s);
                     staffs.Add(s);
@@ -1114,6 +1114,78 @@ namespace ManegeShift
             SetLabels(EveningShift, 3);
             SetLabels(SpiltShift, 4);
             SetLabels(Rest, 5);
+            
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1(Date.AddDays(1));
+            frm.ShowDialog();
+            this.Close();
+     
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1(Date.AddDays(-1));
+            frm.ShowDialog();
+            this.Close();
+
+        }
+
+        private void lblS10_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS10, 0);
+        }
+
+        private void lblS11_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS11, 0);
+        }
+
+        private void lblS12_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS12, 0);
+        }
+
+        private void lblS13_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS13, 0);
+        }
+
+        private void lblS14_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS14, 0);
+        }
+
+        private void lblS15_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS15, 0);
+        }
+
+        private void lblS16_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS16, 0);
+        }
+
+        private void lblS17_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS17, 0);
+        }
+
+        private void lblS18_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS18, 0);
+        }
+
+        private void lblS19_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS19, 0);
+        }
+
+        private void lblS20_Click(object sender, EventArgs e)
+        {
+            SelectStaff(lblS20, 0);
         }
     }
 }

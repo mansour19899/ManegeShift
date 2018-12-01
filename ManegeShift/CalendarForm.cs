@@ -119,21 +119,24 @@ namespace ManegeShift
             DateTime Date;
             Date = ("13" + cmbStartYear.Text + "/" + cmbStartMonth.Text + "/" + lbl.Text).ToGeorgianDateTime();
 
-            if(Date.CompareTo(DateTime.Today.AddDays(30))==1)
-            {
-                MessageBox.Show(" It is impossible");
-            }
-            else if(Date.CompareTo(DateTime.Today.AddDays(-7)) ==-1)
-            {
-                MessageBox.Show(" It is impossible");
-            }
-            else
-            {
-                Form1 frm = new Form1(Date);
-                frm.ShowDialog();
-                Set();
-            }
-            
+            //if(Date.CompareTo(DateTime.Today.AddDays(30))==1)
+            //{
+            //    MessageBox.Show(" It is impossible");
+            //}
+            //else if(Date.CompareTo(DateTime.Today.AddDays(-7)) ==-1)
+            //{
+            //    MessageBox.Show(" It is impossible");
+            //}
+            //else
+            //{
+            //    Form1 frm = new Form1(Date);
+            //    frm.ShowDialog();
+            //    Set();
+            //}
+
+            Form1 frm = new Form1(Date);
+            frm.ShowDialog();
+            Set();
 
         }
 

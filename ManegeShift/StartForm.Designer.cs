@@ -44,6 +44,7 @@
             this.btnSetWeek = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.btnReport = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +112,7 @@
             this.panel2.Controls.Add(this.cmbYear);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Location = new System.Drawing.Point(288, 250);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(675, 306);
             this.panel2.TabIndex = 67;
@@ -196,7 +197,7 @@
             "30",
             "31"});
             this.cmbDay.Location = new System.Drawing.Point(468, 38);
-            this.cmbDay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbDay.Margin = new System.Windows.Forms.Padding(4);
             this.cmbDay.Name = "cmbDay";
             this.cmbDay.Size = new System.Drawing.Size(73, 41);
             this.cmbDay.TabIndex = 27;
@@ -207,7 +208,7 @@
             this.cmbMonth.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMonth.FormattingEnabled = true;
             this.cmbMonth.Location = new System.Drawing.Point(355, 38);
-            this.cmbMonth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbMonth.Margin = new System.Windows.Forms.Padding(4);
             this.cmbMonth.Name = "cmbMonth";
             this.cmbMonth.Size = new System.Drawing.Size(73, 41);
             this.cmbMonth.TabIndex = 24;
@@ -219,7 +220,7 @@
             this.cmbYear.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbYear.FormattingEnabled = true;
             this.cmbYear.Location = new System.Drawing.Point(231, 38);
-            this.cmbYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbYear.Margin = new System.Windows.Forms.Padding(4);
             this.cmbYear.Name = "cmbYear";
             this.cmbYear.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.cmbYear.Size = new System.Drawing.Size(73, 41);
@@ -298,6 +299,23 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // btnReport
+            // 
+            this.btnReport.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnReport.BackgroundImage = global::ManegeShift.Resource1.pi78y9qbT;
+            this.btnReport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReport.FlatAppearance.BorderSize = 0;
+            this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReport.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.btnReport.Location = new System.Drawing.Point(66, 679);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(256, 138);
+            this.btnReport.TabIndex = 77;
+            this.btnReport.Text = "Day";
+            this.btnReport.UseVisualStyleBackColor = false;
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -305,6 +323,7 @@
             this.BackgroundImage = global::ManegeShift.Resource1.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1197, 871);
+            this.Controls.Add(this.btnReport);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblDateMiladi);
@@ -314,7 +333,7 @@
             this.Controls.Add(this.btnSetWeek);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartForm";
@@ -341,5 +360,6 @@
         private System.Windows.Forms.Button btnSetWeek;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnReport;
     }
 }
