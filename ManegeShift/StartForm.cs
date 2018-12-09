@@ -79,43 +79,46 @@ namespace ManegeShift
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            db = new HiiiEntities();
-            List<Shift> shifts = new List<Shift>();
-            string radif = "1";
-            string morning = "";
-            string mid = "";
-            string evening = "";
-            string split = "";
-            string rest = "";
 
-            var date = db.ShiftDays.Where(p => p.Date == DateTime.Today).ToList();
-            foreach (var item in date)
-            {
-                switch (item.Status_fk)
-                {
-                    case 1:
-                        morning = morning + "," + item.Person.NickName.Trim();
-                        break;
-                    case 2:
-                        mid = mid + "," + item.Person.NickName.Trim()+"("+item.mid.Trim()+")";
-                        break;
-                    case 3:
-                        evening = evening + "," + item.Person.NickName.Trim();
-                        break;
-                    case 4:
-                        split = split + "," + item.Person.NickName.Trim();
-                        break;
-                    case 5:
-                        rest = rest + "," + item.Person.NickName.Trim();
-                        break;
-                    default:
-                        break;
-                }
-            }
-            shifts.Add(new Shift() {Radif=radif,Date=date.ElementAt(0).Date.ToPersianDateString(),Morning=morning.TrimStart(','),Mid=mid.TrimStart(','), Evening=evening.TrimStart(','),
-                Split =split.TrimStart(','), Rest=rest.TrimStart(',') });
+            PrintForm frm = new PrintForm();
+            frm.ShowDialog();
 
 
+            //db = new HiiiEntities();
+            //List<Shift> shifts = new List<Shift>();
+            //string radif = "1";
+            //string morning = "";
+            //string mid = "";
+            //string evening = "";
+            //string split = "";
+            //string rest = "";
+
+            //var date = db.ShiftDays.Where(p => p.Date == DateTime.Today).ToList();
+            //foreach (var item in date)
+            //{
+            //    switch (item.Status_fk)
+            //    {
+            //        case 1:
+            //            morning = morning + "," + item.Person.NickName.Trim();
+            //            break;
+            //        case 2:
+            //            mid = mid + "," + item.Person.NickName.Trim()+"("+item.mid.Trim()+")";
+            //            break;
+            //        case 3:
+            //            evening = evening + "," + item.Person.NickName.Trim();
+            //            break;
+            //        case 4:
+            //            split = split + "," + item.Person.NickName.Trim();
+            //            break;
+            //        case 5:
+            //            rest = rest + "," + item.Person.NickName.Trim();
+            //            break;
+            //        default:
+            //            break;
+            //    }
+            //}
+            //shifts.Add(new Shift() {Radif=radif,Date=date.ElementAt(0).Date.ToPersianDateString(),Morning=morning.TrimStart(','),Mid=mid.TrimStart(','), Evening=evening.TrimStart(','),
+            //    Split =split.TrimStart(','), Rest=rest.TrimStart(',') });
 
 
 
@@ -123,16 +126,18 @@ namespace ManegeShift
 
 
 
-            //StiReport stiReport1 = new StiReport();
 
-            //stiReport1.Load(@"D:\projects\ManegeShift\ManegeShift\bin\Debug\Report.mrt");
-            ////stiReport1.Dictionary.Variables["date"].Value = txtDate.Text;
-            ////stiReport1.Dictionary.Variables["part"].Value = cmbPart.GetItemText(cmbPart.SelectedItem);
-            ////stiReport1.Dictionary.Variables["Variable1"].Value = "maryam";
 
-            // stiReport1.RegBusinessObject("Shift", shifts);
+            ////StiReport stiReport1 = new StiReport();
+
+            ////stiReport1.Load(@"D:\projects\ManegeShift\ManegeShift\bin\Debug\Report.mrt");
+            //////stiReport1.Dictionary.Variables["date"].Value = txtDate.Text;
+            //////stiReport1.Dictionary.Variables["part"].Value = cmbPart.GetItemText(cmbPart.SelectedItem);
+            //////stiReport1.Dictionary.Variables["Variable1"].Value = "maryam";
+
+            //// stiReport1.RegBusinessObject("Shift", shifts);
             
-            //stiReport1.Show();
+            ////stiReport1.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

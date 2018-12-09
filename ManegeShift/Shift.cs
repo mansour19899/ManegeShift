@@ -10,6 +10,7 @@ namespace ManegeShift
     {
         public string Radif { get; set; }
         public string Date { get; set; }
+        public string Day { get; set; }
         public string Morning { get; set; }
         public string Mid { get; set; }
         public string Evening { get; set; }

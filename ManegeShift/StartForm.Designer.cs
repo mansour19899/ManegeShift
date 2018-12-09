@@ -312,7 +312,7 @@
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(256, 138);
             this.btnReport.TabIndex = 77;
-            this.btnReport.Text = "Day";
+            this.btnReport.Text = "Report";
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
