@@ -179,6 +179,9 @@ namespace ManegeShift
                 x = x + 1;
             }
 
+            cmbDayStart.DataSource = DateTime.Today.ToPersianDateString().ReturnDaysOfMonth();
+            cmbDayEnd.DataSource = DateTime.Today.ToPersianDateString().ReturnDaysOfMonth();
+
             cmbYearStart.Text = DateTime.Today.ToPersianDateString().Substring(2, 2);
             cmbMonthStart.Text = DateTime.Today.ToPersianDateString().Substring(5, 2);
             cmbDayStart.Text = DateTime.Today.ToPersianDateString().Substring(8 ,2);
@@ -187,6 +190,34 @@ namespace ManegeShift
             cmbMonthEnd.Text = DateTime.Today.ToPersianDateString().Substring(5, 2);
             cmbDayEnd.Text = DateTime.Today.ToPersianDateString().Substring(8, 2);
 
+        }
+
+        private void cmbMonthStart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = cmbDayStart.Text;
+            cmbDayStart.DataSource = ("13" + cmbYearStart.Text + "/" + cmbMonthStart.Text + "/" + cmbDayStart.Text) .ReturnDaysOfMonth();
+            cmbDayStart.Text = temp;
+        }
+
+        private void cmbYearStart_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = cmbDayStart.Text;
+            cmbDayStart.DataSource = ("13" + cmbYearStart.Text + "/" + cmbMonthStart.Text + "/" + cmbDayStart.Text).ReturnDaysOfMonth();
+            cmbDayStart.Text = temp;
+        }
+
+        private void cmbMonthEnd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = cmbDayEnd.Text;
+            cmbDayEnd.DataSource = ("13" + cmbYearEnd.Text + "/" + cmbMonthEnd.Text + "/" + cmbDayEnd.Text).ReturnDaysOfMonth();
+            cmbDayEnd.Text = temp;
+        }
+
+        private void cmbYearEnd_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = cmbDayEnd.Text;
+            cmbDayEnd.DataSource = ("13" + cmbYearEnd.Text + "/" + cmbMonthEnd.Text + "/" + cmbDayEnd.Text).ReturnDaysOfMonth();
+            cmbDayEnd.Text = temp;
         }
 
 

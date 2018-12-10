@@ -140,6 +140,20 @@ namespace ManegeShift
             ////stiReport1.Show();
         }
 
+        private void cmbMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = cmbDay.Text;
+            cmbDay.DataSource = ("13" + cmbYear.Text + "/" + cmbMonth.Text + "/" + cmbDay.Text).ReturnDaysOfMonth();
+            cmbDay.Text = temp;
+        }
+
+        private void cmbYear_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = cmbDay.Text;
+            cmbDay.DataSource = ("13" + cmbYear.Text + "/" + cmbMonth.Text + "/" + cmbDay.Text).ReturnDaysOfMonth();
+            cmbDay.Text = temp;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
    
@@ -175,8 +189,9 @@ namespace ManegeShift
 
         private void StartForm_Load(object sender, EventArgs e)
         {
+            cmbDay.DataSource = DateTime.Today.ToPersianDateString().ReturnDaysOfMonth();
 
-           if(CheckRunSql())
+            if (CheckRunSql())
             {
                 lblDateShamsi.Text = Today.ToPersianDateString();
                 lblDateDay.Text = Today.DayOfWeek.ToString();

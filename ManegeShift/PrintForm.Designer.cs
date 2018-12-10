@@ -54,10 +54,10 @@
             this.btnReport.FlatAppearance.BorderSize = 0;
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReport.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.btnReport.Location = new System.Drawing.Point(485, 628);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReport.Location = new System.Drawing.Point(364, 510);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReport.Name = "btnReport";
-            this.btnReport.Size = new System.Drawing.Size(157, 144);
+            this.btnReport.Size = new System.Drawing.Size(118, 117);
             this.btnReport.TabIndex = 78;
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
@@ -66,10 +66,9 @@
             // 
             this.lblDateDay.BackColor = System.Drawing.Color.Transparent;
             this.lblDateDay.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateDay.Location = new System.Drawing.Point(519, 706);
-            this.lblDateDay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDateDay.Location = new System.Drawing.Point(389, 574);
             this.lblDateDay.Name = "lblDateDay";
-            this.lblDateDay.Size = new System.Drawing.Size(73, 40);
+            this.lblDateDay.Size = new System.Drawing.Size(55, 32);
             this.lblDateDay.TabIndex = 79;
             this.lblDateDay.Text = "Print";
             this.lblDateDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,20 +88,18 @@
             this.panel1.Controls.Add(this.cmbMonthStart);
             this.panel1.Controls.Add(this.cmbYearStart);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(260, 178);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(195, 145);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(618, 239);
+            this.panel1.Size = new System.Drawing.Size(464, 194);
             this.panel1.TabIndex = 80;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(71, 108);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(53, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 60);
+            this.label3.Size = new System.Drawing.Size(93, 49);
             this.label3.TabIndex = 73;
             this.label3.Text = "End";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -111,10 +108,9 @@
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(435, 107);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(326, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 50);
+            this.label4.Size = new System.Drawing.Size(25, 41);
             this.label4.TabIndex = 72;
             this.label4.Text = "/";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,42 +120,9 @@
             this.cmbDayEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDayEnd.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDayEnd.FormattingEnabled = true;
-            this.cmbDayEnd.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.cmbDayEnd.Location = new System.Drawing.Point(468, 116);
-            this.cmbDayEnd.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbDayEnd.Location = new System.Drawing.Point(351, 94);
             this.cmbDayEnd.Name = "cmbDayEnd";
-            this.cmbDayEnd.Size = new System.Drawing.Size(73, 41);
+            this.cmbDayEnd.Size = new System.Drawing.Size(56, 34);
             this.cmbDayEnd.TabIndex = 71;
             // 
             // cmbMonthEnd
@@ -180,32 +143,31 @@
             "10",
             "11",
             "12"});
-            this.cmbMonthEnd.Location = new System.Drawing.Point(355, 116);
-            this.cmbMonthEnd.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbMonthEnd.Location = new System.Drawing.Point(266, 94);
             this.cmbMonthEnd.Name = "cmbMonthEnd";
-            this.cmbMonthEnd.Size = new System.Drawing.Size(73, 41);
+            this.cmbMonthEnd.Size = new System.Drawing.Size(56, 34);
             this.cmbMonthEnd.TabIndex = 69;
+            this.cmbMonthEnd.SelectedIndexChanged += new System.EventHandler(this.cmbMonthEnd_SelectedIndexChanged);
             // 
             // cmbYearEnd
             // 
             this.cmbYearEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbYearEnd.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbYearEnd.FormattingEnabled = true;
-            this.cmbYearEnd.Location = new System.Drawing.Point(231, 116);
-            this.cmbYearEnd.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbYearEnd.Location = new System.Drawing.Point(173, 94);
             this.cmbYearEnd.Name = "cmbYearEnd";
             this.cmbYearEnd.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbYearEnd.Size = new System.Drawing.Size(73, 41);
+            this.cmbYearEnd.Size = new System.Drawing.Size(56, 34);
             this.cmbYearEnd.TabIndex = 68;
+            this.cmbYearEnd.SelectedIndexChanged += new System.EventHandler(this.cmbYearEnd_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(313, 107);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(235, 87);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 50);
+            this.label6.Size = new System.Drawing.Size(25, 41);
             this.label6.TabIndex = 70;
             this.label6.Text = "/";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -214,10 +176,9 @@
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(71, 31);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(53, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 60);
+            this.label2.Size = new System.Drawing.Size(93, 49);
             this.label2.TabIndex = 67;
             this.label2.Text = "Start";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,10 +187,9 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(435, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(326, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 50);
+            this.label1.Size = new System.Drawing.Size(25, 41);
             this.label1.TabIndex = 29;
             this.label1.Text = "/";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -239,42 +199,9 @@
             this.cmbDayStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDayStart.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDayStart.FormattingEnabled = true;
-            this.cmbDayStart.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03",
-            "04",
-            "05",
-            "06",
-            "07",
-            "08",
-            "09",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.cmbDayStart.Location = new System.Drawing.Point(468, 38);
-            this.cmbDayStart.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbDayStart.Location = new System.Drawing.Point(351, 31);
             this.cmbDayStart.Name = "cmbDayStart";
-            this.cmbDayStart.Size = new System.Drawing.Size(73, 41);
+            this.cmbDayStart.Size = new System.Drawing.Size(56, 34);
             this.cmbDayStart.TabIndex = 27;
             // 
             // cmbMonthStart
@@ -295,11 +222,11 @@
             "10",
             "11",
             "12"});
-            this.cmbMonthStart.Location = new System.Drawing.Point(355, 38);
-            this.cmbMonthStart.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbMonthStart.Location = new System.Drawing.Point(266, 31);
             this.cmbMonthStart.Name = "cmbMonthStart";
-            this.cmbMonthStart.Size = new System.Drawing.Size(73, 41);
+            this.cmbMonthStart.Size = new System.Drawing.Size(56, 34);
             this.cmbMonthStart.TabIndex = 24;
+            this.cmbMonthStart.SelectedIndexChanged += new System.EventHandler(this.cmbMonthStart_SelectedIndexChanged);
             // 
             // cmbYearStart
             // 
@@ -307,35 +234,35 @@
             this.cmbYearStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbYearStart.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbYearStart.FormattingEnabled = true;
-            this.cmbYearStart.Location = new System.Drawing.Point(231, 38);
-            this.cmbYearStart.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbYearStart.Location = new System.Drawing.Point(173, 31);
             this.cmbYearStart.Name = "cmbYearStart";
             this.cmbYearStart.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.cmbYearStart.Size = new System.Drawing.Size(73, 41);
+            this.cmbYearStart.Size = new System.Drawing.Size(56, 34);
             this.cmbYearStart.TabIndex = 21;
+            this.cmbYearStart.SelectedIndexChanged += new System.EventHandler(this.cmbYearStart_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(313, 30);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(235, 24);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 50);
+            this.label5.Size = new System.Drawing.Size(25, 41);
             this.label5.TabIndex = 25;
             this.label5.Text = "/";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PrintForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ManegeShift.Resource1.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1197, 871);
+            this.ClientSize = new System.Drawing.Size(898, 708);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblDateDay);
             this.Controls.Add(this.btnReport);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PrintForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PrintForm";

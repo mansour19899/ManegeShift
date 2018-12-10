@@ -833,5 +833,355 @@ namespace ManegeShift
         {
             ShowDetailsShift(5, 5);
         }
+
+        private void lblM7_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(6, 1);
+        }
+
+        private void lblMi7_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(6, 2);
+        }
+
+        private void lblE7_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(6, 3);
+        }
+
+        private void lblSp7_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(6, 4);
+        }
+
+        private void lblR7_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(6, 5);
+        }
+
+        private void lblM8_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(7, 1);
+        }
+
+        private void lblMi8_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(7, 2);
+        }
+
+        private void lblE8_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(7, 3);
+        }
+
+        private void lblSp8_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(7, 4);
+        }
+
+        private void lblR8_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(7, 5);
+        }
+
+        private void lblM9_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(8, 1);
+        }
+
+        private void lblMi9_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(8, 2);
+        }
+
+        private void lblE9_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(8, 3);
+        }
+
+        private void lblSp9_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(8, 4);
+        }
+
+        private void lblR9_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(8, 5);
+        }
+
+        private void lblM10_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(9, 1);
+        }
+
+        private void lblMi10_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(9, 2);
+        }
+
+        private void lblE10_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(9, 3);
+        }
+
+        private void lblSp10_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(9, 4);
+        }
+
+        private void lblR10_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(9, 5);
+        }
+
+        private void lblM11_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(10, 1);
+        }
+
+        private void lblMi11_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(10, 2);
+        }
+
+        private void lblE11_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(10, 3);
+        }
+
+        private void lblSp11_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(10, 4);
+        }
+
+        private void lblR11_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(10, 5);
+        }
+
+        private void lblM12_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(11, 1);
+        }
+
+        private void lblMi12_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(11, 2);
+        }
+
+        private void lblE12_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(11, 3);
+        }
+
+        private void lblSp12_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(11, 4);
+        }
+
+        private void lblR12_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(11, 5);
+        }
+
+        private void lblM13_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(12, 1);
+        }
+
+        private void lblMi13_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(12, 2);
+        }
+
+        private void lblE13_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(12, 3);
+        }
+
+        private void lblSp13_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(12, 4);
+        }
+
+        private void lblR13_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(12, 5);
+        }
+
+        private void lblM14_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(13, 1);
+        }
+
+        private void lblMi14_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(13, 2);
+        }
+
+        private void lblE14_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(13, 3);
+        }
+
+        private void lblSp14_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(13, 4);
+        }
+
+        private void lblR14_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(13, 5);
+        }
+
+        private void lblM15_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(14, 1);
+        }
+
+        private void lblMi15_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(14, 2);
+        }
+
+        private void lblE15_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(14, 3);
+        }
+
+        private void lblSp15_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(14, 4);
+        }
+
+        private void lblR15_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(14, 5);
+        }
+
+        private void lblM16_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(15, 1);
+        }
+
+        private void lblMi16_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(15, 2);
+        }
+
+        private void lblE16_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(15, 3);
+        }
+
+        private void lblSp16_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(15, 4);
+        }
+
+        private void lblR16_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(15, 5);
+        }
+
+        private void lblM17_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(16, 1);
+        }
+
+        private void lblMi17_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(16, 2);
+        }
+
+        private void lblE17_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(16,3);
+        }
+
+        private void lblSp17_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(16, 4);
+        }
+
+        private void lblR17_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(16, 5);
+        }
+
+        private void lblM18_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(17, 1);
+        }
+
+        private void lblMi18_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(17, 2);
+        }
+
+        private void lblE18_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(17, 3);
+        }
+
+        private void lblSp18_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(17, 4);
+        }
+
+        private void lblR18_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(17, 5);
+        }
+
+        private void lblM19_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(18, 1);
+        }
+
+        private void lblMi19_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(18, 2);
+        }
+
+        private void lblE19_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(18, 3);
+        }
+
+        private void lblSp19_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(18, 4);
+        }
+
+        private void lblR19_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(18, 5);
+        }
+
+        private void lblM20_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(19, 1);
+        }
+
+        private void lblMi20_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(19, 2);
+        }
+
+        private void lblE20_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(19, 3);
+        }
+
+        private void lblSp20_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(19, 4);
+        }
+
+        private void lblR20_Click(object sender, EventArgs e)
+        {
+            ShowDetailsShift(19, 5);
+        }
     }
 }
