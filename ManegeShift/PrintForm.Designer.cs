@@ -55,7 +55,7 @@
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReport.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.btnReport.Location = new System.Drawing.Point(364, 510);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(118, 117);
             this.btnReport.TabIndex = 78;
@@ -64,13 +64,14 @@
             // 
             // lblDateDay
             // 
+            this.lblDateDay.AutoSize = true;
             this.lblDateDay.BackColor = System.Drawing.Color.Transparent;
             this.lblDateDay.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateDay.Location = new System.Drawing.Point(389, 574);
+            this.lblDateDay.Location = new System.Drawing.Point(377, 575);
             this.lblDateDay.Name = "lblDateDay";
-            this.lblDateDay.Size = new System.Drawing.Size(55, 32);
+            this.lblDateDay.Size = new System.Drawing.Size(75, 25);
             this.lblDateDay.TabIndex = 79;
-            this.lblDateDay.Text = "Print";
+            this.lblDateDay.Text = "Export";
             this.lblDateDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -262,7 +263,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblDateDay);
             this.Controls.Add(this.btnReport);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PrintForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PrintForm";
@@ -270,6 +271,7 @@
             this.Load += new System.EventHandler(this.PrintForm_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
