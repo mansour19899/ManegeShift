@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrintForm));
             this.btnReport = new System.Windows.Forms.Button();
             this.lblDateDay = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -263,10 +264,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblDateDay);
             this.Controls.Add(this.btnReport);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "PrintForm";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PrintForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PrintForm_FormClosed);
             this.Load += new System.EventHandler(this.PrintForm_Load);
             this.panel1.ResumeLayout(false);

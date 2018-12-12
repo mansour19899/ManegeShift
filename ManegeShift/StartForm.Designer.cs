@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.btnDay = new System.Windows.Forms.Button();
             this.lblDateShamsi = new System.Windows.Forms.Label();
             this.lblDateDay = new System.Windows.Forms.Label();
@@ -57,7 +58,7 @@
             this.btnDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDay.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.btnDay.Location = new System.Drawing.Point(459, 203);
-            this.btnDay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDay.Margin = new System.Windows.Forms.Padding(2);
             this.btnDay.Name = "btnDay";
             this.btnDay.Size = new System.Drawing.Size(192, 112);
             this.btnDay.TabIndex = 2;
@@ -123,7 +124,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(196, 90);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 70);
             this.button2.TabIndex = 67;
@@ -216,7 +217,7 @@
             this.btnSetWeek.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSetWeek.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetWeek.Location = new System.Drawing.Point(229, 203);
-            this.btnSetWeek.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSetWeek.Margin = new System.Windows.Forms.Padding(2);
             this.btnSetWeek.Name = "btnSetWeek";
             this.btnSetWeek.Size = new System.Drawing.Size(192, 112);
             this.btnSetWeek.TabIndex = 69;
@@ -233,7 +234,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(229, 326);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(192, 112);
             this.button3.TabIndex = 75;
@@ -250,7 +251,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(460, 326);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(192, 112);
             this.button4.TabIndex = 76;
@@ -267,7 +268,7 @@
             this.btnReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReport.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.btnReport.Location = new System.Drawing.Point(50, 552);
-            this.btnReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(192, 112);
             this.btnReport.TabIndex = 77;
@@ -292,7 +293,11 @@
             this.Controls.Add(this.btnSetWeek);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "StartForm";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartForm";
             this.Load += new System.EventHandler(this.StartForm_Load);

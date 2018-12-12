@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WeekForm));
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -101,7 +102,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(201, 160);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 70);
             this.button1.TabIndex = 67;
@@ -321,7 +322,7 @@
             this.panel2.Controls.Add(this.btn2);
             this.panel2.Controls.Add(this.btn1);
             this.panel2.Location = new System.Drawing.Point(20, 24);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(285, 658);
             this.panel2.TabIndex = 76;
@@ -335,7 +336,7 @@
             this.btn14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn14.Location = new System.Drawing.Point(66, 1263);
-            this.btn14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn14.Margin = new System.Windows.Forms.Padding(2);
             this.btn14.Name = "btn14";
             this.btn14.Size = new System.Drawing.Size(154, 76);
             this.btn14.TabIndex = 27;
@@ -353,7 +354,7 @@
             this.btn13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn13.Location = new System.Drawing.Point(66, 1168);
-            this.btn13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn13.Margin = new System.Windows.Forms.Padding(2);
             this.btn13.Name = "btn13";
             this.btn13.Size = new System.Drawing.Size(154, 76);
             this.btn13.TabIndex = 26;
@@ -371,7 +372,7 @@
             this.btn12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn12.Location = new System.Drawing.Point(66, 1068);
-            this.btn12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn12.Margin = new System.Windows.Forms.Padding(2);
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(154, 76);
             this.btn12.TabIndex = 25;
@@ -389,7 +390,7 @@
             this.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn11.Location = new System.Drawing.Point(66, 973);
-            this.btn11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn11.Margin = new System.Windows.Forms.Padding(2);
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(154, 76);
             this.btn11.TabIndex = 24;
@@ -407,7 +408,7 @@
             this.btn10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn10.Location = new System.Drawing.Point(66, 873);
-            this.btn10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn10.Margin = new System.Windows.Forms.Padding(2);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(154, 76);
             this.btn10.TabIndex = 23;
@@ -425,7 +426,7 @@
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn9.Location = new System.Drawing.Point(66, 778);
-            this.btn9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn9.Margin = new System.Windows.Forms.Padding(2);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(154, 76);
             this.btn9.TabIndex = 22;
@@ -443,7 +444,7 @@
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn8.Location = new System.Drawing.Point(66, 678);
-            this.btn8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn8.Margin = new System.Windows.Forms.Padding(2);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(154, 76);
             this.btn8.TabIndex = 21;
@@ -461,7 +462,7 @@
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn7.Location = new System.Drawing.Point(66, 583);
-            this.btn7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn7.Margin = new System.Windows.Forms.Padding(2);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(154, 76);
             this.btn7.TabIndex = 13;
@@ -479,7 +480,7 @@
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn6.Location = new System.Drawing.Point(66, 489);
-            this.btn6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn6.Margin = new System.Windows.Forms.Padding(2);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(154, 76);
             this.btn6.TabIndex = 12;
@@ -497,7 +498,7 @@
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn5.Location = new System.Drawing.Point(66, 389);
-            this.btn5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn5.Margin = new System.Windows.Forms.Padding(2);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(154, 76);
             this.btn5.TabIndex = 11;
@@ -515,7 +516,7 @@
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn4.Location = new System.Drawing.Point(66, 294);
-            this.btn4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn4.Margin = new System.Windows.Forms.Padding(2);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(154, 76);
             this.btn4.TabIndex = 10;
@@ -533,7 +534,7 @@
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn3.Location = new System.Drawing.Point(66, 193);
-            this.btn3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn3.Margin = new System.Windows.Forms.Padding(2);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(154, 76);
             this.btn3.TabIndex = 9;
@@ -551,7 +552,7 @@
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.btn2.Location = new System.Drawing.Point(66, 98);
-            this.btn2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn2.Margin = new System.Windows.Forms.Padding(2);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(154, 76);
             this.btn2.TabIndex = 8;
@@ -569,7 +570,7 @@
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.Location = new System.Drawing.Point(66, 10);
-            this.btn1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn1.Margin = new System.Windows.Forms.Padding(2);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(154, 76);
             this.btn1.TabIndex = 7;
@@ -588,11 +589,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "WeekForm";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WeekForm";
             this.Load += new System.EventHandler(this.WeekForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
