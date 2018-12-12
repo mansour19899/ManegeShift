@@ -44,6 +44,7 @@
             this.cmbMonthStart = new System.Windows.Forms.ComboBox();
             this.cmbYearStart = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -254,6 +255,15 @@
             this.label5.Text = "/";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(685, 531);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(201, 168);
+            this.label8.TabIndex = 81;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // PrintForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +271,7 @@
             this.BackgroundImage = global::ManegeShift.Resource1.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(898, 708);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblDateDay);
             this.Controls.Add(this.btnReport);
@@ -296,5 +307,6 @@
         private System.Windows.Forms.ComboBox cmbMonthStart;
         private System.Windows.Forms.ComboBox cmbYearStart;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -229,6 +229,11 @@ namespace ManegeShift
             cmbDayEnd.Text = temp;
         }
 
+        private void label8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
 
 
 

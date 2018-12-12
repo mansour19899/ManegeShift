@@ -1119,6 +1119,96 @@ namespace ManegeShift
 
         private void label18_Click(object sender, EventArgs e)
         {
+            if(true)
+            {
+                string mid = "";
+                lblDayName.Enabled = false;
+                var eee = new DailyWeek();
+                var fff = new ShiftDay();
+                if (true)
+                {
+                    foreach (var item in staffs)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+
+                        }
+                        else
+                            db.ShiftDays.Remove(fff);
+                    }
+                    foreach (var item in MorningShift)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 1 });
+                        }
+                        else
+                            fff.Status_fk = 1;
+                    }
+
+                    foreach (var item in MidShift)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            mid = item.Name.Split('(')[1].Split(')')[0];
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 2, mid = mid });
+                        }
+                        else
+                        {
+                            mid = item.Name.Split('(')[1].Split(')')[0];
+                            fff.Status_fk = 2;
+                            fff.mid = mid;
+                        }
+
+
+
+
+
+                    }
+
+                    foreach (var item in EveningShift)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 3 });
+                        }
+                        else
+                            fff.Status_fk = 3;
+
+                    }
+                    foreach (var item in SpiltShift)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 4 });
+                        }
+                        else
+                            fff.Status_fk = 4;
+
+                    }
+                    foreach (var item in Rest)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 5 });
+                        }
+                        else
+                            fff.Status_fk = 5;
+
+                    }
+
+                }
+
+
+
+                db.SaveChanges();
+            }
             Form1 frm = new Form1(Date.AddDays(1));
             frm.ShowDialog();
             this.Close();
@@ -1127,6 +1217,97 @@ namespace ManegeShift
 
         private void label10_Click(object sender, EventArgs e)
         {
+            if (true)
+            {
+                string mid = "";
+                lblDayName.Enabled = false;
+                var eee = new DailyWeek();
+                var fff = new ShiftDay();
+                if (true)
+                {
+                    foreach (var item in staffs)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+
+                        }
+                        else
+                            db.ShiftDays.Remove(fff);
+                    }
+                    foreach (var item in MorningShift)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 1 });
+                        }
+                        else
+                            fff.Status_fk = 1;
+                    }
+
+                    foreach (var item in MidShift)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            mid = item.Name.Split('(')[1].Split(')')[0];
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 2, mid = mid });
+                        }
+                        else
+                        {
+                            mid = item.Name.Split('(')[1].Split(')')[0];
+                            fff.Status_fk = 2;
+                            fff.mid = mid;
+                        }
+
+
+
+
+
+                    }
+
+                    foreach (var item in EveningShift)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 3 });
+                        }
+                        else
+                            fff.Status_fk = 3;
+
+                    }
+                    foreach (var item in SpiltShift)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 4 });
+                        }
+                        else
+                            fff.Status_fk = 4;
+
+                    }
+                    foreach (var item in Rest)
+                    {
+                        fff = db.ShiftDays.Where(u => u.Person_fk == item.Id & u.Date == Date).FirstOrDefault();
+                        if (fff == null)
+                        {
+                            db.ShiftDays.Add(new ShiftDay { Date = Date, Person_fk = item.Id, Status_fk = 5 });
+                        }
+                        else
+                            fff.Status_fk = 5;
+
+                    }
+
+                }
+
+
+
+                db.SaveChanges();
+            }
+
             Form1 frm = new Form1(Date.AddDays(-1));
             frm.ShowDialog();
             this.Close();
