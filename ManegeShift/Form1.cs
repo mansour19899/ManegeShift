@@ -165,6 +165,7 @@ namespace ManegeShift
             {
                 var dbb = db.ShiftDays.Where(p => p.Date == Date).ToList();
                 var staffss = db.People.Where(p=>p.IsDelete==false).Select(p => new Staff { Id = p.Id, Name = p.NickName.Trim(),Level=p.Level}).ToList();
+
                 MorningShift = dbb.Where(p => p.Status_fk == 1).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(),Level=p.Person.Level}).ToList();
                 MidShift = dbb.Where(p => p.Status_fk == 2).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim() + "(" + p.mid.Trim() + ")",Level=p.Person.Level }).ToList();
                 EveningShift = dbb.Where(p => p.Status_fk == 3).Select(p => new Staff { Id = p.Person_fk, Name = p.Person.NickName.Trim(), Level = p.Person.Level }).ToList();

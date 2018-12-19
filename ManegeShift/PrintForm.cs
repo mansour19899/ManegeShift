@@ -62,19 +62,19 @@ namespace ManegeShift
                         switch (item.Status_fk)
                         {
                             case 1:
-                                morning = morning + "," + item.Person.NickName.Trim();
+                                morning = morning + "-" + item.Person.NickName.Trim();
                                 break;
                             case 2:
-                                mid = mid + "," + item.Person.NickName.Trim() + "(" + item.mid.Trim() + ")";
+                                mid = mid + "-" + item.Person.NickName.Trim() + "(" + item.mid.Trim() + ")";
                                 break;
                             case 3:
-                                evening = evening + "," + item.Person.NickName.Trim();
+                                evening = evening + "-" + item.Person.NickName.Trim();
                                 break;
                             case 4:
-                                split = split + "," + item.Person.NickName.Trim() + "(split)";
+                                split = split + "-" + item.Person.NickName.Trim() + "(split)";
                                 break;
                             case 5:
-                                rest = rest + "," + item.Person.NickName.Trim();
+                                rest = rest + "-" + item.Person.NickName.Trim();
                                 break;
                             default:
                                 break;
@@ -87,11 +87,11 @@ namespace ManegeShift
                             Radif = radif,
                             Date = date.ElementAt(0).Date.ToPersianDateString(),
                             Day = date.ElementAt(0).Date.DayOfWeek.ToString(),
-                            Morning = morning.TrimStart(','),
-                            Mid = mid.TrimStart(','),
-                            Evening = evening.TrimStart(','),
-                            Split = split.TrimStart(','),
-                            Rest = rest.TrimStart(',')
+                            Morning = morning.TrimStart('-'),
+                            Mid = mid.TrimStart('-'),
+                            Evening = evening.TrimStart('-'),
+                            Split = split.TrimStart('-'),
+                            Rest = rest.TrimStart('-')
                         });
                     }
 

@@ -2658,6 +2658,7 @@
             this.lblR6.TabIndex = 89;
             this.lblR6.Text = "999";
             this.lblR6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblR6.Click += new System.EventHandler(this.lblR6_Click_1);
             // 
             // lbl6
             // 

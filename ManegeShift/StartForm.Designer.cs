@@ -299,7 +299,7 @@
             this.Name = "StartForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StartForm";
+            this.Text = "Adidas";
             this.Load += new System.EventHandler(this.StartForm_Load);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -57,7 +57,7 @@ namespace ManegeShift
             EndDate = endDate.ToGeorgianDateTime();
 
             List = db.ShiftDays.Where(p => p.Date >= StartDate & p.Date <= EndDate).ToList();
-
+            var countStaff = db.People.Where(p=>p.IsDelete==false).Count();
             int length = 30;
             bool IsSet = false;
             var month = cmbStartMonth.Text;
@@ -84,6 +84,14 @@ namespace ManegeShift
                     labelList.ElementAt(i).BackColor = Color.DarkViolet;
                     labelList.ElementAt(i).ForeColor = Color.White;
                     labelList.ElementAt(i).Visible = true;
+
+                    var countt = List.Where(p => p.Date == StartDate.AddDays(i) & p.Status_fk != 0).Count();
+                    if(countt==countStaff)
+                    {
+                        labelList.ElementAt(i).BackColor = Color.DarkGreen;
+                        labelList.ElementAt(i).ForeColor = Color.White;
+                    }
+
                 }
                 else
                 {

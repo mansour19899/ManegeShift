@@ -834,6 +834,11 @@ namespace ManegeShift
             ShowDetailsShift(5, 5);
         }
 
+        private void lblR6_Click_1(object sender, EventArgs e)
+        {
+            ShowDetailsShift(5, 5);
+        }
+
         private void lblM7_Click(object sender, EventArgs e)
         {
             ShowDetailsShift(6, 1);
@@ -1183,5 +1188,7 @@ namespace ManegeShift
         {
             ShowDetailsShift(19, 5);
         }
+
+     
     }
 }
