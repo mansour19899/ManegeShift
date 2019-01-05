@@ -86,10 +86,10 @@ namespace ManegeShift
                     labelList.ElementAt(i).Visible = true;
 
                     var countt = List.Where(p => p.Date == StartDate.AddDays(i) & p.Status_fk != 0).Count();
-                    if(countt==countStaff)
+                    if(countt>=countStaff)
                     {
-                        labelList.ElementAt(i).BackColor = Color.DarkGreen;
-                        labelList.ElementAt(i).ForeColor = Color.White;
+                        labelList.ElementAt(i).BackColor = Color.DeepSkyBlue;
+                        labelList.ElementAt(i).ForeColor = Color.Black;
                     }
 
                 }

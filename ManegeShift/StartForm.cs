@@ -157,7 +157,7 @@ namespace ManegeShift
         private void button1_Click(object sender, EventArgs e)
         {
    
-            db = new HiiiEntities();
+        
             WeekShift = db.DailyWeeks.ToList();
            
 
@@ -176,6 +176,7 @@ namespace ManegeShift
         public StartForm()
         {
             InitializeComponent();
+            db = new HiiiEntities();
             var x = Today.ToPersianDateString().Split('/');
             var xx = Today.ToPersianDateString().AddDaysToShamsiDate(30).Split('/');
             YearStart = x[0].Substring(2);
@@ -189,10 +190,16 @@ namespace ManegeShift
 
         private void StartForm_Load(object sender, EventArgs e)
         {
+
             cmbDay.DataSource = DateTime.Today.ToPersianDateString().ReturnDaysOfMonth();
 
             if (CheckRunSql())
             {
+                var IsConnect = db.People.Any();
+                if (IsConnect)
+                    panel1.Visible = false;
+                else
+                    label1.Text = "Start Again";
                 lblDateShamsi.Text = Today.ToPersianDateString();
                 lblDateDay.Text = Today.DayOfWeek.ToString();
                 lblDateMiladi.Text = Today.Year.ToString() + "/" + Today.Month.ToString() + "/" + Today.Day.ToString();
@@ -226,7 +233,7 @@ namespace ManegeShift
                 this.Close();
             }
            
-
+            
         }
 
         public bool CheckRunSql()
